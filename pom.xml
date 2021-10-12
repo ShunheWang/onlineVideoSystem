@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
-		<module>erueka</module>
 		<module>system</module>
+		<module>eureka</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

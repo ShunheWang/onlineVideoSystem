@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>erueka</artifactId>
+    <artifactId>eureka</artifactId>
 
     <dependencies>
         <dependency>
