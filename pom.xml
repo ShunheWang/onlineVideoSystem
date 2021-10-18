@@ -51,6 +51,13 @@
 				<artifactId>mysql-connector-java</artifactId>
 				<version>8.0.25</version>
 			</dependency>
+
+<!--			server模块，增加自己的依赖-->
+			<dependency>
+				<groupId>com.course</groupId>
+				<artifactId>server</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
