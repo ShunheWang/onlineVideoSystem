@@ -14,14 +14,14 @@ import java.util.List;
  * @Controller 返回页面时用
  */
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/admin/chapter")
 public class ChapterController {
 
     @Resource
     private ChapterService chapterService;
 
-    @RequestMapping("/chapter")
-    public List<ChapterVO> chapter() {
+    @RequestMapping("/list")
+    public List<ChapterVO> list() {
         return chapterService.list();
     }
 }
