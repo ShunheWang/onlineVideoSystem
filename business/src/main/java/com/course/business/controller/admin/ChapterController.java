@@ -1,7 +1,8 @@
-package com.course.business.controller;
+package com.course.business.controller.admin;
 
 import com.course.server.dto.Chapter;
 import com.course.server.service.ChapterService;
+import com.course.server.vo.ChapterVO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,13 +14,14 @@ import java.util.List;
  * @Controller 返回页面时用
  */
 @RestController
+@RequestMapping("/admin")
 public class ChapterController {
 
     @Resource
     private ChapterService chapterService;
 
     @RequestMapping("/chapter")
-    public List<Chapter> chapter() {
+    public List<ChapterVO> chapter() {
         return chapterService.list();
     }
 }
