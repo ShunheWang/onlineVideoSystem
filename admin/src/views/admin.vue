@@ -354,7 +354,7 @@
 
         <ul class="nav nav-list">
           <li class="" id="welcome-sidebar">
-            <router-link to="/admin/wellcome">
+            <router-link to="/wellcome">
               <i class="menu-icon fa fa-tachometer"></i>
               <span class="menu-text"> 欢迎 </span>
             </router-link>
@@ -405,7 +405,7 @@
 
             <ul class="submenu">
               <li class="active" id="business-chapter-sidebar">
-                <router-link to="/admin/business/chapter">
+                <router-link to="/business/chapter">
                   <i class="menu-icon fa fa-caret-right"></i>
                   大章管理
                 </router-link>
@@ -473,9 +473,24 @@
   export default {
     name: "admin",
     mounted: function() {
+      let _this = this;
       $("body").removeClass("login-layout light-login");
       $("body").attr("class", "no-skin");
       // console.log("admin");
+      _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+
+    },
+    watch: {
+      $route: {
+        handler: function(val, oldVal) {
+          console.log("页面跳转 -> ", val, oldVal);
+          let _this = this;
+          _this.$nextTick(function() { // 页面加载完后，进行跳转
+            _this.activeSidebar(_this.$route.name.replace("/", "-") + "-sidebar");
+          })
+
+        }
+      }
     },
     methods: {
       login () {

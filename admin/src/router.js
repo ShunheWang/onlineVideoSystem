@@ -11,7 +11,7 @@ Vue.use(Router)
 
 export default new Router({
     mode: 'history',
-    base: 'process.env.BASE_URL',
+    // base: 'process.env.BASE_URL',
     routes: [{
         path: '*',
         redirect: "/login",
@@ -19,13 +19,16 @@ export default new Router({
         path: "/login",
         component: Login
     }, {
-        path: "/admin",
+        path: "/",
+        name: "admin",
         component: Admin,
         children: [{
             path: "wellcome",
+            name: "wellcome",
             component: Wellcome
         },{
             path: "business/chapter",
+            name: "business/chapter",
             component: Chapter
         }]
     }]
