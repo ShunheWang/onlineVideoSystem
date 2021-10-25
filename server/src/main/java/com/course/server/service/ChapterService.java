@@ -4,6 +4,7 @@ import com.course.server.dto.Chapter;
 import com.course.server.dto.ChapterExample;
 import com.course.server.mapper.ChapterMapper;
 import com.course.server.vo.ChapterVO;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ public class ChapterService {
     private ChapterMapper chapterMapper;
 
     public List<ChapterVO> list() {
+        PageHelper.startPage(1, 1);
         ChapterExample chapterExample = new ChapterExample();
         List<Chapter> chapterDTOList = chapterMapper.selectByExample(chapterExample);
         List<ChapterVO> chapterVOList = new ArrayList<>();
