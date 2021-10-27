@@ -1,6 +1,5 @@
 package com.course.business.controller.admin;
 
-import com.course.server.dto.Chapter;
 import com.course.server.service.ChapterService;
 import com.course.server.vo.ChapterVO;
 import com.course.server.vo.PageVO;
@@ -9,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * @RestController 返回json数据时用
@@ -31,5 +29,12 @@ public class ChapterController {
     public PageVO list(@RequestBody PageVO pageVO) {
         chapterService.list(pageVO);
         return pageVO;
+    }
+
+    @RequestMapping("/save")
+    public ChapterVO save(@RequestBody ChapterVO chapterVO) {
+//        LOG.info("chapterDto: {}", chapterVO);
+        chapterService.save(chapterVO);
+        return chapterVO;
     }
 }

@@ -3,6 +3,7 @@ package com.course.server.service;
 import com.course.server.dto.Chapter;
 import com.course.server.dto.ChapterExample;
 import com.course.server.mapper.ChapterMapper;
+import com.course.server.util.UuidUtil;
 import com.course.server.vo.ChapterVO;
 import com.course.server.vo.PageVO;
 import com.github.pagehelper.PageHelper;
@@ -34,6 +35,13 @@ public class ChapterService {
             chapterVOList.add(chapterVO);
         }
         pageVO.setList(chapterDTOList);
+    }
+
+    public void save(ChapterVO chapterVO) {
+        chapterVO.setId(UuidUtil.getShortUuid());
+        Chapter chapter = new Chapter();
+        BeanUtils.copyProperties(chapterVO, chapter);
+        chapterMapper.insert(chapter);
     }
 
 }
