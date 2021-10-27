@@ -16,7 +16,7 @@
           <a href="index.html" class="navbar-brand">
             <small>
               <i class="fa fa-leaf"></i>
-              在线视频课程
+              Video Project
             </small>
           </a>
         </div>
@@ -440,8 +440,8 @@
         <div class="footer-inner">
           <div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">甲蛙</span>
-							在线视频课程 &copy; 2099-2099
+							<span class="blue bolder">舜禾王</span>
+							Java-learn &copy; 2021-2022
 						</span>
 
             &nbsp; &nbsp;
