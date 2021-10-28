@@ -4,9 +4,7 @@ import com.course.server.service.ChapterService;
 import com.course.server.vo.ChapterVO;
 import com.course.server.vo.PageVO;
 import com.course.server.vo.ResponseVO;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -26,7 +24,7 @@ public class ChapterController {
      * @param pageVO
      * @return
      */
-    @RequestMapping("/list")
+    @PostMapping("/list")
     public ResponseVO list(@RequestBody PageVO pageVO) {
         chapterService.list(pageVO);
         ResponseVO responseVO = new ResponseVO();
@@ -34,12 +32,20 @@ public class ChapterController {
         return responseVO;
     }
 
-    @RequestMapping("/save")
+    @PostMapping("/save")
     public ResponseVO save(@RequestBody ChapterVO chapterVO) {
 //        LOG.info("chapterDto: {}", chapterVO);
         chapterService.save(chapterVO);
         ResponseVO responseVO = new ResponseVO();
         responseVO.setContent(chapterVO);
+        return responseVO;
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseVO delete(@PathVariable String id) {
+//        LOG.info("chapterDto: {}", chapterVO);
+        chapterService.delete(id);
+        ResponseVO responseVO = new ResponseVO();
         return responseVO;
     }
 }
