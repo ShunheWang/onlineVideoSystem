@@ -7,6 +7,7 @@ import com.course.server.util.CopyUtil;
 import com.course.server.util.UuidUtil;
 import com.course.server.vo.ChapterVO;
 import com.course.server.vo.PageVO;
+import com.course.server.vo.ResponseVO;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.BeanUtils;
