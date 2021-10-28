@@ -1,4 +1,4 @@
-2021-10-27 18:27:27.695 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-10-23 15:19:03.216 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -48,7 +48,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 common frames omitted
-2021-10-27 18:27:27.703 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-10-23 15:19:03.220 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -99,7 +99,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 common frames omitted
-2021-10-27 18:27:27.708 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-10-23 15:19:03.226 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -162,7 +162,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
-2021-10-27 18:27:27.710 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.104:system:9001 - de-registration failedCannot execute request on any known server
+2021-10-23 15:19:03.228 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)

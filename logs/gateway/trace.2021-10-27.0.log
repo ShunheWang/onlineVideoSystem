@@ -1,3 +1,37 @@
+2021-10-27 10:49:26.451 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 10:54:26.460 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 10:59:23.364 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:04:23.369 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:09:23.377 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:14:23.361 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:19:23.366 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:24:23.373 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:29:23.357 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:34:23.364 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:39:23.372 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:44:23.355 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:49:23.359 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:54:23.361 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 11:59:23.343 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 12:04:23.347 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 12:09:23.354 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 12:14:23.358 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 14:52:11.024 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:06:50.021 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:11:50.022 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:16:50.027 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:21:50.031 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:26:50.036 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:31:50.016 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:36:50.019 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:41:50.030 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:46:49.991 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:51:49.993 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 17:56:49.997 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:01:49.973 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:01:54.691 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application GATEWAY with eureka with status DOWN
+2021-10-27 18:01:54.691 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635328914691, current=DOWN, previous=UP]
+2021-10-27 18:01:54.692 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000: registering service...
 2021-10-27 18:01:54.702 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -48,6 +82,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 common frames omitted
+2021-10-27 18:01:54.705 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
 2021-10-27 18:01:54.707 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -99,6 +134,43 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 common frames omitted
+2021-10-27 18:01:54.708 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-27 18:01:54.709 WARN  com.netflix.discovery.DiscoveryClient             :849  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-27 18:01:54.709 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-27 18:01:56.775 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-27 18:01:59.780 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
 2021-10-27 18:01:59.785 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -162,6 +234,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
+2021-10-27 18:01:59.786 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
 2021-10-27 18:01:59.787 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
@@ -191,6 +264,76 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
+2021-10-27 18:01:59.797 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-27 18:03:06.446 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:03:16.590 INFO  com.course.gateway.GatewayApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-27 18:03:17.193 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=07044200-6033-3d88-bdb4-f6fddffdaf11
+2021-10-27 18:03:17.317 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:03:17.320 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:03:17.321 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:03:17.324 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:03:17.447 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-27 18:03:17.447 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-27 18:03:17.451 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-27 18:03:17.452 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-27 18:03:18.090 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2021-10-27 18:03:18.091 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2021-10-27 18:03:18.091 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2021-10-27 18:03:18.091 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2021-10-27 18:03:18.092 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2021-10-27 18:03:18.092 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2021-10-27 18:03:18.092 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2021-10-27 18:03:18.092 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2021-10-27 18:03:18.093 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2021-10-27 18:03:18.093 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2021-10-27 18:03:18.093 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2021-10-27 18:03:18.094 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2021-10-27 18:03:18.094 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-10-27 18:03:18.312 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-27 18:03:18.325 WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger:96   [32m        [0;39m You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-27 18:03:18.350 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-27 18:03:18.374 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-27 18:03:18.452 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-27 18:03:18.679 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-27 18:03:18.680 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-27 18:03:18.803 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-27 18:03:18.804 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-27 18:03:18.960 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:03:18.984 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-27 18:03:18.984 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-27 18:03:18.984 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-27 18:03:18.984 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-27 18:03:18.985 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-27 18:03:18.985 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-10-27 18:03:18.985 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-27 18:03:19.157 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-27 18:03:19.159 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-10-27 18:03:19.162 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-27 18:03:19.166 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635328999165 with initial instances count: 0
+2021-10-27 18:03:19.168 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application GATEWAY with eureka with status UP
+2021-10-27 18:03:19.169 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635328999169, current=UP, previous=STARTING]
+2021-10-27 18:03:19.171 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000: registering service...
+2021-10-27 18:03:19.285 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - registration status: 204
+2021-10-27 18:03:24.410 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :89   [32m        [0;39m Netty started on port(s): 9000
+2021-10-27 18:03:24.422 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9000
+2021-10-27 18:03:24.429 INFO  com.course.gateway.GatewayApplication             :61   [32m        [0;39m Started GatewayApplication in 28.762 seconds (JVM running for 29.418)
+2021-10-27 18:03:24.430 INFO  com.course.gateway.GatewayApplication             :23   [32m        [0;39m 启动成功
+2021-10-27 18:03:24.431 INFO  com.course.gateway.GatewayApplication             :24   [32m        [0;39m gateway 地址：	 http://127.0.0.1:9000
+2021-10-27 18:03:49.165 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-27 18:03:49.167 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-27 18:03:49.168 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-27 18:03:49.168 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-27 18:03:49.169 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-27 18:03:49.169 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: false
+2021-10-27 18:03:49.169 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-27 18:03:49.216 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-27 18:08:18.990 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:13:18.996 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:18:19.002 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:23:19.006 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:27:27.582 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application GATEWAY with eureka with status DOWN
+2021-10-27 18:27:27.583 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635330447583, current=DOWN, previous=UP]
+2021-10-27 18:27:27.583 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000: registering service...
 2021-10-27 18:27:27.592 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -241,6 +384,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 common frames omitted
+2021-10-27 18:27:27.593 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
 2021-10-27 18:27:27.595 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -292,6 +436,43 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 common frames omitted
+2021-10-27 18:27:27.596 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-27 18:27:27.597 WARN  com.netflix.discovery.DiscoveryClient             :849  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-27 18:27:27.598 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-27 18:27:29.690 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-27 18:27:32.693 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
 2021-10-27 18:27:32.699 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -355,6 +536,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
+2021-10-27 18:27:32.702 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
 2021-10-27 18:27:32.702 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
@@ -384,6 +566,69 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
+2021-10-27 18:27:32.720 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-27 18:28:32.645 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:28:42.772 INFO  com.course.gateway.GatewayApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-10-27 18:28:43.421 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=07044200-6033-3d88-bdb4-f6fddffdaf11
+2021-10-27 18:28:43.556 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:28:43.560 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:28:43.562 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:28:43.564 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 18:28:43.692 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-27 18:28:43.692 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-27 18:28:43.697 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-10-27 18:28:43.698 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-10-27 18:28:44.408 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [After]
+2021-10-27 18:28:44.408 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Before]
+2021-10-27 18:28:44.409 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Between]
+2021-10-27 18:28:44.409 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Cookie]
+2021-10-27 18:28:44.409 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Header]
+2021-10-27 18:28:44.410 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Host]
+2021-10-27 18:28:44.410 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Method]
+2021-10-27 18:28:44.410 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Path]
+2021-10-27 18:28:44.411 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Query]
+2021-10-27 18:28:44.411 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2021-10-27 18:28:44.411 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2021-10-27 18:28:44.411 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [Weight]
+2021-10-27 18:28:44.411 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m        [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-10-27 18:28:44.654 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-27 18:28:44.667 WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger:96   [32m        [0;39m You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-10-27 18:28:44.691 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-10-27 18:28:44.719 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-10-27 18:28:44.816 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-10-27 18:28:45.054 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-10-27 18:28:45.055 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-10-27 18:28:45.209 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-10-27 18:28:45.210 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-10-27 18:28:45.387 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:28:45.410 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-27 18:28:45.410 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-27 18:28:45.410 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-27 18:28:45.411 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-27 18:28:45.411 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-27 18:28:45.411 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-10-27 18:28:45.411 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-27 18:28:45.609 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-10-27 18:28:45.611 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-10-27 18:28:45.613 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-10-27 18:28:45.616 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635330525615 with initial instances count: 0
+2021-10-27 18:28:45.618 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application GATEWAY with eureka with status UP
+2021-10-27 18:28:45.619 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635330525619, current=UP, previous=STARTING]
+2021-10-27 18:28:45.622 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000: registering service...
+2021-10-27 18:28:45.750 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - registration status: 204
+2021-10-27 18:28:50.893 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :89   [32m        [0;39m Netty started on port(s): 9000
+2021-10-27 18:28:50.893 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9000
+2021-10-27 18:28:50.900 INFO  com.course.gateway.GatewayApplication             :61   [32m        [0;39m Started GatewayApplication in 28.965 seconds (JVM running for 29.677)
+2021-10-27 18:28:50.901 INFO  com.course.gateway.GatewayApplication             :23   [32m        [0;39m 启动成功
+2021-10-27 18:28:50.902 INFO  com.course.gateway.GatewayApplication             :24   [32m        [0;39m gateway 地址：	 http://127.0.0.1:9000
+2021-10-27 18:29:15.617 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-10-27 18:29:15.618 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-10-27 18:29:15.619 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-10-27 18:29:15.620 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-10-27 18:29:15.620 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-10-27 18:29:15.620 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: false
+2021-10-27 18:29:15.621 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-10-27 18:29:15.676 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
 2021-10-27 18:29:51.049 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:122  [32m        [0;39m [d0523ab8]  500 Server Error for HTTP POST "/business/admin/chapter/list"
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /127.0.0.1:9002
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
@@ -426,3 +671,21 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:748)
+2021-10-27 18:33:45.416 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:38:45.419 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:43:45.359 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:48:45.368 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:53:45.371 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 18:58:45.352 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:03:45.352 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:08:45.362 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:13:45.352 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:18:45.353 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:23:45.355 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:40:03.030 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-27 19:40:04.695 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - Re-registering apps/GATEWAY
+2021-10-27 19:40:04.695 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000: registering service...
+2021-10-27 19:40:04.700 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - registration status: 204
+2021-10-27 21:10:25.156 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - Re-registering apps/GATEWAY
+2021-10-27 21:10:25.158 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000: registering service...
+2021-10-27 21:10:25.186 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_GATEWAY/192.168.1.104:gateway:9000 - registration status: 204
