@@ -159,29 +159,42 @@
 
         del(id) {
             let _this = this;
-            Swal.fire({
-            title: '确认删除?',
-            text: "确认删除，删除后不能恢复!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: '是的, 删除!',
-            cancelButtonText: '取消',
-            }).then((result) => {
+            Confirm.show("删除后不能恢复, 确认删除?", function() {
                 Loading.show();
-                if (result.isConfirmed) {
-                    _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/' + id).then((response)=>{
-                    Loading.hide();
-                    console.log("删除大章列表结果：", response);
-                    let resp = response.data;
-                        if (resp.success) {
-                            _this.list(1);
-                            toast.success("删除成功!");
-                        }
-                    })
-                }
-            })
+                _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/' + id).then((response)=>{
+                Loading.hide();
+                console.log("删除大章列表结果：", response);
+                let resp = response.data;
+                    if (resp.success) {
+                        _this.list(1);
+                        toast.success("删除成功!");
+                    }
+                })
+            });
+
+            // Swal.fire({
+            // title: '确认删除?',
+            // text: "确认删除，删除后不能恢复!",
+            // icon: 'warning',
+            // showCancelButton: true,
+            // confirmButtonColor: '#3085d6',
+            // cancelButtonColor: '#d33',
+            // confirmButtonText: '是的, 删除!',
+            // cancelButtonText: '取消',
+            // }).then((result) => {
+            //     if (result.isConfirmed) {
+            //         Loading.show();
+            //         _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/' + id).then((response)=>{
+            //         Loading.hide();
+            //         console.log("删除大章列表结果：", response);
+            //         let resp = response.data;
+            //             if (resp.success) {
+            //                 _this.list(1);
+            //                 toast.success("删除成功!");
+            //             }
+            //         })
+            //     }
+            // })
 
         },
 
