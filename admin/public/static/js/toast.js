@@ -18,14 +18,14 @@ toast = {
         });
     },
 
-    warning: function() {
+    warning: function(message) {
         Toast.fire({
             icon: 'warning',
             title: message
         });
     },
 
-    error: function() {
+    error: function(message) {
         Toast.fire({
             icon: 'error',
             title: message
