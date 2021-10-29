@@ -144,7 +144,9 @@
 
         save() {
             let _this = this;
+            Loading.show();
             _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save', _this.chapter).then((response)=>{
+                Loading.hide();
                 console.log("保存大章列表结果：", response);
                 let resp = response.data;
                 if (resp.success) {
@@ -167,8 +169,10 @@
             confirmButtonText: '是的, 删除!',
             cancelButtonText: '取消',
             }).then((result) => {
+                Loading.show();
                 if (result.isConfirmed) {
                     _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/' + id).then((response)=>{
+                    Loading.hide();
                     console.log("删除大章列表结果：", response);
                     let resp = response.data;
                         if (resp.success) {
@@ -184,12 +188,14 @@
         // list() {
         list(page) {
             let _this = this;
+            Loading.show();
             _this.$ajax.post("http://127.0.0.1:9000/business/admin/chapter/list",{
                 // page: 1,
                 // size: 1
                 page: page,
                 size: _this.$refs.pagination.size,
             }).then((response) => {
+                Loading.hide();
                 console.log("大章返回结果", response);
                 let resp = response.data;
                 _this.chapters = resp.content.list;
