@@ -304,3 +304,5 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-10-30 15:45:55.611 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
 2021-10-30 15:45:55.676 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
 2021-10-30 15:50:25.417 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-30 15:55:25.432 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-30 16:00:25.423 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration

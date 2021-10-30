@@ -37,8 +37,6 @@ public class ChapterController {
 
     @PostMapping("/save")
     public ResponseVO save(@RequestBody ChapterVO chapterVO) {
-//        LOG.info("chapterDto: {}", chapterVO);
-
         // 保存校验
         ValidatorUtil.require(chapterVO.getName(), "名称");
         ValidatorUtil.require(chapterVO.getCourseId(), "课程ID");
@@ -52,7 +50,6 @@ public class ChapterController {
 
     @DeleteMapping("/delete/{id}")
     public ResponseVO delete(@PathVariable String id) {
-//        LOG.info("chapterDto: {}", chapterVO);
         chapterService.delete(id);
         ResponseVO responseVO = new ResponseVO();
         return responseVO;
