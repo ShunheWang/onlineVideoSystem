@@ -1,19 +1,21 @@
-2021-10-30 05:25:33.488 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h51m40s236ms).
-2021-10-30 15:06:42.131 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.102:business:9002 - Re-registering apps/BUSINESS
-2021-10-30 15:06:42.132 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.102:business:9002: registering service...
-2021-10-30 15:06:42.136 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.102:business:9002 - registration status: 204
-2021-10-30 15:06:46.419 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h41m12s931ms).
-2021-10-30 15:10:39.758 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:15:39.761 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:20:39.766 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:25:39.747 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:30:39.751 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:35:39.738 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:40:39.728 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:43:50.241 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
-2021-10-30 15:43:50.242 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635579830242, current=DOWN, previous=UP]
-2021-10-30 15:43:50.242 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.102:business:9002: registering service...
-2021-10-30 15:43:50.252 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-10-31 00:00:04.959 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s930ms).
+2021-10-31 00:05:46.833 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s865ms).
+2021-10-31 00:06:12.647 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 00:11:28.750 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s920ms).
+2021-10-31 07:39:30.815 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h28m2s65ms).
+2021-10-31 08:28:56.866 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m26s51ms).
+2021-10-31 08:30:13.323 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s457ms).
+2021-10-31 09:15:09.737 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m56s393ms).
+2021-10-31 09:45:19.979 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m10s243ms).
+2021-10-31 10:30:16.193 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m56s214ms).
+2021-10-31 13:10:32.155 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 13:10:37.279 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h40m21s86ms).
+2021-10-31 13:14:30.994 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s798ms).
+2021-10-31 13:19:43.050 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m12s56ms).
+2021-10-31 13:30:10.452 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m27s402ms).
+2021-10-31 13:30:35.287 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 13:35:35.289 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 13:37:41.520 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -21,27 +23,74 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at com.sun.jersey.api.client.Client.handle(Client.java:652)
 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2021-10-31 13:37:41.520 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
@@ -63,9 +112,143 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 29 common frames omitted
-2021-10-30 15:43:50.255 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-10-30 15:43:50.256 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2021-10-30 15:43:50.257 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-10-31 13:37:41.523 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-31 13:37:41.522 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-31 13:37:41.524 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 27 common frames omitted
+2021-10-31 13:37:41.524 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+2021-10-31 13:37:41.525 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-31 13:37:41.525 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-31 13:37:41.526 ERROR com.netflix.discovery.DiscoveryClient             :878  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-31 13:37:41.526 ERROR com.netflix.discovery.DiscoveryClient             :990  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - was unable to refresh its cache! status = Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-31 13:37:50.089 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2021-10-31 13:37:50.089 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635658670089, current=DOWN, previous=UP]
+2021-10-31 13:37:50.089 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002: registering service...
+2021-10-31 13:37:50.091 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -116,8 +299,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 30 common frames omitted
-2021-10-30 15:43:50.259 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-10-30 15:43:50.261 WARN  com.netflix.discovery.DiscoveryClient             :849  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.102:business:9002 - registration failed Cannot execute request on any known server
+2021-10-31 13:37:50.092 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-31 13:37:50.092 WARN  com.netflix.discovery.DiscoveryClient             :849  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - registration failed Cannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -134,7 +317,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2021-10-30 15:43:50.262 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
+2021-10-31 13:37:50.093 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -151,9 +334,10 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2021-10-30 15:43:50.268 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
-2021-10-30 15:43:53.269 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
-2021-10-30 15:43:53.274 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+2021-10-31 13:37:50.099 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-31 13:37:50.109 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2021-10-31 13:37:53.116 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2021-10-31 13:37:53.124 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -216,8 +400,8 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
-2021-10-30 15:43:53.276 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-10-30 15:43:53.277 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.102:business:9002 - de-registration failedCannot execute request on any known server
+2021-10-31 13:37:53.125 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2021-10-31 13:37:53.126 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -246,198 +430,6 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
-2021-10-30 15:43:53.291 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
-2021-10-30 15:43:53.291 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
-2021-10-30 15:43:53.298 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
-2021-10-30 15:45:22.291 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-30 15:45:32.431 INFO  com.course.business.BusinessApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2021-10-30 15:45:33.349 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-10-30 15:45:33.492 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b1cff326-fb4d-30a9-a800-0e5b4f9831ec
-2021-10-30 15:45:33.751 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-30 15:45:34.116 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-10-30 15:45:34.417 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2021-10-30 15:45:34.429 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2021-10-30 15:45:34.430 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2021-10-30 15:45:34.430 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-10-30 15:45:34.556 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2021-10-30 15:45:34.556 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2107 ms
-2021-10-30 15:45:34.698 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2021-10-30 15:45:34.699 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-10-30 15:45:34.723 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@69f0b0f4
-2021-10-30 15:45:35.500 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2021-10-30 15:45:35.501 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-10-30 15:45:35.742 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-10-30 15:45:36.408 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2021-10-30 15:45:36.457 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2021-10-30 15:45:36.476 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-10-30 15:45:36.521 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2021-10-30 15:45:36.595 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
-2021-10-30 15:45:36.841 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2021-10-30 15:45:36.842 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2021-10-30 15:45:36.997 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2021-10-30 15:45:36.998 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2021-10-30 15:45:37.280 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:45:37.305 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
-2021-10-30 15:45:37.305 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
-2021-10-30 15:45:37.305 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
-2021-10-30 15:45:37.306 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
-2021-10-30 15:45:37.306 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
-2021-10-30 15:45:37.306 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
-2021-10-30 15:45:37.306 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
-2021-10-30 15:45:37.691 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
-2021-10-30 15:45:37.694 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2021-10-30 15:45:37.697 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-10-30 15:45:37.700 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635579937699 with initial instances count: 1
-2021-10-30 15:45:37.707 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2021-10-30 15:45:37.708 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635579937708, current=UP, previous=STARTING]
-2021-10-30 15:45:37.711 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002: registering service...
-2021-10-30 15:45:37.730 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2021-10-30 15:45:37.753 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - registration status: 204
-2021-10-30 15:45:37.775 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2021-10-30 15:45:37.776 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2021-10-30 15:45:37.781 INFO  com.course.business.BusinessApplication           :61   [32m        [0;39m Started BusinessApplication in 26.197 seconds (JVM running for 26.847)
-2021-10-30 15:45:37.787 INFO  com.course.business.BusinessApplication           :23   [32m        [0;39m 启动成功
-2021-10-30 15:45:37.788 INFO  com.course.business.BusinessApplication           :24   [32m        [0;39m business 地址：	 http://127.0.0.1:9002
-2021-10-30 15:46:39.295 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-30 15:46:39.296 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2021-10-30 15:46:39.308 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 12 ms
-2021-10-30 15:46:39.391 INFO  com.course.server.config.LogAspect                :81   [32mOfQGMB1a[0;39m ------------- 【大章】查询开始 -------------
-2021-10-30 15:46:39.392 INFO  com.course.server.config.LogAspect                :82   [32mOfQGMB1a[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/list POST
-2021-10-30 15:46:39.392 INFO  com.course.server.config.LogAspect                :83   [32mOfQGMB1a[0;39m 类名方法: com.course.business.controller.admin.ChapterController.list
-2021-10-30 15:46:39.392 INFO  com.course.server.config.LogAspect                :84   [32mOfQGMB1a[0;39m 远程地址: 127.0.0.1
-2021-10-30 15:46:39.418 INFO  com.course.server.config.LogAspect                :102  [32mOfQGMB1a[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-10-30 15:46:39.482 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mOfQGMB1a[0;39m HikariPool-1 - Starting...
-2021-10-30 15:46:39.849 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mOfQGMB1a[0;39m HikariPool-1 - Start completed.
-2021-10-30 15:46:39.919 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mOfQGMB1a[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2021-10-30 15:46:39.955 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mOfQGMB1a[0;39m ==> Parameters: 
-2021-10-30 15:46:39.997 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mOfQGMB1a[0;39m <==    Columns: count(0)
-2021-10-30 15:46:39.998 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mOfQGMB1a[0;39m <==        Row: 13
-2021-10-30 15:46:40.001 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mOfQGMB1a[0;39m <==      Total: 1
-2021-10-30 15:46:40.005 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mOfQGMB1a[0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
-2021-10-30 15:46:40.006 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mOfQGMB1a[0;39m ==> Parameters: 5(Integer)
-2021-10-30 15:46:40.008 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mOfQGMB1a[0;39m <==    Columns: id, course_id, name
-2021-10-30 15:46:40.009 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mOfQGMB1a[0;39m <==        Row: 000012, 000, test000
-2021-10-30 15:46:40.010 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mOfQGMB1a[0;39m <==        Row: 000013, 000000, test013
-2021-10-30 15:46:40.011 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mOfQGMB1a[0;39m <==        Row: 000014, 000000, test014
-2021-10-30 15:46:40.011 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mOfQGMB1a[0;39m <==        Row: 000015, 000000, test015
-2021-10-30 15:46:40.012 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mOfQGMB1a[0;39m <==        Row: 000016, 000000, test016
-2021-10-30 15:46:40.013 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mOfQGMB1a[0;39m <==      Total: 5
-2021-10-30 15:46:40.032 INFO  com.course.server.config.LogAspect                :114  [32mOfQGMB1a[0;39m 返回结果: {"content":{"list":[{"courseId":"000","id":"000012","name":"test000"},{"courseId":"000000","id":"000013","name":"test013"},{"courseId":"000000","id":"000014","name":"test014"},{"courseId":"000000","id":"000015","name":"test015"},{"courseId":"000000","id":"000016","name":"test016"}],"page":1,"size":5,"total":13},"success":true}
-2021-10-30 15:46:40.032 INFO  com.course.server.config.LogAspect                :115  [32mOfQGMB1a[0;39m ------------- 结束 耗时：646 ms -------------
-2021-10-30 15:47:11.318 INFO  com.course.server.config.LogAspect                :81   [32mL1DhXkYO[0;39m ------------- 【大章】保存开始 -------------
-2021-10-30 15:47:11.318 INFO  com.course.server.config.LogAspect                :82   [32mL1DhXkYO[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/save POST
-2021-10-30 15:47:11.319 INFO  com.course.server.config.LogAspect                :83   [32mL1DhXkYO[0;39m 类名方法: com.course.business.controller.admin.ChapterController.save
-2021-10-30 15:47:11.319 INFO  com.course.server.config.LogAspect                :84   [32mL1DhXkYO[0;39m 远程地址: 127.0.0.1
-2021-10-30 15:47:11.319 INFO  com.course.server.config.LogAspect                :102  [32mL1DhXkYO[0;39m 请求参数: [{"courseId":"000666","name":"shunhe"}]
-2021-10-30 15:47:11.322 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32mL1DhXkYO[0;39m ==>  Preparing: insert into chapter (id, course_id, name) values (?, ?, ?) 
-2021-10-30 15:47:11.323 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32mL1DhXkYO[0;39m ==> Parameters: TTuEKnm8(String), 000666(String), shunhe(String)
-2021-10-30 15:47:11.327 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32mL1DhXkYO[0;39m <==    Updates: 1
-2021-10-30 15:47:11.328 INFO  com.course.server.config.LogAspect                :114  [32mL1DhXkYO[0;39m 返回结果: {"content":{"courseId":"000666","name":"shunhe"},"success":true}
-2021-10-30 15:47:11.328 INFO  com.course.server.config.LogAspect                :115  [32mL1DhXkYO[0;39m ------------- 结束 耗时：10 ms -------------
-2021-10-30 15:47:11.352 INFO  com.course.server.config.LogAspect                :81   [32m6ZgiVB4a[0;39m ------------- 【大章】查询开始 -------------
-2021-10-30 15:47:11.352 INFO  com.course.server.config.LogAspect                :82   [32m6ZgiVB4a[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/list POST
-2021-10-30 15:47:11.353 INFO  com.course.server.config.LogAspect                :83   [32m6ZgiVB4a[0;39m 类名方法: com.course.business.controller.admin.ChapterController.list
-2021-10-30 15:47:11.353 INFO  com.course.server.config.LogAspect                :84   [32m6ZgiVB4a[0;39m 远程地址: 127.0.0.1
-2021-10-30 15:47:11.354 INFO  com.course.server.config.LogAspect                :102  [32m6ZgiVB4a[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-10-30 15:47:11.355 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m6ZgiVB4a[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2021-10-30 15:47:11.357 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m6ZgiVB4a[0;39m ==> Parameters: 
-2021-10-30 15:47:11.359 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m6ZgiVB4a[0;39m <==    Columns: count(0)
-2021-10-30 15:47:11.360 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m6ZgiVB4a[0;39m <==        Row: 14
-2021-10-30 15:47:11.361 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m6ZgiVB4a[0;39m <==      Total: 1
-2021-10-30 15:47:11.361 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m6ZgiVB4a[0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
-2021-10-30 15:47:11.362 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m6ZgiVB4a[0;39m ==> Parameters: 5(Integer)
-2021-10-30 15:47:11.363 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m6ZgiVB4a[0;39m <==    Columns: id, course_id, name
-2021-10-30 15:47:11.364 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m6ZgiVB4a[0;39m <==        Row: 000012, 000, test000
-2021-10-30 15:47:11.364 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m6ZgiVB4a[0;39m <==        Row: 000013, 000000, test013
-2021-10-30 15:47:11.365 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m6ZgiVB4a[0;39m <==        Row: 000014, 000000, test014
-2021-10-30 15:47:11.365 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m6ZgiVB4a[0;39m <==        Row: 000015, 000000, test015
-2021-10-30 15:47:11.366 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m6ZgiVB4a[0;39m <==        Row: 000016, 000000, test016
-2021-10-30 15:47:11.367 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m6ZgiVB4a[0;39m <==      Total: 5
-2021-10-30 15:47:11.368 INFO  com.course.server.config.LogAspect                :114  [32m6ZgiVB4a[0;39m 返回结果: {"content":{"list":[{"courseId":"000","id":"000012","name":"test000"},{"courseId":"000000","id":"000013","name":"test013"},{"courseId":"000000","id":"000014","name":"test014"},{"courseId":"000000","id":"000015","name":"test015"},{"courseId":"000000","id":"000016","name":"test016"}],"page":1,"size":5,"total":14},"success":true}
-2021-10-30 15:47:11.368 INFO  com.course.server.config.LogAspect                :115  [32m6ZgiVB4a[0;39m ------------- 结束 耗时：16 ms -------------
-2021-10-30 15:50:37.302 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:55:37.316 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 15:56:18.021 INFO  com.course.server.config.LogAspect                :81   [32mum1ngC3T[0;39m ------------- 【大章】查询开始 -------------
-2021-10-30 15:56:18.022 INFO  com.course.server.config.LogAspect                :82   [32mum1ngC3T[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/list POST
-2021-10-30 15:56:18.022 INFO  com.course.server.config.LogAspect                :83   [32mum1ngC3T[0;39m 类名方法: com.course.business.controller.admin.ChapterController.list
-2021-10-30 15:56:18.023 INFO  com.course.server.config.LogAspect                :84   [32mum1ngC3T[0;39m 远程地址: 127.0.0.1
-2021-10-30 15:56:18.023 INFO  com.course.server.config.LogAspect                :102  [32mum1ngC3T[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-10-30 15:56:18.027 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mum1ngC3T[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2021-10-30 15:56:18.028 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mum1ngC3T[0;39m ==> Parameters: 
-2021-10-30 15:56:18.030 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mum1ngC3T[0;39m <==    Columns: count(0)
-2021-10-30 15:56:18.031 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mum1ngC3T[0;39m <==        Row: 14
-2021-10-30 15:56:18.032 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mum1ngC3T[0;39m <==      Total: 1
-2021-10-30 15:56:18.033 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mum1ngC3T[0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
-2021-10-30 15:56:18.034 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mum1ngC3T[0;39m ==> Parameters: 5(Integer)
-2021-10-30 15:56:18.035 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mum1ngC3T[0;39m <==    Columns: id, course_id, name
-2021-10-30 15:56:18.036 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mum1ngC3T[0;39m <==        Row: 000012, 000, test000
-2021-10-30 15:56:18.036 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mum1ngC3T[0;39m <==        Row: 000013, 000000, test013
-2021-10-30 15:56:18.036 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mum1ngC3T[0;39m <==        Row: 000014, 000000, test014
-2021-10-30 15:56:18.037 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mum1ngC3T[0;39m <==        Row: 000015, 000000, test015
-2021-10-30 15:56:18.037 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mum1ngC3T[0;39m <==        Row: 000016, 000000, test016
-2021-10-30 15:56:18.038 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mum1ngC3T[0;39m <==      Total: 5
-2021-10-30 15:56:18.039 INFO  com.course.server.config.LogAspect                :114  [32mum1ngC3T[0;39m 返回结果: {"content":{"list":[{"courseId":"000","id":"000012","name":"test000"},{"courseId":"000000","id":"000013","name":"test013"},{"courseId":"000000","id":"000014","name":"test014"},{"courseId":"000000","id":"000015","name":"test015"},{"courseId":"000000","id":"000016","name":"test016"}],"page":1,"size":5,"total":14},"success":true}
-2021-10-30 15:56:18.040 INFO  com.course.server.config.LogAspect                :115  [32mum1ngC3T[0;39m ------------- 结束 耗时：19 ms -------------
-2021-10-30 15:57:00.334 INFO  com.course.server.config.LogAspect                :81   [32mYScJVssz[0;39m ------------- 【大章】查询开始 -------------
-2021-10-30 15:57:00.335 INFO  com.course.server.config.LogAspect                :82   [32mYScJVssz[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/list POST
-2021-10-30 15:57:00.336 INFO  com.course.server.config.LogAspect                :83   [32mYScJVssz[0;39m 类名方法: com.course.business.controller.admin.ChapterController.list
-2021-10-30 15:57:00.336 INFO  com.course.server.config.LogAspect                :84   [32mYScJVssz[0;39m 远程地址: 127.0.0.1
-2021-10-30 15:57:00.336 INFO  com.course.server.config.LogAspect                :102  [32mYScJVssz[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-10-30 15:57:00.338 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mYScJVssz[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2021-10-30 15:57:00.339 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mYScJVssz[0;39m ==> Parameters: 
-2021-10-30 15:57:00.341 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mYScJVssz[0;39m <==    Columns: count(0)
-2021-10-30 15:57:00.341 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mYScJVssz[0;39m <==        Row: 14
-2021-10-30 15:57:00.342 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mYScJVssz[0;39m <==      Total: 1
-2021-10-30 15:57:00.343 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mYScJVssz[0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
-2021-10-30 15:57:00.344 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mYScJVssz[0;39m ==> Parameters: 5(Integer)
-2021-10-30 15:57:00.346 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mYScJVssz[0;39m <==    Columns: id, course_id, name
-2021-10-30 15:57:00.346 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mYScJVssz[0;39m <==        Row: 000012, 000, test000
-2021-10-30 15:57:00.348 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mYScJVssz[0;39m <==        Row: 000013, 000000, test013
-2021-10-30 15:57:00.349 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mYScJVssz[0;39m <==        Row: 000014, 000000, test014
-2021-10-30 15:57:00.350 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mYScJVssz[0;39m <==        Row: 000015, 000000, test015
-2021-10-30 15:57:00.351 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mYScJVssz[0;39m <==        Row: 000016, 000000, test016
-2021-10-30 15:57:00.352 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mYScJVssz[0;39m <==      Total: 5
-2021-10-30 15:57:00.355 INFO  com.course.server.config.LogAspect                :114  [32mYScJVssz[0;39m 返回结果: {"content":{"list":[{"courseId":"000","id":"000012","name":"test000"},{"courseId":"000000","id":"000013","name":"test013"},{"courseId":"000000","id":"000014","name":"test014"},{"courseId":"000000","id":"000015","name":"test015"},{"courseId":"000000","id":"000016","name":"test016"}],"page":1,"size":5,"total":14},"success":true}
-2021-10-30 15:57:00.356 INFO  com.course.server.config.LogAspect                :115  [32mYScJVssz[0;39m ------------- 结束 耗时：22 ms -------------
-2021-10-30 16:00:05.280 INFO  com.course.server.config.LogAspect                :81   [32mcH8WiJ7l[0;39m ------------- 【大章】查询开始 -------------
-2021-10-30 16:00:05.281 INFO  com.course.server.config.LogAspect                :82   [32mcH8WiJ7l[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/list POST
-2021-10-30 16:00:05.281 INFO  com.course.server.config.LogAspect                :83   [32mcH8WiJ7l[0;39m 类名方法: com.course.business.controller.admin.ChapterController.list
-2021-10-30 16:00:05.281 INFO  com.course.server.config.LogAspect                :84   [32mcH8WiJ7l[0;39m 远程地址: 127.0.0.1
-2021-10-30 16:00:05.282 INFO  com.course.server.config.LogAspect                :102  [32mcH8WiJ7l[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-10-30 16:00:05.283 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mcH8WiJ7l[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2021-10-30 16:00:05.284 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mcH8WiJ7l[0;39m ==> Parameters: 
-2021-10-30 16:00:05.285 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mcH8WiJ7l[0;39m <==    Columns: count(0)
-2021-10-30 16:00:05.285 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mcH8WiJ7l[0;39m <==        Row: 14
-2021-10-30 16:00:05.286 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mcH8WiJ7l[0;39m <==      Total: 1
-2021-10-30 16:00:05.286 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mcH8WiJ7l[0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
-2021-10-30 16:00:05.287 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mcH8WiJ7l[0;39m ==> Parameters: 5(Integer)
-2021-10-30 16:00:05.288 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mcH8WiJ7l[0;39m <==    Columns: id, course_id, name
-2021-10-30 16:00:05.289 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mcH8WiJ7l[0;39m <==        Row: 000012, 000, test000
-2021-10-30 16:00:05.289 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mcH8WiJ7l[0;39m <==        Row: 000013, 000000, test013
-2021-10-30 16:00:05.289 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mcH8WiJ7l[0;39m <==        Row: 000014, 000000, test014
-2021-10-30 16:00:05.290 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mcH8WiJ7l[0;39m <==        Row: 000015, 000000, test015
-2021-10-30 16:00:05.290 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mcH8WiJ7l[0;39m <==        Row: 000016, 000000, test016
-2021-10-30 16:00:05.290 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mcH8WiJ7l[0;39m <==      Total: 5
-2021-10-30 16:00:05.291 INFO  com.course.server.config.LogAspect                :114  [32mcH8WiJ7l[0;39m 返回结果: {"content":{"list":[{"courseId":"000","id":"000012","name":"test000"},{"courseId":"000000","id":"000013","name":"test013"},{"courseId":"000000","id":"000014","name":"test014"},{"courseId":"000000","id":"000015","name":"test015"},{"courseId":"000000","id":"000016","name":"test016"}],"page":1,"size":5,"total":14},"success":true}
-2021-10-30 16:00:05.291 INFO  com.course.server.config.LogAspect                :115  [32mcH8WiJ7l[0;39m ------------- 结束 耗时：11 ms -------------
-2021-10-30 16:00:37.306 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:05:37.313 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:10:37.230 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:15:37.219 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:20:37.207 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:25:37.267 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:30:37.263 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 16:39:20.717 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - Re-registering apps/BUSINESS
-2021-10-30 16:39:20.720 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002: registering service...
-2021-10-30 16:39:20.771 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.7:business:9002 - registration status: 204
-2021-10-30 16:39:22.315 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m12s191ms).
-2021-10-30 19:59:00.588 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h19m38s256ms).
-2021-10-30 19:59:00.588 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:04:01.044 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:09:01.037 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:14:01.034 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:19:01.042 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:24:01.051 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:29:01.039 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:34:00.983 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-10-30 20:39:00.970 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-10-31 13:37:53.144 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2021-10-31 13:37:53.144 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
+2021-10-31 13:37:53.154 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
