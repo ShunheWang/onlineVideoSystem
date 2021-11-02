@@ -1,4 +1,4 @@
-package com.course.business.controller.admin;
+package com.course.${module}.controller.admin;
 
 import com.course.server.service.${Domain}Service;
 import com.course.server.util.ValidatorUtil;
@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 @RequestMapping("/admin/${domain}")
 public class ${Domain}Controller {
 
-    public static final String BUSINESS_NAME = "大章";
+    public static final String BUSINESS_NAME = "${tableNameCn}";
 
     @Resource
     private ${Domain}Service ${domain}Service;
