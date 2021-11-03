@@ -37,10 +37,16 @@ public class ${Domain}Controller {
 
     @PostMapping("/save")
     public ResponseVO save(@RequestBody ${Domain}VO ${domain}VO) {
+
         // 保存校验
-        // ValidatorUtil.require(${domain}VO.getName(), "名称");
-        // ValidatorUtil.require(${domain}VO.getCourseId(), "课程ID");
-        // ValidatorUtil.length(${domain}VO.getCourseId(), "课程ID", 1, 8);
+        <#list fieldList as field>
+            <#if !field.nullable>
+        ValidatorUtil.require(${domain}VO.get${field.nameBigHump}(), "${field.nameCn}");
+            </#if>
+            <#if (field.length > 0)>
+        ValidatorUtil.length(${domain}VO.get${field.nameBigHump}(), "${field.nameCn}", 1, ${field.length});
+            </#if>
+        </#list>
 
         ${domain}Service.save(${domain}VO);
         ResponseVO responseVO = new ResponseVO();

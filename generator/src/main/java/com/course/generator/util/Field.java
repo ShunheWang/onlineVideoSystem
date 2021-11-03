@@ -1,5 +1,7 @@
 package com.course.generator.util;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 public class Field {
 
     private String name; // 字段名：course_id
@@ -9,6 +11,24 @@ public class Field {
     private String type; // 字段类型：char(8)
     private String javaType; // java类型：String
     private String comment; // 注释：课程|ID
+    private Boolean nullable; // 该字段是否为空
+    private Integer length; // 字符串长度为0
+
+    public Boolean getNullable() {
+        return nullable;
+    }
+
+    public void setNullable(Boolean nullable) {
+        this.nullable = nullable;
+    }
+
+    public Integer getLength() {
+        return length;
+    }
+
+    public void setLength(Integer length) {
+        this.length = length;
+    }
 
     public String getName() {
         return name;
@@ -76,6 +96,8 @@ public class Field {
                 ", type='" + type + '\'' +
                 ", javaType='" + javaType + '\'' +
                 ", comment='" + comment + '\'' +
+                ", nullable='" + nullable + '\'' +
+                ", length=" + length +
                 '}';
     }
 }

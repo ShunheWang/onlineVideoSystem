@@ -37,10 +37,11 @@ public class SectionController {
 
     @PostMapping("/save")
     public ResponseVO save(@RequestBody SectionVO sectionVO) {
+
         // 保存校验
-        // ValidatorUtil.require(sectionVO.getName(), "名称");
-        // ValidatorUtil.require(sectionVO.getCourseId(), "课程ID");
-        // ValidatorUtil.length(sectionVO.getCourseId(), "课程ID", 1, 8);
+        ValidatorUtil.require(sectionVO.getTitle(), "标题");
+        ValidatorUtil.length(sectionVO.getTitle(), "标题", 1, 50);
+        ValidatorUtil.length(sectionVO.getVideo(), "视频", 1, 200);
 
         sectionService.save(sectionVO);
         ResponseVO responseVO = new ResponseVO();
