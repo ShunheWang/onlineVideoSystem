@@ -39,9 +39,9 @@ public class SectionController {
     public ResponseVO save(@RequestBody SectionVO sectionVO) {
 
         // 保存校验
-        ValidatorUtil.require(sectionVO.getTitle(), "标题");
-        ValidatorUtil.length(sectionVO.getTitle(), "标题", 1, 50);
-        ValidatorUtil.length(sectionVO.getVideo(), "视频", 1, 200);
+                ValidatorUtil.require(sectionVO.getTitle(), "标题");
+                ValidatorUtil.length(sectionVO.getTitle(), "标题", 1, 50);
+                ValidatorUtil.length(sectionVO.getVideo(), "视频", 1, 200);
 
         sectionService.save(sectionVO);
         ResponseVO responseVO = new ResponseVO();
