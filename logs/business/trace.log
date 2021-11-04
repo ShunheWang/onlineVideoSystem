@@ -448,3 +448,104 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2021-11-04 12:55:25.626 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mRfddM332[0;39m <==      Total: 2
 2021-11-04 12:55:25.626 INFO  com.course.server.config.LogAspect                :114  [32mRfddM332[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
 2021-11-04 12:55:25.627 INFO  com.course.server.config.LogAspect                :115  [32mRfddM332[0;39m ------------- 结束 耗时：15 ms -------------
+2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :81   [32mAn6k0ltJ[0;39m ------------- 【小节】查询开始 -------------
+2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :82   [32mAn6k0ltJ[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :83   [32mAn6k0ltJ[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :84   [32mAn6k0ltJ[0;39m 远程地址: 127.0.0.1
+2021-11-04 12:59:03.042 INFO  com.course.server.config.LogAspect                :102  [32mAn6k0ltJ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-04 12:59:03.045 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mAn6k0ltJ[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-04 12:59:03.046 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mAn6k0ltJ[0;39m ==> Parameters: 
+2021-11-04 12:59:03.047 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mAn6k0ltJ[0;39m <==    Columns: count(0)
+2021-11-04 12:59:03.048 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mAn6k0ltJ[0;39m <==        Row: 2
+2021-11-04 12:59:03.049 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mAn6k0ltJ[0;39m <==      Total: 1
+2021-11-04 12:59:03.050 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mAn6k0ltJ[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-04 12:59:03.051 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mAn6k0ltJ[0;39m ==> Parameters: 5(Integer)
+2021-11-04 12:59:03.053 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mAn6k0ltJ[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-04 12:59:03.053 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mAn6k0ltJ[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
+2021-11-04 12:59:03.054 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mAn6k0ltJ[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-04 12:59:03.055 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mAn6k0ltJ[0;39m <==      Total: 2
+2021-11-04 12:59:03.056 INFO  com.course.server.config.LogAspect                :114  [32mAn6k0ltJ[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-04 12:59:03.056 INFO  com.course.server.config.LogAspect                :115  [32mAn6k0ltJ[0;39m ------------- 结束 耗时：16 ms -------------
+2021-11-04 12:59:41.252 INFO  com.course.server.config.LogAspect                :81   [32m0wVcPwlF[0;39m ------------- 【小节】查询开始 -------------
+2021-11-04 12:59:41.252 INFO  com.course.server.config.LogAspect                :82   [32m0wVcPwlF[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-04 12:59:41.253 INFO  com.course.server.config.LogAspect                :83   [32m0wVcPwlF[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-04 12:59:41.253 INFO  com.course.server.config.LogAspect                :84   [32m0wVcPwlF[0;39m 远程地址: 127.0.0.1
+2021-11-04 12:59:41.254 INFO  com.course.server.config.LogAspect                :102  [32m0wVcPwlF[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-04 12:59:41.259 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m0wVcPwlF[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-04 12:59:41.260 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m0wVcPwlF[0;39m ==> Parameters: 
+2021-11-04 12:59:41.262 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m0wVcPwlF[0;39m <==    Columns: count(0)
+2021-11-04 12:59:41.262 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m0wVcPwlF[0;39m <==        Row: 2
+2021-11-04 12:59:41.263 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m0wVcPwlF[0;39m <==      Total: 1
+2021-11-04 12:59:41.264 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m0wVcPwlF[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-04 12:59:41.265 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m0wVcPwlF[0;39m ==> Parameters: 5(Integer)
+2021-11-04 12:59:41.266 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m0wVcPwlF[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-04 12:59:41.267 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m0wVcPwlF[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
+2021-11-04 12:59:41.268 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m0wVcPwlF[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-04 12:59:41.269 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m0wVcPwlF[0;39m <==      Total: 2
+2021-11-04 12:59:41.270 INFO  com.course.server.config.LogAspect                :114  [32m0wVcPwlF[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-04 12:59:41.271 INFO  com.course.server.config.LogAspect                :115  [32m0wVcPwlF[0;39m ------------- 结束 耗时：20 ms -------------
+2021-11-04 12:59:49.315 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-04 13:00:46.896 INFO  com.course.server.config.LogAspect                :81   [32mBwoktPLQ[0;39m ------------- 【小节】查询开始 -------------
+2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :82   [32mBwoktPLQ[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :83   [32mBwoktPLQ[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :84   [32mBwoktPLQ[0;39m 远程地址: 127.0.0.1
+2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :102  [32mBwoktPLQ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-04 13:00:46.899 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mBwoktPLQ[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-04 13:00:46.899 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mBwoktPLQ[0;39m ==> Parameters: 
+2021-11-04 13:00:46.901 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mBwoktPLQ[0;39m <==    Columns: count(0)
+2021-11-04 13:00:46.901 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mBwoktPLQ[0;39m <==        Row: 2
+2021-11-04 13:00:46.902 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mBwoktPLQ[0;39m <==      Total: 1
+2021-11-04 13:00:46.903 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mBwoktPLQ[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-04 13:00:46.903 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mBwoktPLQ[0;39m ==> Parameters: 5(Integer)
+2021-11-04 13:00:46.905 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mBwoktPLQ[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-04 13:00:46.906 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mBwoktPLQ[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
+2021-11-04 13:00:46.906 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mBwoktPLQ[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-04 13:00:46.907 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mBwoktPLQ[0;39m <==      Total: 2
+2021-11-04 13:00:46.907 INFO  com.course.server.config.LogAspect                :114  [32mBwoktPLQ[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-04 13:00:46.908 INFO  com.course.server.config.LogAspect                :115  [32mBwoktPLQ[0;39m ------------- 结束 耗时：12 ms -------------
+2021-11-04 13:00:58.740 INFO  com.course.server.config.LogAspect                :81   [32mfJQSiioh[0;39m ------------- 【小节】查询开始 -------------
+2021-11-04 13:00:58.741 INFO  com.course.server.config.LogAspect                :82   [32mfJQSiioh[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-04 13:00:58.742 INFO  com.course.server.config.LogAspect                :83   [32mfJQSiioh[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-04 13:00:58.742 INFO  com.course.server.config.LogAspect                :84   [32mfJQSiioh[0;39m 远程地址: 127.0.0.1
+2021-11-04 13:00:58.742 INFO  com.course.server.config.LogAspect                :102  [32mfJQSiioh[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-04 13:00:58.745 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mfJQSiioh[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-04 13:00:58.746 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mfJQSiioh[0;39m ==> Parameters: 
+2021-11-04 13:00:58.748 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mfJQSiioh[0;39m <==    Columns: count(0)
+2021-11-04 13:00:58.749 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mfJQSiioh[0;39m <==        Row: 2
+2021-11-04 13:00:58.749 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mfJQSiioh[0;39m <==      Total: 1
+2021-11-04 13:00:58.750 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mfJQSiioh[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-04 13:00:58.751 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mfJQSiioh[0;39m ==> Parameters: 5(Integer)
+2021-11-04 13:00:58.752 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mfJQSiioh[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-04 13:00:58.753 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mfJQSiioh[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
+2021-11-04 13:00:58.754 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mfJQSiioh[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-04 13:00:58.755 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mfJQSiioh[0;39m <==      Total: 2
+2021-11-04 13:00:58.757 INFO  com.course.server.config.LogAspect                :114  [32mfJQSiioh[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-04 13:00:58.757 INFO  com.course.server.config.LogAspect                :115  [32mfJQSiioh[0;39m ------------- 结束 耗时：17 ms -------------
+2021-11-04 13:01:03.866 INFO  com.course.server.config.LogAspect                :81   [32mtTQxoP2X[0;39m ------------- 【小节】保存开始 -------------
+2021-11-04 13:01:03.867 INFO  com.course.server.config.LogAspect                :82   [32mtTQxoP2X[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/save POST
+2021-11-04 13:01:03.867 INFO  com.course.server.config.LogAspect                :83   [32mtTQxoP2X[0;39m 类名方法: com.course.business.controller.admin.SectionController.save
+2021-11-04 13:01:03.868 INFO  com.course.server.config.LogAspect                :84   [32mtTQxoP2X[0;39m 远程地址: 127.0.0.1
+2021-11-04 13:01:03.868 INFO  com.course.server.config.LogAspect                :102  [32mtTQxoP2X[0;39m 请求参数: [{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725000,"video":""}]
+2021-11-04 13:01:03.870 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32mtTQxoP2X[0;39m ==>  Preparing: update section set title = ?, course_id = ?, chapter_id = ?, video = ?, time = ?, charge = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2021-11-04 13:01:03.871 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32mtTQxoP2X[0;39m ==> Parameters: 测试小节01(String), 00000001(String), 00000000(String), (String), 500(Integer), F(String), 1(Integer), 2021-10-31 04:03:21.0(Timestamp), 2021-11-04 13:01:03.869(Timestamp), 00000001(String)
+2021-11-04 13:01:03.876 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32mtTQxoP2X[0;39m <==    Updates: 1
+2021-11-04 13:01:03.877 INFO  com.course.server.config.LogAspect                :114  [32mtTQxoP2X[0;39m 返回结果: {"content":{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725000,"video":""},"success":true}
+2021-11-04 13:01:03.878 INFO  com.course.server.config.LogAspect                :115  [32mtTQxoP2X[0;39m ------------- 结束 耗时：12 ms -------------
+2021-11-04 13:01:03.909 INFO  com.course.server.config.LogAspect                :81   [32mflkk2Sbu[0;39m ------------- 【小节】查询开始 -------------
+2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :82   [32mflkk2Sbu[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :83   [32mflkk2Sbu[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :84   [32mflkk2Sbu[0;39m 远程地址: 127.0.0.1
+2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :102  [32mflkk2Sbu[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-04 13:01:03.912 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mflkk2Sbu[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-04 13:01:03.913 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mflkk2Sbu[0;39m ==> Parameters: 
+2021-11-04 13:01:03.915 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mflkk2Sbu[0;39m <==    Columns: count(0)
+2021-11-04 13:01:03.916 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mflkk2Sbu[0;39m <==        Row: 2
+2021-11-04 13:01:03.917 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mflkk2Sbu[0;39m <==      Total: 1
+2021-11-04 13:01:03.918 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mflkk2Sbu[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-04 13:01:03.919 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mflkk2Sbu[0;39m ==> Parameters: 5(Integer)
+2021-11-04 13:01:03.921 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mflkk2Sbu[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-04 13:01:03.922 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mflkk2Sbu[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, F, 1, 2021-10-30 20:03:21, 2021-11-04 05:01:03.869
+2021-11-04 13:01:03.923 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mflkk2Sbu[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-04 13:01:03.924 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mflkk2Sbu[0;39m <==      Total: 2
+2021-11-04 13:01:03.925 INFO  com.course.server.config.LogAspect                :114  [32mflkk2Sbu[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636002063869,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-04 13:01:03.926 INFO  com.course.server.config.LogAspect                :115  [32mflkk2Sbu[0;39m ------------- 结束 耗时：17 ms -------------
