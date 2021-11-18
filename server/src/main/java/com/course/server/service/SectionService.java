@@ -2,6 +2,7 @@ package com.course.server.service;
 
 import com.course.server.dto.Section;
 import com.course.server.dto.SectionExample;
+import com.course.server.enums.SectionChargeEnum;
 import com.course.server.mapper.SectionMapper;
 import com.course.server.util.CopyUtil;
 import com.course.server.util.UuidUtil;
@@ -47,6 +48,7 @@ public class SectionService {
         section.setCreatedAt(now);
         section.setUpdatedAt(now);
         section.setId(UuidUtil.getShortUuid());
+        section.setCharge(SectionChargeEnum.CHARGE.getCode());
         sectionMapper.insert(section);
     }
 

@@ -36,6 +36,14 @@
             <version>2.1.1</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.course</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.course</groupId>
+            <artifactId>server</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

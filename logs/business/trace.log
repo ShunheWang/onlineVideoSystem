@@ -1,551 +1,132 @@
-2021-11-04 00:01:04.619 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-04 00:01:14.770 INFO  com.course.business.BusinessApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2021-11-04 00:01:15.742 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-11-04 00:01:15.898 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b45c770b-53e8-34b5-ba53-177f922f82f8
-2021-11-04 00:01:16.160 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-04 00:01:16.509 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-04 00:01:16.829 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2021-11-04 00:01:16.842 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2021-11-04 00:01:16.843 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2021-11-04 00:01:16.843 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-04 00:01:16.967 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2021-11-04 00:01:16.967 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2180 ms
-2021-11-04 00:01:17.091 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2021-11-04 00:01:17.092 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-11-04 00:01:17.110 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2daf06fc
-2021-11-04 00:01:18.178 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2021-11-04 00:01:18.178 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-11-04 00:01:18.584 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-11-04 00:01:19.599 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2021-11-04 00:01:19.689 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2021-11-04 00:01:19.721 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-11-04 00:01:19.801 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2021-11-04 00:01:19.951 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
-2021-11-04 00:01:20.335 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2021-11-04 00:01:20.336 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2021-11-04 00:01:20.622 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2021-11-04 00:01:20.623 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2021-11-04 00:01:21.160 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-11-04 00:01:21.195 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
-2021-11-04 00:01:21.195 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
-2021-11-04 00:01:21.196 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
-2021-11-04 00:01:21.196 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
-2021-11-04 00:01:21.197 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
-2021-11-04 00:01:21.198 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
-2021-11-04 00:01:21.199 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
-2021-11-04 00:01:21.702 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
-2021-11-04 00:01:21.707 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2021-11-04 00:01:21.712 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-11-04 00:01:21.719 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1635955281716 with initial instances count: 0
-2021-11-04 00:01:21.730 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2021-11-04 00:01:21.731 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635955281731, current=UP, previous=STARTING]
-2021-11-04 00:01:21.734 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/172.20.10.2:business:9002: registering service...
-2021-11-04 00:01:21.761 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2021-11-04 00:01:21.815 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2021-11-04 00:01:21.816 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2021-11-04 00:01:21.823 INFO  com.course.business.BusinessApplication           :61   [32m        [0;39m Started BusinessApplication in 28.072 seconds (JVM running for 29.367)
-2021-11-04 00:01:21.834 INFO  com.course.business.BusinessApplication           :23   [32m        [0;39m 启动成功
-2021-11-04 00:01:21.834 INFO  com.course.business.BusinessApplication           :24   [32m        [0;39m business 地址：	 http://127.0.0.1:9002
-2021-11-04 00:01:21.876 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/172.20.10.2:business:9002 - registration status: 204
-2021-11-04 00:01:51.708 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
-2021-11-04 00:01:51.709 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
-2021-11-04 00:01:51.710 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
-2021-11-04 00:01:51.711 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
-2021-11-04 00:01:51.711 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
-2021-11-04 00:01:51.711 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: false
-2021-11-04 00:01:51.712 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
-2021-11-04 00:01:51.763 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
-2021-11-04 00:01:55.728 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-04 00:01:55.729 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2021-11-04 00:01:55.743 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 14 ms
-2021-11-04 00:01:55.841 INFO  com.course.server.config.LogAspect                :81   [32m1GWrBKi1[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 00:01:55.842 INFO  com.course.server.config.LogAspect                :82   [32m1GWrBKi1[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 00:01:55.842 INFO  com.course.server.config.LogAspect                :83   [32m1GWrBKi1[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 00:01:55.843 INFO  com.course.server.config.LogAspect                :84   [32m1GWrBKi1[0;39m 远程地址: 127.0.0.1
-2021-11-04 00:01:55.866 INFO  com.course.server.config.LogAspect                :102  [32m1GWrBKi1[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 00:01:55.943 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1GWrBKi1[0;39m HikariPool-1 - Starting...
-2021-11-04 00:01:56.296 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1GWrBKi1[0;39m HikariPool-1 - Start completed.
-2021-11-04 00:01:56.366 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m1GWrBKi1[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 00:01:56.398 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m1GWrBKi1[0;39m ==> Parameters: 
-2021-11-04 00:01:56.435 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m1GWrBKi1[0;39m <==    Columns: count(0)
-2021-11-04 00:01:56.436 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m1GWrBKi1[0;39m <==        Row: 2
-2021-11-04 00:01:56.439 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m1GWrBKi1[0;39m <==      Total: 1
-2021-11-04 00:01:56.442 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m1GWrBKi1[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 00:01:56.444 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m1GWrBKi1[0;39m ==> Parameters: 5(Integer)
-2021-11-04 00:01:56.445 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m1GWrBKi1[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 00:01:56.447 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m1GWrBKi1[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, F, 1, 2021-10-30 20:03:21, 2021-10-30 20:03:21
-2021-11-04 00:01:56.449 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m1GWrBKi1[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 00:01:56.450 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m1GWrBKi1[0;39m <==      Total: 2
-2021-11-04 00:01:56.474 INFO  com.course.server.config.LogAspect                :114  [32m1GWrBKi1[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1635624201000,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 00:01:56.475 INFO  com.course.server.config.LogAspect                :115  [32m1GWrBKi1[0;39m ------------- 结束 耗时：638 ms -------------
-2021-11-04 00:10:29.727 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m3s327ms).
-2021-11-04 00:10:54.510 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-11-04 00:11:43.776 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
-2021-11-04 00:11:43.778 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1635955903778, current=DOWN, previous=UP]
-2021-11-04 00:11:43.778 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/172.20.10.2:business:9002: registering service...
-2021-11-04 00:11:43.782 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2021-11-04 00:11:43.784 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 29 common frames omitted
-2021-11-04 00:11:43.786 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-11-04 00:11:43.788 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
-2021-11-04 00:11:43.788 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 30 common frames omitted
-2021-11-04 00:11:43.789 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-11-04 00:11:43.790 WARN  com.netflix.discovery.DiscoveryClient             :849  [32m        [0;39m DiscoveryClient_BUSINESS/172.20.10.2:business:9002 - registration failed Cannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2021-11-04 00:11:43.790 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
-	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
-	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
-	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2021-11-04 00:11:43.791 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
-2021-11-04 00:11:43.794 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 42 common frames omitted
-2021-11-04 00:11:43.795 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
-2021-11-04 00:11:43.796 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_BUSINESS/172.20.10.2:business:9002 - de-registration failedCannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
-2021-11-04 00:11:43.810 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
-2021-11-04 00:11:43.810 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
-2021-11-04 00:11:43.821 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
-2021-11-04 12:54:34.135 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-04 12:54:44.263 INFO  com.course.business.BusinessApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2021-11-04 12:54:45.127 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-11-04 12:54:45.255 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b45c770b-53e8-34b5-ba53-177f922f82f8
-2021-11-04 12:54:45.496 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-04 12:54:45.813 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-04 12:54:46.111 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2021-11-04 12:54:46.121 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2021-11-04 12:54:46.122 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2021-11-04 12:54:46.123 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-04 12:54:46.239 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2021-11-04 12:54:46.239 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1956 ms
-2021-11-04 12:54:46.352 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2021-11-04 12:54:46.352 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-11-04 12:54:46.368 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e3ecf5c
-2021-11-04 12:54:47.117 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2021-11-04 12:54:47.117 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-11-04 12:54:47.339 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-11-04 12:54:47.953 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2021-11-04 12:54:48.009 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2021-11-04 12:54:48.030 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-11-04 12:54:48.086 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2021-11-04 12:54:48.197 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
-2021-11-04 12:54:48.587 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2021-11-04 12:54:48.587 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2021-11-04 12:54:48.848 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2021-11-04 12:54:48.852 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2021-11-04 12:54:49.263 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-11-04 12:54:49.296 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
-2021-11-04 12:54:49.297 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
-2021-11-04 12:54:49.298 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
-2021-11-04 12:54:49.298 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
-2021-11-04 12:54:49.299 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
-2021-11-04 12:54:49.299 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
-2021-11-04 12:54:49.300 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
-2021-11-04 12:54:49.836 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
-2021-11-04 12:54:49.841 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2021-11-04 12:54:49.845 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-11-04 12:54:49.851 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1636001689848 with initial instances count: 0
-2021-11-04 12:54:49.864 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2021-11-04 12:54:49.865 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1636001689865, current=UP, previous=STARTING]
-2021-11-04 12:54:49.868 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/172.16.0.124:business:9002: registering service...
-2021-11-04 12:54:49.893 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2021-11-04 12:54:49.960 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2021-11-04 12:54:49.961 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2021-11-04 12:54:49.969 INFO  com.course.business.BusinessApplication           :61   [32m        [0;39m Started BusinessApplication in 26.431 seconds (JVM running for 27.166)
-2021-11-04 12:54:49.983 INFO  com.course.business.BusinessApplication           :23   [32m        [0;39m 启动成功
-2021-11-04 12:54:49.983 INFO  com.course.business.BusinessApplication           :24   [32m        [0;39m business 地址：	 http://127.0.0.1:9002
-2021-11-04 12:54:50.019 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/172.16.0.124:business:9002 - registration status: 204
-2021-11-04 12:55:11.678 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-04 12:55:11.679 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2021-11-04 12:55:11.690 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 10 ms
-2021-11-04 12:55:11.786 INFO  com.course.server.config.LogAspect                :81   [32mvrSbPMaV[0;39m ------------- 【大章】查询开始 -------------
-2021-11-04 12:55:11.787 INFO  com.course.server.config.LogAspect                :82   [32mvrSbPMaV[0;39m 请求地址: http://127.0.0.1:9002/business/admin/chapter/list POST
-2021-11-04 12:55:11.788 INFO  com.course.server.config.LogAspect                :83   [32mvrSbPMaV[0;39m 类名方法: com.course.business.controller.admin.ChapterController.list
-2021-11-04 12:55:11.788 INFO  com.course.server.config.LogAspect                :84   [32mvrSbPMaV[0;39m 远程地址: 127.0.0.1
-2021-11-04 12:55:11.810 INFO  com.course.server.config.LogAspect                :102  [32mvrSbPMaV[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 12:55:11.878 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mvrSbPMaV[0;39m HikariPool-1 - Starting...
-2021-11-04 12:55:12.232 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mvrSbPMaV[0;39m HikariPool-1 - Start completed.
-2021-11-04 12:55:12.298 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mvrSbPMaV[0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2021-11-04 12:55:12.332 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mvrSbPMaV[0;39m ==> Parameters: 
-2021-11-04 12:55:12.376 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mvrSbPMaV[0;39m <==    Columns: count(0)
-2021-11-04 12:55:12.377 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32mvrSbPMaV[0;39m <==        Row: 14
-2021-11-04 12:55:12.379 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32mvrSbPMaV[0;39m <==      Total: 1
-2021-11-04 12:55:12.383 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mvrSbPMaV[0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
-2021-11-04 12:55:12.384 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mvrSbPMaV[0;39m ==> Parameters: 5(Integer)
-2021-11-04 12:55:12.386 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mvrSbPMaV[0;39m <==    Columns: id, course_id, name
-2021-11-04 12:55:12.386 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mvrSbPMaV[0;39m <==        Row: 000012, 000, test000
-2021-11-04 12:55:12.387 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mvrSbPMaV[0;39m <==        Row: 000013, 000000, test013
-2021-11-04 12:55:12.388 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mvrSbPMaV[0;39m <==        Row: 000014, 000000, test014
-2021-11-04 12:55:12.389 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mvrSbPMaV[0;39m <==        Row: 000015, 000000, test015
-2021-11-04 12:55:12.391 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32mvrSbPMaV[0;39m <==        Row: 000016, 000000, test016
-2021-11-04 12:55:12.392 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32mvrSbPMaV[0;39m <==      Total: 5
-2021-11-04 12:55:12.407 INFO  com.course.server.config.LogAspect                :114  [32mvrSbPMaV[0;39m 返回结果: {"content":{"list":[{"courseId":"000","id":"000012","name":"test000"},{"courseId":"000000","id":"000013","name":"test013"},{"courseId":"000000","id":"000014","name":"test014"},{"courseId":"000000","id":"000015","name":"test015"},{"courseId":"000000","id":"000016","name":"test016"}],"page":1,"size":5,"total":14},"success":true}
-2021-11-04 12:55:12.407 INFO  com.course.server.config.LogAspect                :115  [32mvrSbPMaV[0;39m ------------- 结束 耗时：623 ms -------------
-2021-11-04 12:55:13.774 INFO  com.course.server.config.LogAspect                :81   [32mzLLae13l[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 12:55:13.775 INFO  com.course.server.config.LogAspect                :82   [32mzLLae13l[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 12:55:13.775 INFO  com.course.server.config.LogAspect                :83   [32mzLLae13l[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 12:55:13.775 INFO  com.course.server.config.LogAspect                :84   [32mzLLae13l[0;39m 远程地址: 127.0.0.1
-2021-11-04 12:55:13.776 INFO  com.course.server.config.LogAspect                :102  [32mzLLae13l[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 12:55:13.789 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mzLLae13l[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 12:55:13.790 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mzLLae13l[0;39m ==> Parameters: 
-2021-11-04 12:55:13.793 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mzLLae13l[0;39m <==    Columns: count(0)
-2021-11-04 12:55:13.793 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mzLLae13l[0;39m <==        Row: 2
-2021-11-04 12:55:13.794 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mzLLae13l[0;39m <==      Total: 1
-2021-11-04 12:55:13.797 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mzLLae13l[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 12:55:13.798 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mzLLae13l[0;39m ==> Parameters: 5(Integer)
-2021-11-04 12:55:13.800 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mzLLae13l[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 12:55:13.803 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mzLLae13l[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, F, 1, 2021-10-30 20:03:21, 2021-10-30 20:03:21
-2021-11-04 12:55:13.805 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mzLLae13l[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 12:55:13.806 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mzLLae13l[0;39m <==      Total: 2
-2021-11-04 12:55:13.822 INFO  com.course.server.config.LogAspect                :114  [32mzLLae13l[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1635624201000,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 12:55:13.822 INFO  com.course.server.config.LogAspect                :115  [32mzLLae13l[0;39m ------------- 结束 耗时：48 ms -------------
-2021-11-04 12:55:19.853 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
-2021-11-04 12:55:19.854 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
-2021-11-04 12:55:19.855 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
-2021-11-04 12:55:19.856 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
-2021-11-04 12:55:19.856 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
-2021-11-04 12:55:19.857 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: false
-2021-11-04 12:55:19.857 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
-2021-11-04 12:55:19.891 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
-2021-11-04 12:55:25.564 INFO  com.course.server.config.LogAspect                :81   [32m0EivCWyK[0;39m ------------- 【小节】保存开始 -------------
-2021-11-04 12:55:25.565 INFO  com.course.server.config.LogAspect                :82   [32m0EivCWyK[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/save POST
-2021-11-04 12:55:25.566 INFO  com.course.server.config.LogAspect                :83   [32m0EivCWyK[0;39m 类名方法: com.course.business.controller.admin.SectionController.save
-2021-11-04 12:55:25.566 INFO  com.course.server.config.LogAspect                :84   [32m0EivCWyK[0;39m 远程地址: 127.0.0.1
-2021-11-04 12:55:25.567 INFO  com.course.server.config.LogAspect                :102  [32m0EivCWyK[0;39m 请求参数: [{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1635624201000,"video":""}]
-2021-11-04 12:55:25.569 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m0EivCWyK[0;39m ==>  Preparing: update section set title = ?, course_id = ?, chapter_id = ?, video = ?, time = ?, charge = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
-2021-11-04 12:55:25.574 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m0EivCWyK[0;39m ==> Parameters: 测试小节01(String), 00000001(String), 00000000(String), (String), 500(Integer), C(String), 1(Integer), 2021-10-31 04:03:21.0(Timestamp), 2021-11-04 12:55:25.568(Timestamp), 00000001(String)
-2021-11-04 12:55:25.578 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m0EivCWyK[0;39m <==    Updates: 1
-2021-11-04 12:55:25.579 INFO  com.course.server.config.LogAspect                :114  [32m0EivCWyK[0;39m 返回结果: {"content":{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1635624201000,"video":""},"success":true}
-2021-11-04 12:55:25.580 INFO  com.course.server.config.LogAspect                :115  [32m0EivCWyK[0;39m ------------- 结束 耗时：16 ms -------------
-2021-11-04 12:55:25.612 INFO  com.course.server.config.LogAspect                :81   [32mRfddM332[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 12:55:25.613 INFO  com.course.server.config.LogAspect                :82   [32mRfddM332[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 12:55:25.613 INFO  com.course.server.config.LogAspect                :83   [32mRfddM332[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 12:55:25.613 INFO  com.course.server.config.LogAspect                :84   [32mRfddM332[0;39m 远程地址: 127.0.0.1
-2021-11-04 12:55:25.613 INFO  com.course.server.config.LogAspect                :102  [32mRfddM332[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 12:55:25.615 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mRfddM332[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 12:55:25.616 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mRfddM332[0;39m ==> Parameters: 
-2021-11-04 12:55:25.617 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mRfddM332[0;39m <==    Columns: count(0)
-2021-11-04 12:55:25.618 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mRfddM332[0;39m <==        Row: 2
-2021-11-04 12:55:25.618 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mRfddM332[0;39m <==      Total: 1
-2021-11-04 12:55:25.619 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mRfddM332[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 12:55:25.621 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mRfddM332[0;39m ==> Parameters: 5(Integer)
-2021-11-04 12:55:25.623 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mRfddM332[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 12:55:25.624 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mRfddM332[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
-2021-11-04 12:55:25.625 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mRfddM332[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 12:55:25.626 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mRfddM332[0;39m <==      Total: 2
-2021-11-04 12:55:25.626 INFO  com.course.server.config.LogAspect                :114  [32mRfddM332[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 12:55:25.627 INFO  com.course.server.config.LogAspect                :115  [32mRfddM332[0;39m ------------- 结束 耗时：15 ms -------------
-2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :81   [32mAn6k0ltJ[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :82   [32mAn6k0ltJ[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :83   [32mAn6k0ltJ[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 12:59:03.041 INFO  com.course.server.config.LogAspect                :84   [32mAn6k0ltJ[0;39m 远程地址: 127.0.0.1
-2021-11-04 12:59:03.042 INFO  com.course.server.config.LogAspect                :102  [32mAn6k0ltJ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 12:59:03.045 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mAn6k0ltJ[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 12:59:03.046 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mAn6k0ltJ[0;39m ==> Parameters: 
-2021-11-04 12:59:03.047 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mAn6k0ltJ[0;39m <==    Columns: count(0)
-2021-11-04 12:59:03.048 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mAn6k0ltJ[0;39m <==        Row: 2
-2021-11-04 12:59:03.049 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mAn6k0ltJ[0;39m <==      Total: 1
-2021-11-04 12:59:03.050 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mAn6k0ltJ[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 12:59:03.051 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mAn6k0ltJ[0;39m ==> Parameters: 5(Integer)
-2021-11-04 12:59:03.053 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mAn6k0ltJ[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 12:59:03.053 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mAn6k0ltJ[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
-2021-11-04 12:59:03.054 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mAn6k0ltJ[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 12:59:03.055 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mAn6k0ltJ[0;39m <==      Total: 2
-2021-11-04 12:59:03.056 INFO  com.course.server.config.LogAspect                :114  [32mAn6k0ltJ[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 12:59:03.056 INFO  com.course.server.config.LogAspect                :115  [32mAn6k0ltJ[0;39m ------------- 结束 耗时：16 ms -------------
-2021-11-04 12:59:41.252 INFO  com.course.server.config.LogAspect                :81   [32m0wVcPwlF[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 12:59:41.252 INFO  com.course.server.config.LogAspect                :82   [32m0wVcPwlF[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 12:59:41.253 INFO  com.course.server.config.LogAspect                :83   [32m0wVcPwlF[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 12:59:41.253 INFO  com.course.server.config.LogAspect                :84   [32m0wVcPwlF[0;39m 远程地址: 127.0.0.1
-2021-11-04 12:59:41.254 INFO  com.course.server.config.LogAspect                :102  [32m0wVcPwlF[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 12:59:41.259 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m0wVcPwlF[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 12:59:41.260 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m0wVcPwlF[0;39m ==> Parameters: 
-2021-11-04 12:59:41.262 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m0wVcPwlF[0;39m <==    Columns: count(0)
-2021-11-04 12:59:41.262 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m0wVcPwlF[0;39m <==        Row: 2
-2021-11-04 12:59:41.263 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m0wVcPwlF[0;39m <==      Total: 1
-2021-11-04 12:59:41.264 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m0wVcPwlF[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 12:59:41.265 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m0wVcPwlF[0;39m ==> Parameters: 5(Integer)
-2021-11-04 12:59:41.266 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m0wVcPwlF[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 12:59:41.267 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m0wVcPwlF[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
-2021-11-04 12:59:41.268 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m0wVcPwlF[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 12:59:41.269 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m0wVcPwlF[0;39m <==      Total: 2
-2021-11-04 12:59:41.270 INFO  com.course.server.config.LogAspect                :114  [32m0wVcPwlF[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 12:59:41.271 INFO  com.course.server.config.LogAspect                :115  [32m0wVcPwlF[0;39m ------------- 结束 耗时：20 ms -------------
-2021-11-04 12:59:49.315 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2021-11-04 13:00:46.896 INFO  com.course.server.config.LogAspect                :81   [32mBwoktPLQ[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :82   [32mBwoktPLQ[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :83   [32mBwoktPLQ[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :84   [32mBwoktPLQ[0;39m 远程地址: 127.0.0.1
-2021-11-04 13:00:46.897 INFO  com.course.server.config.LogAspect                :102  [32mBwoktPLQ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 13:00:46.899 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mBwoktPLQ[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 13:00:46.899 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mBwoktPLQ[0;39m ==> Parameters: 
-2021-11-04 13:00:46.901 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mBwoktPLQ[0;39m <==    Columns: count(0)
-2021-11-04 13:00:46.901 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mBwoktPLQ[0;39m <==        Row: 2
-2021-11-04 13:00:46.902 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mBwoktPLQ[0;39m <==      Total: 1
-2021-11-04 13:00:46.903 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mBwoktPLQ[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 13:00:46.903 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mBwoktPLQ[0;39m ==> Parameters: 5(Integer)
-2021-11-04 13:00:46.905 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mBwoktPLQ[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 13:00:46.906 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mBwoktPLQ[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
-2021-11-04 13:00:46.906 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mBwoktPLQ[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 13:00:46.907 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mBwoktPLQ[0;39m <==      Total: 2
-2021-11-04 13:00:46.907 INFO  com.course.server.config.LogAspect                :114  [32mBwoktPLQ[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 13:00:46.908 INFO  com.course.server.config.LogAspect                :115  [32mBwoktPLQ[0;39m ------------- 结束 耗时：12 ms -------------
-2021-11-04 13:00:58.740 INFO  com.course.server.config.LogAspect                :81   [32mfJQSiioh[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 13:00:58.741 INFO  com.course.server.config.LogAspect                :82   [32mfJQSiioh[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 13:00:58.742 INFO  com.course.server.config.LogAspect                :83   [32mfJQSiioh[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 13:00:58.742 INFO  com.course.server.config.LogAspect                :84   [32mfJQSiioh[0;39m 远程地址: 127.0.0.1
-2021-11-04 13:00:58.742 INFO  com.course.server.config.LogAspect                :102  [32mfJQSiioh[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 13:00:58.745 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mfJQSiioh[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 13:00:58.746 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mfJQSiioh[0;39m ==> Parameters: 
-2021-11-04 13:00:58.748 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mfJQSiioh[0;39m <==    Columns: count(0)
-2021-11-04 13:00:58.749 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mfJQSiioh[0;39m <==        Row: 2
-2021-11-04 13:00:58.749 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mfJQSiioh[0;39m <==      Total: 1
-2021-11-04 13:00:58.750 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mfJQSiioh[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 13:00:58.751 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mfJQSiioh[0;39m ==> Parameters: 5(Integer)
-2021-11-04 13:00:58.752 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mfJQSiioh[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 13:00:58.753 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mfJQSiioh[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-04 04:55:25.568
-2021-11-04 13:00:58.754 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mfJQSiioh[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 13:00:58.755 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mfJQSiioh[0;39m <==      Total: 2
-2021-11-04 13:00:58.757 INFO  com.course.server.config.LogAspect                :114  [32mfJQSiioh[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725568,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 13:00:58.757 INFO  com.course.server.config.LogAspect                :115  [32mfJQSiioh[0;39m ------------- 结束 耗时：17 ms -------------
-2021-11-04 13:01:03.866 INFO  com.course.server.config.LogAspect                :81   [32mtTQxoP2X[0;39m ------------- 【小节】保存开始 -------------
-2021-11-04 13:01:03.867 INFO  com.course.server.config.LogAspect                :82   [32mtTQxoP2X[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/save POST
-2021-11-04 13:01:03.867 INFO  com.course.server.config.LogAspect                :83   [32mtTQxoP2X[0;39m 类名方法: com.course.business.controller.admin.SectionController.save
-2021-11-04 13:01:03.868 INFO  com.course.server.config.LogAspect                :84   [32mtTQxoP2X[0;39m 远程地址: 127.0.0.1
-2021-11-04 13:01:03.868 INFO  com.course.server.config.LogAspect                :102  [32mtTQxoP2X[0;39m 请求参数: [{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725000,"video":""}]
-2021-11-04 13:01:03.870 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32mtTQxoP2X[0;39m ==>  Preparing: update section set title = ?, course_id = ?, chapter_id = ?, video = ?, time = ?, charge = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
-2021-11-04 13:01:03.871 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32mtTQxoP2X[0;39m ==> Parameters: 测试小节01(String), 00000001(String), 00000000(String), (String), 500(Integer), F(String), 1(Integer), 2021-10-31 04:03:21.0(Timestamp), 2021-11-04 13:01:03.869(Timestamp), 00000001(String)
-2021-11-04 13:01:03.876 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32mtTQxoP2X[0;39m <==    Updates: 1
-2021-11-04 13:01:03.877 INFO  com.course.server.config.LogAspect                :114  [32mtTQxoP2X[0;39m 返回结果: {"content":{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636001725000,"video":""},"success":true}
-2021-11-04 13:01:03.878 INFO  com.course.server.config.LogAspect                :115  [32mtTQxoP2X[0;39m ------------- 结束 耗时：12 ms -------------
-2021-11-04 13:01:03.909 INFO  com.course.server.config.LogAspect                :81   [32mflkk2Sbu[0;39m ------------- 【小节】查询开始 -------------
-2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :82   [32mflkk2Sbu[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
-2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :83   [32mflkk2Sbu[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
-2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :84   [32mflkk2Sbu[0;39m 远程地址: 127.0.0.1
-2021-11-04 13:01:03.910 INFO  com.course.server.config.LogAspect                :102  [32mflkk2Sbu[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
-2021-11-04 13:01:03.912 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mflkk2Sbu[0;39m ==>  Preparing: SELECT count(0) FROM section 
-2021-11-04 13:01:03.913 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mflkk2Sbu[0;39m ==> Parameters: 
-2021-11-04 13:01:03.915 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mflkk2Sbu[0;39m <==    Columns: count(0)
-2021-11-04 13:01:03.916 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mflkk2Sbu[0;39m <==        Row: 2
-2021-11-04 13:01:03.917 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mflkk2Sbu[0;39m <==      Total: 1
-2021-11-04 13:01:03.918 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mflkk2Sbu[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
-2021-11-04 13:01:03.919 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mflkk2Sbu[0;39m ==> Parameters: 5(Integer)
-2021-11-04 13:01:03.921 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mflkk2Sbu[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
-2021-11-04 13:01:03.922 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mflkk2Sbu[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, F, 1, 2021-10-30 20:03:21, 2021-11-04 05:01:03.869
-2021-11-04 13:01:03.923 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mflkk2Sbu[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
-2021-11-04 13:01:03.924 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mflkk2Sbu[0;39m <==      Total: 2
-2021-11-04 13:01:03.925 INFO  com.course.server.config.LogAspect                :114  [32mflkk2Sbu[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636002063869,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
-2021-11-04 13:01:03.926 INFO  com.course.server.config.LogAspect                :115  [32mflkk2Sbu[0;39m ------------- 结束 耗时：17 ms -------------
+2021-11-18 14:33:48.951 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-18 14:33:59.085 INFO  com.course.business.BusinessApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2021-11-18 14:34:00.095 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-11-18 14:34:00.237 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b45c770b-53e8-34b5-ba53-177f922f82f8
+2021-11-18 14:34:00.518 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-18 14:34:00.879 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-18 14:34:01.189 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2021-11-18 14:34:01.203 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2021-11-18 14:34:01.204 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2021-11-18 14:34:01.205 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-18 14:34:01.334 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-18 14:34:01.335 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 2228 ms
+2021-11-18 14:34:01.454 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-18 14:34:01.455 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-18 14:34:01.474 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e3ecf5c
+2021-11-18 14:34:02.329 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2021-11-18 14:34:02.329 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-18 14:34:02.533 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-18 14:34:03.167 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-11-18 14:34:03.219 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2021-11-18 14:34:03.235 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-18 14:34:03.277 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2021-11-18 14:34:03.353 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2021-11-18 14:34:03.596 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2021-11-18 14:34:03.597 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2021-11-18 14:34:03.731 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2021-11-18 14:34:03.732 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2021-11-18 14:34:04.014 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 14:34:04.036 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2021-11-18 14:34:04.037 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2021-11-18 14:34:04.037 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2021-11-18 14:34:04.037 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2021-11-18 14:34:04.037 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2021-11-18 14:34:04.038 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2021-11-18 14:34:04.038 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2021-11-18 14:34:04.384 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2021-11-18 14:34:04.388 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2021-11-18 14:34:04.391 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-11-18 14:34:04.397 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1637217244396 with initial instances count: 1
+2021-11-18 14:34:04.412 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2021-11-18 14:34:04.414 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1637217244414, current=UP, previous=STARTING]
+2021-11-18 14:34:04.434 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.3.46:business:9002: registering service...
+2021-11-18 14:34:04.451 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2021-11-18 14:34:04.492 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.3.46:business:9002 - registration status: 204
+2021-11-18 14:34:04.519 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2021-11-18 14:34:04.522 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2021-11-18 14:34:04.531 INFO  com.course.business.BusinessApplication           :61   [32m        [0;39m Started BusinessApplication in 26.471 seconds (JVM running for 27.251)
+2021-11-18 14:34:04.544 INFO  com.course.business.BusinessApplication           :23   [32m        [0;39m 启动成功
+2021-11-18 14:34:04.545 INFO  com.course.business.BusinessApplication           :24   [32m        [0;39m business 地址：	 http://127.0.0.1:9002
+2021-11-18 14:34:47.957 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-18 14:34:47.958 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-18 14:34:47.969 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 11 ms
+2021-11-18 14:34:48.046 INFO  com.course.server.config.LogAspect                :81   [32m3OUWayTG[0;39m ------------- 【小节】查询开始 -------------
+2021-11-18 14:34:48.047 INFO  com.course.server.config.LogAspect                :82   [32m3OUWayTG[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-18 14:34:48.047 INFO  com.course.server.config.LogAspect                :83   [32m3OUWayTG[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-18 14:34:48.048 INFO  com.course.server.config.LogAspect                :84   [32m3OUWayTG[0;39m 远程地址: 127.0.0.1
+2021-11-18 14:34:48.073 INFO  com.course.server.config.LogAspect                :102  [32m3OUWayTG[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-18 14:34:48.153 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m3OUWayTG[0;39m HikariPool-1 - Starting...
+2021-11-18 14:34:48.547 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m3OUWayTG[0;39m HikariPool-1 - Start completed.
+2021-11-18 14:34:48.624 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m3OUWayTG[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-18 14:34:48.654 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m3OUWayTG[0;39m ==> Parameters: 
+2021-11-18 14:34:48.697 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m3OUWayTG[0;39m <==    Columns: count(0)
+2021-11-18 14:34:48.697 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m3OUWayTG[0;39m <==        Row: 2
+2021-11-18 14:34:48.699 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m3OUWayTG[0;39m <==      Total: 1
+2021-11-18 14:34:48.702 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m3OUWayTG[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-18 14:34:48.703 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m3OUWayTG[0;39m ==> Parameters: 5(Integer)
+2021-11-18 14:34:48.706 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m3OUWayTG[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-18 14:34:48.712 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m3OUWayTG[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, F, 1, 2021-10-30 20:03:21, 2021-11-04 05:31:47.581
+2021-11-18 14:34:48.714 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32m3OUWayTG[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-18 14:34:48.715 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32m3OUWayTG[0;39m <==      Total: 2
+2021-11-18 14:34:48.738 INFO  com.course.server.config.LogAspect                :114  [32m3OUWayTG[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"F","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636003907581,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-18 14:34:48.738 INFO  com.course.server.config.LogAspect                :115  [32m3OUWayTG[0;39m ------------- 结束 耗时：697 ms -------------
+2021-11-18 14:35:11.679 INFO  com.course.server.config.LogAspect                :81   [32m5DVX6TVN[0;39m ------------- 【小节】保存开始 -------------
+2021-11-18 14:35:11.679 INFO  com.course.server.config.LogAspect                :82   [32m5DVX6TVN[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/save POST
+2021-11-18 14:35:11.680 INFO  com.course.server.config.LogAspect                :83   [32m5DVX6TVN[0;39m 类名方法: com.course.business.controller.admin.SectionController.save
+2021-11-18 14:35:11.680 INFO  com.course.server.config.LogAspect                :84   [32m5DVX6TVN[0;39m 远程地址: 127.0.0.1
+2021-11-18 14:35:11.680 INFO  com.course.server.config.LogAspect                :102  [32m5DVX6TVN[0;39m 请求参数: [{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636003907000,"video":""}]
+2021-11-18 14:35:11.684 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m5DVX6TVN[0;39m ==>  Preparing: update section set title = ?, course_id = ?, chapter_id = ?, video = ?, time = ?, charge = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2021-11-18 14:35:11.685 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m5DVX6TVN[0;39m ==> Parameters: 测试小节01(String), 00000001(String), 00000000(String), (String), 500(Integer), C(String), 1(Integer), 2021-10-31 04:03:21.0(Timestamp), 2021-11-18 14:35:11.682(Timestamp), 00000001(String)
+2021-11-18 14:35:11.691 DEBUG c.c.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m5DVX6TVN[0;39m <==    Updates: 1
+2021-11-18 14:35:11.692 INFO  com.course.server.config.LogAspect                :114  [32m5DVX6TVN[0;39m 返回结果: {"content":{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1636003907000,"video":""},"success":true}
+2021-11-18 14:35:11.692 INFO  com.course.server.config.LogAspect                :115  [32m5DVX6TVN[0;39m ------------- 结束 耗时：13 ms -------------
+2021-11-18 14:35:11.731 INFO  com.course.server.config.LogAspect                :81   [32mxuQFrfp6[0;39m ------------- 【小节】查询开始 -------------
+2021-11-18 14:35:11.732 INFO  com.course.server.config.LogAspect                :82   [32mxuQFrfp6[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-18 14:35:11.732 INFO  com.course.server.config.LogAspect                :83   [32mxuQFrfp6[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-18 14:35:11.733 INFO  com.course.server.config.LogAspect                :84   [32mxuQFrfp6[0;39m 远程地址: 127.0.0.1
+2021-11-18 14:35:11.733 INFO  com.course.server.config.LogAspect                :102  [32mxuQFrfp6[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-18 14:35:11.736 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mxuQFrfp6[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-18 14:35:11.737 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mxuQFrfp6[0;39m ==> Parameters: 
+2021-11-18 14:35:11.739 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mxuQFrfp6[0;39m <==    Columns: count(0)
+2021-11-18 14:35:11.739 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mxuQFrfp6[0;39m <==        Row: 2
+2021-11-18 14:35:11.740 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mxuQFrfp6[0;39m <==      Total: 1
+2021-11-18 14:35:11.741 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mxuQFrfp6[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-18 14:35:11.741 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mxuQFrfp6[0;39m ==> Parameters: 5(Integer)
+2021-11-18 14:35:11.743 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mxuQFrfp6[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-18 14:35:11.744 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mxuQFrfp6[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-18 06:35:11.682
+2021-11-18 14:35:11.746 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mxuQFrfp6[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-18 14:35:11.747 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mxuQFrfp6[0;39m <==      Total: 2
+2021-11-18 14:35:11.748 INFO  com.course.server.config.LogAspect                :114  [32mxuQFrfp6[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1637217311682,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-18 14:35:11.748 INFO  com.course.server.config.LogAspect                :115  [32mxuQFrfp6[0;39m ------------- 结束 耗时：17 ms -------------
+2021-11-18 14:39:04.033 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 14:44:04.026 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 14:49:04.026 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 14:54:04.018 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 14:59:04.013 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:04:04.018 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:09:04.009 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:14:04.010 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:19:04.014 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:24:04.000 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:24:58.848 INFO  com.course.server.config.LogAspect                :81   [32mWVTFdfWi[0;39m ------------- 【小节】查询开始 -------------
+2021-11-18 15:24:58.848 INFO  com.course.server.config.LogAspect                :82   [32mWVTFdfWi[0;39m 请求地址: http://127.0.0.1:9002/business/admin/section/list POST
+2021-11-18 15:24:58.849 INFO  com.course.server.config.LogAspect                :83   [32mWVTFdfWi[0;39m 类名方法: com.course.business.controller.admin.SectionController.list
+2021-11-18 15:24:58.850 INFO  com.course.server.config.LogAspect                :84   [32mWVTFdfWi[0;39m 远程地址: 127.0.0.1
+2021-11-18 15:24:58.851 INFO  com.course.server.config.LogAspect                :102  [32mWVTFdfWi[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-18 15:24:58.855 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mWVTFdfWi[0;39m ==>  Preparing: SELECT count(0) FROM section 
+2021-11-18 15:24:58.856 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mWVTFdfWi[0;39m ==> Parameters: 
+2021-11-18 15:24:58.860 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mWVTFdfWi[0;39m <==    Columns: count(0)
+2021-11-18 15:24:58.861 TRACE c.c.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32mWVTFdfWi[0;39m <==        Row: 2
+2021-11-18 15:24:58.861 DEBUG c.c.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32mWVTFdfWi[0;39m <==      Total: 1
+2021-11-18 15:24:58.862 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mWVTFdfWi[0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2021-11-18 15:24:58.863 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mWVTFdfWi[0;39m ==> Parameters: 5(Integer)
+2021-11-18 15:24:58.866 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mWVTFdfWi[0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2021-11-18 15:24:58.867 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mWVTFdfWi[0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2021-10-30 20:03:21, 2021-11-18 06:35:11.682
+2021-11-18 15:24:58.869 TRACE c.c.server.mapper.SectionMapper.selectByExample   :165  [32mWVTFdfWi[0;39m <==        Row: NwGodhYw, 11, 22, 33, 66, 55, 9, 3, null, null
+2021-11-18 15:24:58.870 DEBUG c.c.server.mapper.SectionMapper.selectByExample   :159  [32mWVTFdfWi[0;39m <==      Total: 2
+2021-11-18 15:24:58.871 INFO  com.course.server.config.LogAspect                :114  [32mWVTFdfWi[0;39m 返回结果: {"content":{"list":[{"chapterId":"00000000","charge":"C","courseId":"00000001","createdAt":1635624201000,"id":"00000001","sort":1,"time":500,"title":"测试小节01","updatedAt":1637217311682,"video":""},{"chapterId":"33","charge":"9","courseId":"22","id":"NwGodhYw","sort":3,"time":55,"title":"11","video":"66"}],"page":1,"size":5,"total":2},"success":true}
+2021-11-18 15:24:58.872 INFO  com.course.server.config.LogAspect                :115  [32mWVTFdfWi[0;39m ------------- 结束 耗时：24 ms -------------
+2021-11-18 15:29:03.998 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:34:04.001 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:39:04.006 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-18 15:44:03.985 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
