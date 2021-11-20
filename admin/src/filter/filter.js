@@ -19,7 +19,7 @@ let optionKV = (object, key) => {
     } else {
         let result = "";
         for (let enums in object) {
-            console.log(object[enums]["key"]);
+            // console.log(object[enums]["key"]);
             if (key === object[enums]["key"]) {
                 result = object[enums]["value"];
             }

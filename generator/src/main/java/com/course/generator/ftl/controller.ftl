@@ -45,7 +45,7 @@ public class ${Domain}Controller {
                 ValidatorUtil.require(${domain}VO.get${field.nameBigHump}(), "${field.nameCn}");
                     </#if>
                     <#if (field.length > 0)>
-                ValidatorUtil.length(${domain}VO.get${field.nameBigHump}(), "${field.nameCn}", 1, ${field.length});
+                ValidatorUtil.length(${domain}VO.get${field.nameBigHump}(), "${field.nameCn}", 1, ${field.length?c});
                     </#if>
             </#if>
         </#list>
