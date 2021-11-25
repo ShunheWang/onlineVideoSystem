@@ -1,0 +1,36 @@
+2021-11-24 07:18:24.420 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 07:18:34.432 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h56m14s476ms).
+2021-11-24 12:28:57.884 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h10m23s452ms).
+2021-11-24 12:33:18.614 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 12:38:18.607 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 12:43:18.609 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 12:48:18.601 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 12:53:18.595 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 12:58:18.591 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:03:18.588 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:08:18.594 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:10:51.692 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s638ms).
+2021-11-24 13:14:12.233 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:19:12.227 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:24:12.222 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:29:12.215 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:34:12.211 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:39:12.203 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:44:12.201 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:49:12.198 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:54:12.193 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 13:59:12.189 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:04:12.188 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:26:49.693 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m57s728ms).
+2021-11-24 14:28:39.913 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:35:31.692 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s980ms).
+2021-11-24 14:36:27.534 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s842ms).
+2021-11-24 14:38:47.721 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:43:47.719 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:48:47.712 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:53:47.711 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 14:58:47.709 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 15:03:47.707 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-24 17:49:34.418 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h45m36s719ms).
+2021-11-24 17:56:23.692 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m19s295ms).
+2021-11-24 18:03:35.694 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s930ms).

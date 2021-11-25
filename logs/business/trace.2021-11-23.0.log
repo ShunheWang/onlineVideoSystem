@@ -1,0 +1,67 @@
+2021-11-23 06:34:44.366 INFO  com.netflix.discovery.DiscoveryClient             :868  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002 - Re-registering apps/BUSINESS
+2021-11-23 06:34:44.390 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002: registering service...
+2021-11-23 06:34:44.425 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002 - registration status: 204
+2021-11-23 16:01:23.533 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21h27m45s938ms).
+2021-11-23 16:03:43.381 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:08:43.401 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:13:43.401 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:18:43.386 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:23:43.392 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:28:43.378 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:34:27.608 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m3s983ms).
+2021-11-23 16:38:17.372 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:43:17.373 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:48:17.361 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:53:17.349 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 16:54:12.500 INFO  com.course.server.config.LogAspect                :81   [32mCxsixyPz[0;39m ------------- 【课程】查询开始 -------------
+2021-11-23 16:54:12.503 INFO  com.course.server.config.LogAspect                :82   [32mCxsixyPz[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list POST
+2021-11-23 16:54:12.504 INFO  com.course.server.config.LogAspect                :83   [32mCxsixyPz[0;39m 类名方法: com.course.business.controller.admin.CourseController.list
+2021-11-23 16:54:12.504 INFO  com.course.server.config.LogAspect                :84   [32mCxsixyPz[0;39m 远程地址: 127.0.0.1
+2021-11-23 16:54:12.505 INFO  com.course.server.config.LogAspect                :102  [32mCxsixyPz[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2021-11-23 16:54:12.515 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mCxsixyPz[0;39m ==>  Preparing: SELECT count(0) FROM course 
+2021-11-23 16:54:12.517 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mCxsixyPz[0;39m ==> Parameters: 
+2021-11-23 16:54:12.520 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mCxsixyPz[0;39m <==    Columns: count(0)
+2021-11-23 16:54:12.520 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mCxsixyPz[0;39m <==        Row: 5
+2021-11-23 16:54:12.521 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mCxsixyPz[0;39m <==      Total: 1
+2021-11-23 16:54:12.524 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mCxsixyPz[0;39m ==>  Preparing: select id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at from course order by sort asc LIMIT ? 
+2021-11-23 16:54:12.525 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mCxsixyPz[0;39m ==> Parameters: 5(Integer)
+2021-11-23 16:54:12.527 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCxsixyPz[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at
+2021-11-23 16:54:12.528 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCxsixyPz[0;39m <==        Row: ATCbxL6h, shunhe1, test from shunhe, 123, 213.00, http://lmg.jj20.com/up/allimg/tp05/19100220060CY5-0-lp.jpg, 3, C, P, null, null, 2021-11-20 05:33:16, 2021-11-22 09:32:26.032
+2021-11-23 16:54:12.530 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCxsixyPz[0;39m <==        Row: BCzTck7q, 111, 111, 111, null, null, null, null, null, null, null, 2021-11-20 07:00:25.121, 2021-11-20 07:00:25.121
+2021-11-23 16:54:12.532 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCxsixyPz[0;39m <==        Row: QFoRupap, 112, 111, 111, null, null, null, null, null, null, null, 2021-11-20 07:00:30.865, 2021-11-20 07:00:30.865
+2021-11-23 16:54:12.534 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCxsixyPz[0;39m <==        Row: YvyS2CX7, TEST123, das, 123, 123.00, null, 3, F, P, null, null, 2021-11-20 05:33:37, 2021-11-20 05:56:23.158
+2021-11-23 16:54:12.535 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCxsixyPz[0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 2, C, D, 100, 0, 2021-11-18 17:28:50, 2021-11-20 05:56:44.049
+2021-11-23 16:54:12.537 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mCxsixyPz[0;39m <==      Total: 5
+2021-11-23 16:54:12.539 INFO  com.course.server.config.LogAspect                :114  [32mCxsixyPz[0;39m 返回结果: {"content":{"list":[{"charge":"C","createdAt":1637386396000,"id":"ATCbxL6h","image":"http://lmg.jj20.com/up/allimg/tp05/19100220060CY5-0-lp.jpg","level":"3","name":"shunhe1","price":213.00,"status":"P","summary":"test from shunhe","time":123,"updatedAt":1637573546032},{"createdAt":1637391625121,"id":"BCzTck7q","name":"111","summary":"111","time":111,"updatedAt":1637391625121},{"createdAt":1637391630865,"id":"QFoRupap","name":"112","summary":"111","time":111,"updatedAt":1637391630865},{"charge":"F","createdAt":1637386417000,"id":"YvyS2CX7","level":"3","name":"TEST123","price":123.00,"status":"P","summary":"das","time":123,"updatedAt":1637387783158},{"charge":"C","createdAt":1637256530000,"enroll":100,"id":"00000001","image":"","level":"2","name":"测试课程01","price":19.90,"sort":0,"status":"D","summary":"这是一门测试课程","time":7200,"updatedAt":1637387804049}],"page":1,"size":5,"total":5},"success":true}
+2021-11-23 16:54:12.539 INFO  com.course.server.config.LogAspect                :115  [32mCxsixyPz[0;39m ------------- 结束 耗时：39 ms -------------
+2021-11-23 16:58:17.345 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:00:14.041 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s322ms).
+2021-11-23 17:03:33.689 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:08:33.689 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:13:33.688 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:18:33.683 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:23:33.682 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:28:33.678 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:33:33.676 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:38:33.669 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:43:33.662 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:48:33.657 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:53:33.654 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 17:58:33.647 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:03:33.644 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:08:33.649 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:13:33.647 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:18:33.641 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:23:33.636 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:28:33.634 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:33:33.632 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:41:26.415 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s794ms).
+2021-11-23 18:47:08.448 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s888ms).
+2021-11-23 18:52:20.377 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s929ms).
+2021-11-23 18:52:39.367 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-23 18:58:02.359 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s973ms).
+2021-11-23 19:03:44.328 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s957ms).
+2021-11-23 19:08:56.297 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s970ms).
+2021-11-23 19:14:38.267 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s961ms).
+2021-11-23 19:17:08.023 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s747ms).
+2021-11-23 19:22:19.956 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s933ms).

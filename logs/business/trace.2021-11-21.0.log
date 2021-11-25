@@ -1,0 +1,15 @@
+2021-11-21 00:07:00.023 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m41s731ms).
+2021-11-21 00:21:54.289 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m24s235ms).
+2021-11-21 00:22:10.163 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-21 00:27:14.819 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m50s516ms).
+2021-11-21 00:57:51.368 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m35s772ms).
+2021-11-21 01:42:56.184 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m4s816ms).
+2021-11-21 02:28:01.031 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m4s847ms).
+2021-11-21 07:55:11.824 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h27m10s793ms).
+2021-11-21 09:28:01.157 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-21 10:28:06.473 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h32m54s649ms).
+2021-11-21 11:32:18.018 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m11s544ms).
+2021-11-21 11:49:55.244 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m7s217ms).
+2021-11-21 12:21:38.334 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2021-11-21 12:21:54.082 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m58s821ms).
+2021-11-21 15:58:03.574 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h35m39s473ms).
