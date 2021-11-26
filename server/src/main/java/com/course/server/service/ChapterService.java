@@ -5,6 +5,7 @@ import com.course.server.dto.ChapterExample;
 import com.course.server.mapper.ChapterMapper;
 import com.course.server.util.CopyUtil;
 import com.course.server.util.UuidUtil;
+import com.course.server.vo.ChapterPageVO;
 import com.course.server.vo.ChapterVO;
 import com.course.server.vo.PageVO;
 import com.github.pagehelper.PageHelper;
@@ -21,14 +22,18 @@ public class ChapterService {
     @Resource
     private ChapterMapper chapterMapper;
 
-    public void list(PageVO pageVO) {
-        PageHelper.startPage(pageVO.getPage(), pageVO.getSize());
+    public void list(ChapterPageVO chapterPageVO) {
+        PageHelper.startPage(chapterPageVO.getPage(), chapterPageVO.getSize());
         ChapterExample chapterExample = new ChapterExample();
+        ChapterExample.Criteria criteria = chapterExample.createCriteria();
+        if (!StringUtils.isEmpty(chapterPageVO.getCourseId())) {
+            criteria.andCourseIdEqualTo(chapterPageVO.getCourseId());
+        }
         List<Chapter> chapterDTOList = chapterMapper.selectByExample(chapterExample);
         PageInfo<Chapter> pageInfo = new PageInfo<>(chapterDTOList);
-        pageVO.setTotal(pageInfo.getTotal());
+        chapterPageVO.setTotal(pageInfo.getTotal());
         List<ChapterVO> chapterVOList = CopyUtil.copyList(chapterDTOList, ChapterVO.class);
-        pageVO.setList(chapterVOList);
+        chapterPageVO.setList(chapterVOList);
     }
 
     public void save(ChapterVO chapterVO) {

@@ -2,6 +2,7 @@ package com.course.business.controller.admin;
 
 import com.course.server.service.ChapterService;
 import com.course.server.util.ValidatorUtil;
+import com.course.server.vo.ChapterPageVO;
 import com.course.server.vo.ChapterVO;
 import com.course.server.vo.PageVO;
 import com.course.server.vo.ResponseVO;
@@ -24,14 +25,15 @@ public class ChapterController {
 
     /**
      * 参数加上@RequestBody 按照接受流的方式接受前端过来的数据
-     * @param pageVO
+     * @param chapterPageVO
      * @return
      */
     @PostMapping("/list")
-    public ResponseVO list(@RequestBody PageVO pageVO) {
-        chapterService.list(pageVO);
+    public ResponseVO list(@RequestBody ChapterPageVO chapterPageVO) {
+        ValidatorUtil.require(chapterPageVO.getCourseId(), "课程ID");
+        chapterService.list(chapterPageVO);
         ResponseVO responseVO = new ResponseVO();
-        responseVO.setContent(pageVO);
+        responseVO.setContent(chapterPageVO);
         return responseVO;
     }
 
