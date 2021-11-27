@@ -6,8 +6,8 @@ import com.course.server.enums.SectionChargeEnum;
 import com.course.server.mapper.SectionMapper;
 import com.course.server.util.CopyUtil;
 import com.course.server.util.UuidUtil;
+import com.course.server.vo.SectionPageVO;
 import com.course.server.vo.SectionVO;
-import com.course.server.vo.PageVO;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;
@@ -23,15 +23,22 @@ public class SectionService {
     @Resource
     private SectionMapper sectionMapper;
 
-    public void list(PageVO pageVO) {
-        PageHelper.startPage(pageVO.getPage(), pageVO.getSize());
+    public void list(SectionPageVO sectionPageVO) {
+        PageHelper.startPage(sectionPageVO.getPage(), sectionPageVO.getSize());
         SectionExample sectionExample = new SectionExample();
-                sectionExample.setOrderByClause("sort asc");
+        SectionExample.Criteria criteria = sectionExample.createCriteria();
+        if (!StringUtils.isEmpty(sectionPageVO.getCourseId())) {
+            criteria.andCourseIdEqualTo(sectionPageVO.getCourseId());
+        }
+        if (!StringUtils.isEmpty(sectionPageVO.getChapterId())) {
+            criteria.andChapterIdEqualTo(sectionPageVO.getChapterId());
+        }
+        sectionExample.setOrderByClause("sort asc");
         List<Section> sectionDTOList = sectionMapper.selectByExample(sectionExample);
         PageInfo<Section> pageInfo = new PageInfo<>(sectionDTOList);
-        pageVO.setTotal(pageInfo.getTotal());
+        sectionPageVO.setTotal(pageInfo.getTotal());
         List<SectionVO> sectionVOList = CopyUtil.copyList(sectionDTOList, SectionVO.class);
-        pageVO.setList(sectionVOList);
+        sectionPageVO.setList(sectionVOList);
     }
 
     public void save(SectionVO sectionVO) {

@@ -2,8 +2,8 @@ package com.course.business.controller.admin;
 
 import com.course.server.service.SectionService;
 import com.course.server.util.ValidatorUtil;
+import com.course.server.vo.SectionPageVO;
 import com.course.server.vo.SectionVO;
-import com.course.server.vo.PageVO;
 import com.course.server.vo.ResponseVO;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,14 +24,16 @@ public class SectionController {
 
     /**
      * 参数加上@RequestBody 按照接受流的方式接受前端过来的数据
-     * @param pageVO
+     * @param sectionPageVO
      * @return
      */
     @PostMapping("/list")
-    public ResponseVO list(@RequestBody PageVO pageVO) {
-        sectionService.list(pageVO);
+    public ResponseVO list(@RequestBody SectionPageVO sectionPageVO) {
+        ValidatorUtil.require(sectionPageVO.getCourseId(), "课程ID");
+        ValidatorUtil.require(sectionPageVO.getChapterId(), "大章ID");
+        sectionService.list(sectionPageVO);
         ResponseVO responseVO = new ResponseVO();
-        responseVO.setContent(pageVO);
+        responseVO.setContent(sectionPageVO);
         return responseVO;
     }
 
