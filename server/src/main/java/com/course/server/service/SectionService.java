@@ -20,8 +20,13 @@ import java.util.List;
 @Service
 public class SectionService {
 
+//    private static final Logger LOG =  LoggerFactory.getLogger(CourseService.class);
+
     @Resource
     private SectionMapper sectionMapper;
+
+    @Resource
+    private CourseService courseService;    // 平级调用
 
     public void list(SectionPageVO sectionPageVO) {
         PageHelper.startPage(sectionPageVO.getPage(), sectionPageVO.getSize());
@@ -41,6 +46,10 @@ public class SectionService {
         sectionPageVO.setList(sectionVOList);
     }
 
+    /**
+     * 保存，id有值时更新，无值时新增
+     * @param sectionVO
+     */
     public void save(SectionVO sectionVO) {
         Section section = CopyUtil.copy(sectionVO, Section.class);
         if (StringUtils.isEmpty(section.getId())) {
@@ -48,6 +57,7 @@ public class SectionService {
         } else {
             this.update(section);
         }
+        courseService.updateTime(sectionVO.getCourseId());
     }
 
     private void insert(Section section) {

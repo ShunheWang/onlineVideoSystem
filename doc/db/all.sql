@@ -1,3 +1,11 @@
+
+update course c set `time` = (select sum(`time`) from `section` where course_id = '000001')
+where c.id = '000001';
+
+------------------------- 计算视频时长sql --------------------------
+
+
+
 drop table if exists course;
 create table course (
   id char(8) not null default '' comment 'id',

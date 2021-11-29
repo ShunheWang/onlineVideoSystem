@@ -3,12 +3,15 @@ package com.course.server.service;
 import com.course.server.dto.Course;
 import com.course.server.dto.CourseExample;
 import com.course.server.mapper.CourseMapper;
+import com.course.server.mapper.my.MyCourseMapper;
 import com.course.server.util.CopyUtil;
 import com.course.server.util.UuidUtil;
 import com.course.server.vo.CourseVO;
 import com.course.server.vo.PageVO;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -19,8 +22,13 @@ import java.util.List;
 @Service
 public class CourseService {
 
+    private static final Logger LOG =  LoggerFactory.getLogger(CourseService.class);
+
     @Resource
     private CourseMapper courseMapper;
+
+    @Resource
+    private MyCourseMapper myCourseMapper;
 
     public void list(PageVO pageVO) {
         PageHelper.startPage(pageVO.getPage(), pageVO.getSize());
@@ -57,5 +65,14 @@ public class CourseService {
 
     public void delete(String id) {
         courseMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 更新课程时长
+     * @param courseId
+     */
+    public void updateTime(String courseId) {
+        LOG.info("更新课程时长:{}", courseId);
+        myCourseMapper.updateTime(courseId);
     }
 }
