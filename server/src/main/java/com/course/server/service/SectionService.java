@@ -11,6 +11,7 @@ import com.course.server.vo.SectionVO;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
@@ -50,6 +51,14 @@ public class SectionService {
      * 保存，id有值时更新，无值时新增
      * @param sectionVO
      */
+    /**
+     * @Transactional
+     * 1. 如果是Exception时, 事务不会回滚; 如果MUST要Exception也要回滚, 需要@Transactional(rollbackFor = Exception.class)
+     * 2. 如果是RuntimeException时, 事务会回滚;
+     * 3. try...catch...不会回滚;
+     * thus, 自定义异常编写时一般继承RuntimeException
+     */
+    @Transactional
     public void save(SectionVO sectionVO) {
         Section section = CopyUtil.copy(sectionVO, Section.class);
         if (StringUtils.isEmpty(section.getId())) {
