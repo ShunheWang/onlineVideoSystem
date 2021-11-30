@@ -48,6 +48,44 @@ let optionKV = (object, key) => {
     }
 };
 
+let formatSecond = (value) => {
+    value = value || 0;
+    let second = parseInt(value, 10); // 秒
+    let minute = 0; // 分
+    let hour = 0; // 小时
+    if (second > 60) {
+        // 当>60秒时, 才需要做转换;
+        minute = Math.floor(second / 60);
+        second = Math.floor(second % 60);
+        if (minute > 60) {
+            // 当>60分时, 才需要做转换;
+            hour = Math.floor(minute / 60);
+            minute = Math.floor(minute % 60);
+        }
+        
+    } else {
+        // <60秒不需要处理, 直接显示
+    }
+    let result = "" + PrefixInteger(second, 2) + "";
+    if (minute > 0) {
+        // 拼接上分钟
+        result = "" + PrefixInteger(minute, 2) + ":" + result;
+        if (hour > 0) {
+            // 拼接上小时
+            result = "" + PrefixInteger(hour, 2) + ":" + result;
+        }
+    }
+    return result;
+};
+
+/**
+ * 格式化指定长度, 前面多余位数补0
+ */
+function PrefixInteger(num, length) {
+    return (Array(length).join('0') + num).slice(-length);
+}
+
 export default {
-    optionKV
+    optionKV,
+    formatSecond
 }
