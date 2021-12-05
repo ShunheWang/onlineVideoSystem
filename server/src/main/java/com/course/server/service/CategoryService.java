@@ -21,6 +21,21 @@ public class CategoryService {
     @Resource
     private CategoryMapper categoryMapper;
 
+    /**
+     * 所有列表查询
+     */
+    public List<CategoryVO> all() {
+        CategoryExample categoryExample = new CategoryExample();
+        categoryExample.setOrderByClause("sort asc");
+        List<Category> categoryDTOList = categoryMapper.selectByExample(categoryExample);
+        List<CategoryVO> categoryVOList = CopyUtil.copyList(categoryDTOList, CategoryVO.class);
+        return categoryVOList;
+    }
+
+    /**
+     * 列表查询
+     * @param pageVO
+     */
     public void list(PageVO pageVO) {
         PageHelper.startPage(pageVO.getPage(), pageVO.getSize());
         CategoryExample categoryExample = new CategoryExample();

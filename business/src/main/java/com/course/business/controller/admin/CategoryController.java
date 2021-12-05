@@ -8,6 +8,7 @@ import com.course.server.vo.ResponseVO;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @RestController 返回json数据时用
@@ -21,6 +22,17 @@ public class CategoryController {
 
     @Resource
     private CategoryService categoryService;
+
+    /**
+     * @return
+     */
+    @PostMapping("/all")
+    public ResponseVO all() {
+        List<CategoryVO> categoryVOList = categoryService.all();
+        ResponseVO responseVO = new ResponseVO();
+        responseVO.setContent(categoryVOList);
+        return responseVO;
+    }
 
     /**
      * 参数加上@RequestBody 按照接受流的方式接受前端过来的数据

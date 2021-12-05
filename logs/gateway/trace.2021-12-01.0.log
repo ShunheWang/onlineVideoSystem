@@ -1,0 +1,1 @@
+2021-12-01 07:50:31.775 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration

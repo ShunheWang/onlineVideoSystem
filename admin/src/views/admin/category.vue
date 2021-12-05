@@ -1,83 +1,88 @@
 <template>
     <div>
-        <p>
-            <button v-on:click="add()" class="btn btn-white btn-default btn-round">
-                <i class="ace-icon fa fa-edit"></i>
-                新增
-            </button>
-            &nbsp;
-            <button v-on:click="list(1)" class="btn btn-white btn-default btn-round">
-                <i class="ace-icon fa fa-refresh red2"></i>
-                刷新
-            </button>
-        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    <button v-on:click="add()" class="btn btn-white btn-default btn-round">
+                        <i class="ace-icon fa fa-edit"></i>
+                        新增
+                    </button>
+                    &nbsp;
+                    <button v-on:click="all()" class="btn btn-white btn-default btn-round">
+                        <i class="ace-icon fa fa-refresh red2"></i>
+                        刷新
+                    </button>
+                </p>
 
-        <pagination ref="pagination" v-bind:list="list" v-bind:itemCount="8"></pagination>
+                <table id="simple-table" class="table  table-bordered table-hover">
+                    <thead>
+                            <tr>
+                                        <th>id</th>
+                                        <th>parent-id</th>
+                                        <th>name</th>
+                                        <th>sort</th>
+                                <th>操作</th>
+                            </tr>
+                    </thead>
 
-        <table id="simple-table" class="table  table-bordered table-hover">
-            <thead>
-                    <tr>
-                                                        <th>id</th>
-                                <th>parent-id</th>
-                                <th>name</th>
-                                <th>sort</th>
-                        <th>操作</th>
-                    </tr>
-            </thead>
+                    <tbody>
+                        <tr v-for="category in level1" :key="level1.id">
+                                        <td>{{category.id}}</td>
+                                        <td>{{category.parent}}</td>
+                                        <td>{{category.name}}</td>
+                                        <td>{{category.sort}}</td>
+                            <td>
+                                <div class="hidden-sm hidden-xs btn-group">
+                                    <button v-on:click="edit(category)" class="btn btn-xs btn-info">
+                                        <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                    </button>
+                                    <button v-on:click="del(category.id)" class="btn btn-xs btn-danger">
+                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                    </button>
+                                </div>
 
-            <tbody>
-                <tr v-for="category in categorys" :key="category.id">
-                                <td>{{category.id}}</td>
-                                <td>{{category.parent}}</td>
-                                <td>{{category.name}}</td>
-                                <td>{{category.sort}}</td>
-                    <td>
-                        <div class="hidden-sm hidden-xs btn-group">
-                            <button v-on:click="edit(category)" class="btn btn-xs btn-info">
-                                <i class="ace-icon fa fa-pencil bigger-120"></i>
-                            </button>
-                            <button v-on:click="del(category.id)" class="btn btn-xs btn-danger">
-                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                            </button>
-                        </div>
+                                <div class="hidden-md hidden-lg">
+                                    <div class="inline pos-rel">
+                                        <button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                            <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                        </button>
 
-                        <div class="hidden-md hidden-lg">
-                            <div class="inline pos-rel">
-                                <button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
-                                    <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
-                                </button>
+                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                            <li>
+                                                <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
+                                                    <span class="blue">
+                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
 
-                                <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-                                    <li>
-                                        <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
-                                            <span class="blue">
-                                                <i class="ace-icon fa fa-search-plus bigger-120"></i>
-                                            </span>
-                                        </a>
-                                    </li>
+                                            <li>
+                                                <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                    <span class="green">
+                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
 
-                                    <li>
-                                        <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
-                                            <span class="green">
-                                                <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
-                                            </span>
-                                        </a>
-                                    </li>
+                                            <li>
+                                                <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+                                                    <span class="red">
+                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                                    <li>
-                                        <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
-                                            <span class="red">
-                                                <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        </div>
+
+
 
         <div id="form-modal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -119,22 +124,19 @@
 </template>
 
 <script>
-  import Pagination from "../../components/pagination";
   export default {
-    components: {Pagination},
     name: 'business-category',
     data: function() {
         return {
             category: {},
             categorys: [],
+            level1: [],
+            level2:[],
         }
     },
     mounted: function() {
         let _this = this;
-        // _this.list();
-        _this.$refs.pagination.size = 5;
-        _this.list(1);
-    //   this.$parent.activeSidebar("business-category-sidebar");
+        _this.all();
     },
     methods: {
 
@@ -177,7 +179,7 @@
                 let resp = response.data;
                 if (resp.success) {
                     $("#form-modal").modal("hide");
-                    _this.list(1);
+                    _this.all();
                     toast.success("保存成功!");
                 } else {
                     toast.warning(resp.message);
@@ -196,7 +198,7 @@
                 Loading.hide();
                 let resp = response.data;
                     if (resp.success) {
-                        _this.list(1);
+                        _this.all();
                         toast.success("删除成功!");
                     }
                 })
@@ -206,19 +208,30 @@
         /**
          * 列表查询
          */
-        list(page) {
+        all() {
             let _this = this;
             Loading.show();
-            _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/category/list',{
-                // page: 1,
-                // size: 1
-                page: page,
-                size: _this.$refs.pagination.size,
-            }).then((response) => {
+            _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/category/all').then((response) => {
                 Loading.hide();
                 let resp = response.data;
-                _this.categorys = resp.content.list;
-                _this.$refs.pagination.render(page, resp.content.total);
+                _this.categorys = resp.content;
+
+                //将数据结构变成树形数据结构
+                for (let i = 0; i < _this.categorys.length; i++) {
+                    let c = _this.categorys[i];
+                    if (c === '00000000') {
+                        _this.level1.push(c);
+                        for (let j = 0; j < _this.categorys.length; j++) {
+                            let child = _this.categorys[j];
+                            if (child.parent === c.id) {
+                                if (Tool.isEmpty(c.children)) {
+                                    c.children = [];
+                                }
+                                c.children.push(child);
+                            }
+                        }
+                    }
+                }
             })
         }
     }
