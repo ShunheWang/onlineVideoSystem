@@ -219,7 +219,7 @@
             let _this = this;
             _this.active = {};
             _this.level2 = [];
-            _this.categorys = {
+            _this.category = {
                 parent : "00000000",
             };
             $("#form-modal").modal("show");
@@ -231,10 +231,10 @@
         add2() {
             let _this = this;
             if (Tool.isEmpty(_this.active)) {
-                Toast.warning("请先点一级分类");
+                toast.warning("请先点一级分类");
                 return;
             }
-            _this.categorys = {
+            _this.category = {
                 parent : _this.active.id,
             };
             $(".modal").modal("show");
@@ -324,6 +324,13 @@
                         }
                     }
                 }
+
+                _this.level2 = [];
+                // 对当前一级分类中选中的表格触发一次点击事件，以刷新二级分类列表
+                // 注意：界面的渲染需要等vue绑定好变量后才做，所以加延迟100ms
+                setTimeout(() => {
+                    $("tr.active").trigger("click");
+                }, 100);
             })
         },
 
