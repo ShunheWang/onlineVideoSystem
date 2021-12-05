@@ -14,21 +14,93 @@
                     </button>
                 </p>
 
-                <table id="simple-table" class="table  table-bordered table-hover">
+                <table id="level1-table" class="table  table-bordered table-hover">
                     <thead>
                             <tr>
-                                        <th>id</th>
-                                        <th>parent-id</th>
-                                        <th>name</th>
-                                        <th>sort</th>
+                                <th>id</th>
+                                <th>name</th>
+                                <th>sort</th>
                                 <th>操作</th>
                             </tr>
                     </thead>
 
                     <tbody>
-                        <tr v-for="category in level1" :key="level1.id">
+                        <tr v-for="category in level1" v.bind:key="level1.id" 
+                                v-on:click="onClickLevel1(category)"
+                                v-bind:class="{'active' : category.id === active.id}">
                                         <td>{{category.id}}</td>
-                                        <td>{{category.parent}}</td>
+                                        <td>{{category.name}}</td>
+                                        <td>{{category.sort}}</td>
+                            <td>
+                                <div class="hidden-sm hidden-xs btn-group">
+                                    <button v-on:click="edit(category)" class="btn btn-xs btn-info">
+                                        <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                    </button>
+                                    <button v-on:click="del(category.id)" class="btn btn-xs btn-danger">
+                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                    </button>
+                                </div>
+
+                                <div class="hidden-md hidden-lg">
+                                    <div class="inline pos-rel">
+                                        <button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                            <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                            <li>
+                                                <a href="#" class="tooltip-info" data-rel="tooltip" title="View">
+                                                    <span class="blue">
+                                                        <i class="ace-icon fa fa-search-plus bigger-120"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                    <span class="green">
+                                                        <i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+                                                    <span class="red">
+                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <p>
+                    <button v-on:click="add()" class="btn btn-white btn-default btn-round">
+                        <i class="ace-icon fa fa-edit"></i>
+                        新增
+                    </button>
+                </p>
+
+                <table id="level2-table" class="table  table-bordered table-hover">
+                    <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>name</th>
+                                <th>sort</th>
+                                <th>操作</th>
+                            </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr v-for="category in level2" v.bind:key="level2.id">
+                                        <td>{{category.id}}</td>
                                         <td>{{category.name}}</td>
                                         <td>{{category.sort}}</td>
                             <td>
@@ -83,7 +155,6 @@
         </div>
 
 
-
         <div id="form-modal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -93,24 +164,24 @@
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal">
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">parent-id</label>
-                                            <div class="col-sm-10">
-                                            <input v-model="category.parent" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">name</label>
-                                            <div class="col-sm-10">
-                                            <input v-model="category.name" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">sort</label>
-                                            <div class="col-sm-10">
-                                            <input v-model="category.sort" class="form-control">
-                                            </div>
-                                        </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">parent-id</label>
+                                <div class="col-sm-10">
+                                <input v-model="category.parent" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">name</label>
+                                <div class="col-sm-10">
+                                <input v-model="category.name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">sort</label>
+                                <div class="col-sm-10">
+                                <input v-model="category.sort" class="form-control">
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -132,6 +203,7 @@
             categorys: [],
             level1: [],
             level2:[],
+            active: {},
         }
     },
     mounted: function() {
@@ -166,9 +238,9 @@
 
             // 保存校验
             if (1 != 1
-                      || !Validator.require(_this.category.parent, "parent-id")
-                      || !Validator.require(_this.category.name, "name")
-                      || !Validator.length(_this.category.name, "name", 1, 50)
+                || !Validator.require(_this.category.parent, "parent-id")
+                || !Validator.require(_this.category.name, "name")
+                || !Validator.length(_this.category.name, "name", 1, 50)
             ) {
               return;
             }
@@ -217,10 +289,11 @@
                 _this.categorys = resp.content;
 
                 //将数据结构变成树形数据结构
+                _this.level1 = [];
                 for (let i = 0; i < _this.categorys.length; i++) {
                     let c = _this.categorys[i];
-                    if (c === '00000000') {
-                        _this.level1.push(c);
+                    if (c.parent === '00000000') {
+                        _this.level1.push(c);                        
                         for (let j = 0; j < _this.categorys.length; j++) {
                             let child = _this.categorys[j];
                             if (child.parent === c.id) {
@@ -233,7 +306,22 @@
                     }
                 }
             })
+        },
+
+        /**
+         * 点击左边模版事件
+         */
+        onClickLevel1(category) {
+            let _this = this;
+            _this.active = category;
+            _this.level2 = category.children;
         }
     }
   }
 </script>
+
+<style scoped>
+    .active td {
+        background-color: #d6e9c6 !important;
+    }
+</style>

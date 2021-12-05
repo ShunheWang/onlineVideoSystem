@@ -24,17 +24,6 @@ public class CategoryController {
     private CategoryService categoryService;
 
     /**
-     * @return
-     */
-    @PostMapping("/all")
-    public ResponseVO all() {
-        List<CategoryVO> categoryVOList = categoryService.all();
-        ResponseVO responseVO = new ResponseVO();
-        responseVO.setContent(categoryVOList);
-        return responseVO;
-    }
-
-    /**
      * 参数加上@RequestBody 按照接受流的方式接受前端过来的数据
      * @param pageVO
      * @return
@@ -47,13 +36,24 @@ public class CategoryController {
         return responseVO;
     }
 
+    /**
+     * 列表查询
+     */
+    @PostMapping("/all")
+    public ResponseVO all() {
+        ResponseVO responseVO = new ResponseVO();
+        List<CategoryVO> categoryDtoList = categoryService.all();
+        responseVO.setContent(categoryDtoList);
+        return responseVO;
+    }
+
     @PostMapping("/save")
     public ResponseVO save(@RequestBody CategoryVO categoryVO) {
 
         // 保存校验
-                ValidatorUtil.require(categoryVO.getParent(), "parent-id");
-                ValidatorUtil.require(categoryVO.getName(), "name");
-                ValidatorUtil.length(categoryVO.getName(), "name", 1, 50);
+        ValidatorUtil.require(categoryVO.getParent(), "parent-id");
+        ValidatorUtil.require(categoryVO.getName(), "name");
+        ValidatorUtil.length(categoryVO.getName(), "name", 1, 50);
 
         categoryService.save(categoryVO);
         ResponseVO responseVO = new ResponseVO();
