@@ -152,6 +152,16 @@ INSERT INTO `section` (id, title, course_id, chapter_id, video, time, charge, so
 VALUES ('00000001', '测试小节01', '00000001', '00000000', '', 500, 'F', 1, now(), now());
 
 
+---------------------- 课程分类
+drop table if exists `course_category`;
+create table `course_category` (
+ `id` char(8) not null default '' comment 'id',
+ `course_id` char(8) comment '课程|course.id',
+ `category_id` char(8) comment '分类|category.id',
+ primary key(`id`)
+) engine=innodb default charset=utf8mb4 comment='课程分类';
+
+
 
 ---------------------- 测试
 
