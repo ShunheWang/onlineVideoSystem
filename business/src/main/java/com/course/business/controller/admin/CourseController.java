@@ -3,10 +3,7 @@ package com.course.business.controller.admin;
 import com.course.server.service.CourseCategoryService;
 import com.course.server.service.CourseService;
 import com.course.server.util.ValidatorUtil;
-import com.course.server.vo.CourseCategoryVO;
-import com.course.server.vo.CourseVO;
-import com.course.server.vo.PageVO;
-import com.course.server.vo.ResponseVO;
+import com.course.server.vo.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -69,5 +66,20 @@ public class CourseController {
         List<CourseCategoryVO> dtoList = courseCategoryService.listByCourse(courseId);
         responseVO.setContent(dtoList);
         return responseVO;
+    }
+
+    @GetMapping("/find-content/{id}")
+    public ResponseVO findContent(@PathVariable String id) {
+        ResponseVO responseDto = new ResponseVO();
+        CourseContentVO contentDto = courseService.findContent(id);
+        responseDto.setContent(contentDto);
+        return responseDto;
+    }
+
+    @PostMapping("/save-content")
+    public ResponseVO saveContent(@RequestBody CourseContentVO contentDto) {
+        ResponseVO responseDto = new ResponseVO();
+        courseService.saveContent(contentDto);
+        return responseDto;
     }
 }
