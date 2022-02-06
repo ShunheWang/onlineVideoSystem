@@ -1,13 +1,16 @@
 package com.course.business.controller.admin;
 
+import com.course.server.service.CourseCategoryService;
 import com.course.server.service.CourseService;
 import com.course.server.util.ValidatorUtil;
+import com.course.server.vo.CourseCategoryVO;
 import com.course.server.vo.CourseVO;
 import com.course.server.vo.PageVO;
 import com.course.server.vo.ResponseVO;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @RestController 返回json数据时用
@@ -21,6 +24,9 @@ public class CourseController {
 
     @Resource
     private CourseService courseService;
+
+    @Resource
+    private CourseCategoryService courseCategoryService;
 
     /**
      * 参数加上@RequestBody 按照接受流的方式接受前端过来的数据
@@ -39,10 +45,10 @@ public class CourseController {
     public ResponseVO save(@RequestBody CourseVO courseVO) {
 
         // 保存校验
-                ValidatorUtil.require(courseVO.getName(), "名称");
-                ValidatorUtil.length(courseVO.getName(), "名称", 1, 50);
-                ValidatorUtil.length(courseVO.getSummary(), "概述", 1, 2000);
-                ValidatorUtil.length(courseVO.getImage(), "封面", 1, 100);
+        ValidatorUtil.require(courseVO.getName(), "名称");
+        ValidatorUtil.length(courseVO.getName(), "名称", 1, 50);
+        ValidatorUtil.length(courseVO.getSummary(), "概述", 1, 2000);
+        ValidatorUtil.length(courseVO.getImage(), "封面", 1, 100);
 
         courseService.save(courseVO);
         ResponseVO responseVO = new ResponseVO();
@@ -54,6 +60,14 @@ public class CourseController {
     public ResponseVO delete(@PathVariable String id) {
         courseService.delete(id);
         ResponseVO responseVO = new ResponseVO();
+        return responseVO;
+    }
+
+    @PostMapping("/list-category/{courseId}")
+    public ResponseVO listCategory(@PathVariable(value = "courseId") String courseId) {
+        ResponseVO responseVO = new ResponseVO();
+        List<CourseCategoryVO> dtoList = courseCategoryService.listByCourse(courseId);
+        responseVO.setContent(dtoList);
         return responseVO;
     }
 }

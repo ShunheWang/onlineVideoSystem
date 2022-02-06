@@ -1091,3 +1091,726 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-02-06 21:36:42.458 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2022-02-06 21:41:42.487 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2022-02-06 22:05:22.432 WARN  com.zaxxer.hikari.pool.HikariPool                 :787  [32m        [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m21s214ms).
+2022-02-06 22:08:33.680 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:13:33.669 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:18:33.660 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:23:33.655 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:28:33.656 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:33:33.685 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:38:33.681 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:38:37.732 INFO  com.course.server.config.LogAspect                :81   [32mQRFxjPDf[0;39m ------------- 【分类】操作开始 -------------
+2022-02-06 22:38:37.733 INFO  com.course.server.config.LogAspect                :82   [32mQRFxjPDf[0;39m 请求地址: http://127.0.0.1:9002/business/admin/category/all POST
+2022-02-06 22:38:37.733 INFO  com.course.server.config.LogAspect                :83   [32mQRFxjPDf[0;39m 类名方法: com.course.business.controller.admin.CategoryController.all
+2022-02-06 22:38:37.733 INFO  com.course.server.config.LogAspect                :84   [32mQRFxjPDf[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:38:37.734 INFO  com.course.server.config.LogAspect                :102  [32mQRFxjPDf[0;39m 请求参数: []
+2022-02-06 22:38:37.734 INFO  com.course.server.config.LogAspect                :81   [32mDa4LAqwJ[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:38:37.734 INFO  com.course.server.config.LogAspect                :82   [32mDa4LAqwJ[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list POST
+2022-02-06 22:38:37.735 INFO  com.course.server.config.LogAspect                :83   [32mDa4LAqwJ[0;39m 类名方法: com.course.business.controller.admin.CourseController.list
+2022-02-06 22:38:37.736 INFO  com.course.server.config.LogAspect                :84   [32mDa4LAqwJ[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:38:37.736 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mQRFxjPDf[0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2022-02-06 22:38:37.737 INFO  com.course.server.config.LogAspect                :102  [32mDa4LAqwJ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2022-02-06 22:38:37.737 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mQRFxjPDf[0;39m ==> Parameters: 
+2022-02-06 22:38:37.740 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==    Columns: id, parent, name, sort
+2022-02-06 22:38:37.740 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mDa4LAqwJ[0;39m ==>  Preparing: SELECT count(0) FROM course 
+2022-02-06 22:38:37.740 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 6Y9qKmb2, GZtCxj1d, sub-test1, 3
+2022-02-06 22:38:37.741 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mDa4LAqwJ[0;39m ==> Parameters: 
+2022-02-06 22:38:37.741 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: c3rgAs1X, GZtCxj1d, sub-test2, 6
+2022-02-06 22:38:37.742 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: PV47HdAM, GZtCxj1d, sub-test9, 9
+2022-02-06 22:38:37.742 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000100, 00000000, 前端技术, 100
+2022-02-06 22:38:37.742 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mDa4LAqwJ[0;39m <==    Columns: count(0)
+2022-02-06 22:38:37.743 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mDa4LAqwJ[0;39m <==        Row: 3
+2022-02-06 22:38:37.744 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000101, 00000100, html/css, 101
+2022-02-06 22:38:37.744 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mDa4LAqwJ[0;39m <==      Total: 1
+2022-02-06 22:38:37.744 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000102, 00000100, JavaScript, 102
+2022-02-06 22:38:37.745 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000103, 00000100, vue.js, 103
+2022-02-06 22:38:37.745 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mDa4LAqwJ[0;39m ==>  Preparing: select id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at from course order by sort asc LIMIT ? 
+2022-02-06 22:38:37.745 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000104, 00000100, react.js, 104
+2022-02-06 22:38:37.745 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mDa4LAqwJ[0;39m ==> Parameters: 5(Integer)
+2022-02-06 22:38:37.746 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000105, 00000100, angular, 105
+2022-02-06 22:38:37.746 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000106, 00000100, NodeJs, 106
+2022-02-06 22:38:37.747 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000107, 00000100, JQuery, 107
+2022-02-06 22:38:37.747 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mDa4LAqwJ[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at
+2022-02-06 22:38:37.747 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000108, 00000100, 小程序, 108
+2022-02-06 22:38:37.747 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000200, 00000000, 后端技术, 200
+2022-02-06 22:38:37.747 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mDa4LAqwJ[0;39m <==        Row: 000001, test001, 这是test001, 140999, 33.00, null, 2, F, D, null, null, 2021-11-26 13:59:55, 2022-02-06 13:32:11.373
+2022-02-06 22:38:37.748 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000201, 00000200, JAVA, 201
+2022-02-06 22:38:37.748 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000202, 00000200, SpringBoot, 202
+2022-02-06 22:38:37.749 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000203, 00000200, SpringCloud, 203
+2022-02-06 22:38:37.749 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mDa4LAqwJ[0;39m <==        Row: ErDrWSpI, testj, testj, 33, null, null, 2, F, D, null, null, 2022-02-06 13:06:51, 2022-02-06 13:32:19.961
+2022-02-06 22:38:37.749 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000204, 00000200, ssm, 204
+2022-02-06 22:38:37.749 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000205, 00000200, Python, 205
+2022-02-06 22:38:37.750 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000206, 00000200, 爬虫, 206
+2022-02-06 22:38:37.750 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mDa4LAqwJ[0;39m <==        Row: rxqxHLxR, test002, 这是test002, 999, 66.00, null, 3, C, P, null, null, 2021-11-26 14:00:18.369, 2021-11-26 14:00:18.369
+2022-02-06 22:38:37.750 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000300, 00000000, 移动开发, 300
+2022-02-06 22:38:37.750 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mDa4LAqwJ[0;39m <==      Total: 3
+2022-02-06 22:38:37.750 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000301, 00000300, Andriod, 301
+2022-02-06 22:38:37.751 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000302, 00000300, iOS, 302
+2022-02-06 22:38:37.751 INFO  com.course.server.config.LogAspect                :114  [32mDa4LAqwJ[0;39m 返回结果: {"content":{"list":[{"charge":"F","createdAt":1637935195000,"id":"000001","level":"2","name":"test001","price":33.00,"status":"D","summary":"这是test001","time":140999,"updatedAt":1644154331373},{"charge":"F","createdAt":1644152811000,"id":"ErDrWSpI","level":"2","name":"testj","status":"D","summary":"testj","time":33,"updatedAt":1644154339961},{"charge":"C","createdAt":1637935218369,"id":"rxqxHLxR","level":"3","name":"test002","price":66.00,"status":"P","summary":"这是test002","time":999,"updatedAt":1637935218369}],"page":1,"size":5,"total":3},"success":true}
+2022-02-06 22:38:37.752 INFO  com.course.server.config.LogAspect                :115  [32mDa4LAqwJ[0;39m ------------- 结束 耗时：18 ms -------------
+2022-02-06 22:38:37.752 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000303, 00000300, React native, 303
+2022-02-06 22:38:37.752 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000304, 00000300, WEEX, 304
+2022-02-06 22:38:37.753 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000400, 00000000, 计算机基础, 400
+2022-02-06 22:38:37.753 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000401, 00000400, 计算机网络, 401
+2022-02-06 22:38:37.755 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000402, 00000400, 算法与数据结构, 402
+2022-02-06 22:38:37.755 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000403, 00000400, 数学, 403
+2022-02-06 22:38:37.757 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000404, 00000400, Mysql, 404
+2022-02-06 22:38:37.757 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000405, 00000400, Redis, 405
+2022-02-06 22:38:37.758 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000406, 00000400, MongoDB, 406
+2022-02-06 22:38:37.758 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000407, 00000400, Oracle, 407
+2022-02-06 22:38:37.759 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000408, 00000400, SQL Server, 408
+2022-02-06 22:38:37.760 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000409, 00000400, NoSql, 409
+2022-02-06 22:38:37.761 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000500, 00000000, 前沿技术, 500
+2022-02-06 22:38:37.761 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000501, 00000500, 微服务, 501
+2022-02-06 22:38:37.762 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000502, 00000500, 区块链, 502
+2022-02-06 22:38:37.762 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000503, 00000500, 以太坊, 503
+2022-02-06 22:38:37.763 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000504, 00000500, 机器学习, 504
+2022-02-06 22:38:37.763 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000505, 00000500, 深度学习, 505
+2022-02-06 22:38:37.763 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000506, 00000500, 计算机视觉, 506
+2022-02-06 22:38:37.764 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000507, 00000500, 自然语言处理, 507
+2022-02-06 22:38:37.764 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000508, 00000500, 数据分析&挖掘, 508
+2022-02-06 22:38:37.764 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000509, 00000500, 大数据, 509
+2022-02-06 22:38:37.764 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000510, 00000500, Hadoop, 510
+2022-02-06 22:38:37.765 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000511, 00000500, Spark, 511
+2022-02-06 22:38:37.765 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000512, 00000500, Hbase, 512
+2022-02-06 22:38:37.765 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000513, 00000500, Flink, 513
+2022-02-06 22:38:37.766 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000514, 00000500, Storm, 514
+2022-02-06 22:38:37.766 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000515, 00000500, 云计算, 515
+2022-02-06 22:38:37.766 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000516, 00000500, AWS, 516
+2022-02-06 22:38:37.767 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000517, 00000500, Docker, 517
+2022-02-06 22:38:37.767 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000518, 00000500, Kubernetes, 518
+2022-02-06 22:38:37.767 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000600, 00000000, 测试运维, 600
+2022-02-06 22:38:37.767 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000601, 00000600, 运维, 601
+2022-02-06 22:38:37.768 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000602, 00000600, 自动化运维, 602
+2022-02-06 22:38:37.768 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000603, 00000600, 运维工具, 603
+2022-02-06 22:38:37.768 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000604, 00000600, 中间件, 604
+2022-02-06 22:38:37.769 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000605, 00000600, Linux, 605
+2022-02-06 22:38:37.769 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000606, 00000600, 测试, 606
+2022-02-06 22:38:37.769 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000607, 00000600, 功能测试, 607
+2022-02-06 22:38:37.769 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000608, 00000600, 性能测试, 608
+2022-02-06 22:38:37.770 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000609, 00000600, 自动化测试, 609
+2022-02-06 22:38:37.770 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000610, 00000600, 接口测试, 610
+2022-02-06 22:38:37.770 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: 00000611, 00000600, 安全测试, 611
+2022-02-06 22:38:37.771 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mQRFxjPDf[0;39m <==        Row: GZtCxj1d, 00000000, test, 369963
+2022-02-06 22:38:37.771 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mQRFxjPDf[0;39m <==      Total: 66
+2022-02-06 22:38:37.773 INFO  com.course.server.config.LogAspect                :114  [32mQRFxjPDf[0;39m 返回结果: {"content":[{"id":"6Y9qKmb2","name":"sub-test1","parent":"GZtCxj1d","sort":3},{"id":"c3rgAs1X","name":"sub-test2","parent":"GZtCxj1d","sort":6},{"id":"PV47HdAM","name":"sub-test9","parent":"GZtCxj1d","sort":9},{"id":"00000100","name":"前端技术","parent":"00000000","sort":100},{"id":"00000101","name":"html/css","parent":"00000100","sort":101},{"id":"00000102","name":"JavaScript","parent":"00000100","sort":102},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000106","name":"NodeJs","parent":"00000100","sort":106},{"id":"00000107","name":"JQuery","parent":"00000100","sort":107},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"00000200","name":"后端技术","parent":"00000000","sort":200},{"id":"00000201","name":"JAVA","parent":"00000200","sort":201},{"id":"00000202","name":"SpringBoot","parent":"00000200","sort":202},{"id":"00000203","name":"SpringCloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"Python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"Andriod","parent":"00000300","sort":301},{"id":"00000302","name":"iOS","parent":"00000300","sort":302},{"id":"00000303","name":"React native","parent":"00000300","sort":303},{"id":"00000304","name":"WEEX","parent":"00000300","sort":304},{"id":"00000400","name":"计算机基础","parent":"00000000","sort":400},{"id":"00000401","name":"计算机网络","parent":"00000400","sort":401},{"id":"00000402","name":"算法与数据结构","parent":"00000400","sort":402},{"id":"00000403","name":"数学","parent":"00000400","sort":403},{"id":"00000404","name":"Mysql","parent":"00000400","sort":404},{"id":"00000405","name":"Redis","parent":"00000400","sort":405},{"id":"00000406","name":"MongoDB","parent":"00000400","sort":406},{"id":"00000407","name":"Oracle","parent":"00000400","sort":407},{"id":"00000408","name":"SQL Server","parent":"00000400","sort":408},{"id":"00000409","name":"NoSql","parent":"00000400","sort":409},{"id":"00000500","name":"前沿技术","parent":"00000000","sort":500},{"id":"00000501","name":"微服务","parent":"00000500","sort":501},{"id":"00000502","name":"区块链","parent":"00000500","sort":502},{"id":"00000503","name":"以太坊","parent":"00000500","sort":503},{"id":"00000504","name":"机器学习","parent":"00000500","sort":504},{"id":"00000505","name":"深度学习","parent":"00000500","sort":505},{"id":"00000506","name":"计算机视觉","parent":"00000500","sort":506},{"id":"00000507","name":"自然语言处理","parent":"00000500","sort":507},{"id":"00000508","name":"数据分析&挖掘","parent":"00000500","sort":508},{"id":"00000509","name":"大数据","parent":"00000500","sort":509},{"id":"00000510","name":"Hadoop","parent":"00000500","sort":510},{"id":"00000511","name":"Spark","parent":"00000500","sort":511},{"id":"00000512","name":"Hbase","parent":"00000500","sort":512},{"id":"00000513","name":"Flink","parent":"00000500","sort":513},{"id":"00000514","name":"Storm","parent":"00000500","sort":514},{"id":"00000515","name":"云计算","parent":"00000500","sort":515},{"id":"00000516","name":"AWS","parent":"00000500","sort":516},{"id":"00000517","name":"Docker","parent":"00000500","sort":517},{"id":"00000518","name":"Kubernetes","parent":"00000500","sort":518},{"id":"00000600","name":"测试运维","parent":"00000000","sort":600},{"id":"00000601","name":"运维","parent":"00000600","sort":601},{"id":"00000602","name":"自动化运维","parent":"00000600","sort":602},{"id":"00000603","name":"运维工具","parent":"00000600","sort":603},{"id":"00000604","name":"中间件","parent":"00000600","sort":604},{"id":"00000605","name":"Linux","parent":"00000600","sort":605},{"id":"00000606","name":"测试","parent":"00000600","sort":606},{"id":"00000607","name":"功能测试","parent":"00000600","sort":607},{"id":"00000608","name":"性能测试","parent":"00000600","sort":608},{"id":"00000609","name":"自动化测试","parent":"00000600","sort":609},{"id":"00000610","name":"接口测试","parent":"00000600","sort":610},{"id":"00000611","name":"安全测试","parent":"00000600","sort":611},{"id":"GZtCxj1d","name":"test","parent":"00000000","sort":369963}],"success":true}
+2022-02-06 22:38:37.774 INFO  com.course.server.config.LogAspect                :115  [32mQRFxjPDf[0;39m ------------- 结束 耗时：42 ms -------------
+2022-02-06 22:39:30.102 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2022-02-06 22:39:30.103 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1644158370103, current=DOWN, previous=UP]
+2022-02-06 22:39:30.103 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002: registering service...
+2022-02-06 22:39:30.108 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-06 22:39:30.108 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :91   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+2022-02-06 22:39:30.109 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2022-02-06 22:39:30.110 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 common frames omitted
+2022-02-06 22:39:30.111 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2022-02-06 22:39:30.112 WARN  com.netflix.discovery.DiscoveryClient             :849  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-02-06 22:39:30.113 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:847)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-02-06 22:39:30.116 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2022-02-06 22:39:33.123 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2022-02-06 22:39:33.129 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 42 common frames omitted
+2022-02-06 22:39:33.132 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2022-02-06 22:39:33.132 ERROR com.netflix.discovery.DiscoveryClient             :944  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
+2022-02-06 22:39:33.147 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2022-02-06 22:39:33.148 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
+2022-02-06 22:39:33.156 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
+2022-02-06 22:40:32.072 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-06 22:40:42.192 INFO  com.course.business.BusinessApplication           :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2022-02-06 22:40:43.075 WARN  o.springframework.boot.actuate.endpoint.EndpointId:155  [32m        [0;39m Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-02-06 22:40:43.197 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ce7b1296-d01a-33cb-b96b-a5ea609d6a4b
+2022-02-06 22:40:43.422 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-06 22:40:43.725 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-06 22:40:43.996 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2022-02-06 22:40:44.007 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2022-02-06 22:40:44.007 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2022-02-06 22:40:44.008 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-02-06 22:40:44.107 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2022-02-06 22:40:44.108 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1900 ms
+2022-02-06 22:40:44.222 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2022-02-06 22:40:44.223 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-06 22:40:44.244 INFO  com.netflix.config.DynamicPropertyFactory         :281  [32m        [0;39m DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ed4a7e4
+2022-02-06 22:40:45.123 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2022-02-06 22:40:45.123 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-06 22:40:45.339 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-06 22:40:45.873 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-02-06 22:40:45.917 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-02-06 22:40:45.932 INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver  :58   [32m        [0;39m Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-02-06 22:40:45.971 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2022-02-06 22:40:46.035 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2022-02-06 22:40:46.254 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2022-02-06 22:40:46.254 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2022-02-06 22:40:46.385 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2022-02-06 22:40:46.385 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2022-02-06 22:40:46.651 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:40:46.672 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2022-02-06 22:40:46.673 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2022-02-06 22:40:46.673 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2022-02-06 22:40:46.673 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2022-02-06 22:40:46.673 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2022-02-06 22:40:46.674 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2022-02-06 22:40:46.674 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2022-02-06 22:40:47.051 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2022-02-06 22:40:47.053 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2022-02-06 22:40:47.055 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-06 22:40:47.059 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1644158447058 with initial instances count: 0
+2022-02-06 22:40:47.064 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2022-02-06 22:40:47.065 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1644158447065, current=UP, previous=STARTING]
+2022-02-06 22:40:47.067 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002: registering service...
+2022-02-06 22:40:47.085 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2022-02-06 22:40:47.129 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2022-02-06 22:40:47.130 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2022-02-06 22:40:47.136 INFO  com.course.business.BusinessApplication           :61   [32m        [0;39m Started BusinessApplication in 25.644 seconds (JVM running for 26.286)
+2022-02-06 22:40:47.145 INFO  com.course.business.BusinessApplication           :23   [32m        [0;39m 启动成功
+2022-02-06 22:40:47.145 INFO  com.course.business.BusinessApplication           :24   [32m        [0;39m business 地址：	 http://127.0.0.1:9002
+2022-02-06 22:40:47.175 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.2.12:business:9002 - registration status: 204
+2022-02-06 22:41:17.056 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2022-02-06 22:41:17.057 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2022-02-06 22:41:17.058 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2022-02-06 22:41:17.058 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2022-02-06 22:41:17.059 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2022-02-06 22:41:17.059 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: false
+2022-02-06 22:41:17.059 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2022-02-06 22:41:17.105 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2022-02-06 22:41:39.332 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-06 22:41:39.333 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2022-02-06 22:41:39.345 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 12 ms
+2022-02-06 22:41:39.392 INFO  com.course.server.config.LogAspect                :81   [32mc5kLuV90[0;39m ------------- 【分类】操作开始 -------------
+2022-02-06 22:41:39.393 INFO  com.course.server.config.LogAspect                :82   [32mc5kLuV90[0;39m 请求地址: http://127.0.0.1:9002/business/admin/category/all POST
+2022-02-06 22:41:39.394 INFO  com.course.server.config.LogAspect                :83   [32mc5kLuV90[0;39m 类名方法: com.course.business.controller.admin.CategoryController.all
+2022-02-06 22:41:39.395 INFO  com.course.server.config.LogAspect                :84   [32mc5kLuV90[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:39.400 INFO  com.course.server.config.LogAspect                :102  [32mc5kLuV90[0;39m 请求参数: []
+2022-02-06 22:41:39.421 INFO  com.course.server.config.LogAspect                :81   [32mf1R5rwiF[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:41:39.421 INFO  com.course.server.config.LogAspect                :82   [32mf1R5rwiF[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list POST
+2022-02-06 22:41:39.422 INFO  com.course.server.config.LogAspect                :83   [32mf1R5rwiF[0;39m 类名方法: com.course.business.controller.admin.CourseController.list
+2022-02-06 22:41:39.422 INFO  com.course.server.config.LogAspect                :84   [32mf1R5rwiF[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:39.444 INFO  com.course.server.config.LogAspect                :102  [32mf1R5rwiF[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2022-02-06 22:41:39.484 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mf1R5rwiF[0;39m HikariPool-1 - Starting...
+2022-02-06 22:41:39.802 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mf1R5rwiF[0;39m HikariPool-1 - Start completed.
+2022-02-06 22:41:39.822 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mc5kLuV90[0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2022-02-06 22:41:39.856 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mc5kLuV90[0;39m ==> Parameters: 
+2022-02-06 22:41:39.869 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mf1R5rwiF[0;39m ==>  Preparing: SELECT count(0) FROM course 
+2022-02-06 22:41:39.870 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mf1R5rwiF[0;39m ==> Parameters: 
+2022-02-06 22:41:39.891 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==    Columns: id, parent, name, sort
+2022-02-06 22:41:39.891 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mf1R5rwiF[0;39m <==    Columns: count(0)
+2022-02-06 22:41:39.892 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 6Y9qKmb2, GZtCxj1d, sub-test1, 3
+2022-02-06 22:41:39.892 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mf1R5rwiF[0;39m <==        Row: 3
+2022-02-06 22:41:39.894 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: c3rgAs1X, GZtCxj1d, sub-test2, 6
+2022-02-06 22:41:39.894 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mf1R5rwiF[0;39m <==      Total: 1
+2022-02-06 22:41:39.895 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: PV47HdAM, GZtCxj1d, sub-test9, 9
+2022-02-06 22:41:39.896 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000100, 00000000, 前端技术, 100
+2022-02-06 22:41:39.897 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000101, 00000100, html/css, 101
+2022-02-06 22:41:39.898 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000102, 00000100, JavaScript, 102
+2022-02-06 22:41:39.899 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mf1R5rwiF[0;39m ==>  Preparing: select id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at from course order by sort asc LIMIT ? 
+2022-02-06 22:41:39.899 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000103, 00000100, vue.js, 103
+2022-02-06 22:41:39.900 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000104, 00000100, react.js, 104
+2022-02-06 22:41:39.900 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mf1R5rwiF[0;39m ==> Parameters: 5(Integer)
+2022-02-06 22:41:39.900 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000105, 00000100, angular, 105
+2022-02-06 22:41:39.901 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000106, 00000100, NodeJs, 106
+2022-02-06 22:41:39.902 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000107, 00000100, JQuery, 107
+2022-02-06 22:41:39.902 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mf1R5rwiF[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at
+2022-02-06 22:41:39.903 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000108, 00000100, 小程序, 108
+2022-02-06 22:41:39.904 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000200, 00000000, 后端技术, 200
+2022-02-06 22:41:39.904 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000201, 00000200, JAVA, 201
+2022-02-06 22:41:39.905 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000202, 00000200, SpringBoot, 202
+2022-02-06 22:41:39.906 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000203, 00000200, SpringCloud, 203
+2022-02-06 22:41:39.909 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000204, 00000200, ssm, 204
+2022-02-06 22:41:39.909 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mf1R5rwiF[0;39m <==        Row: 000001, test001, 这是test001, 140999, 33.00, null, 2, F, D, null, null, 2021-11-26 13:59:55, 2022-02-06 13:32:11.373
+2022-02-06 22:41:39.910 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000205, 00000200, Python, 205
+2022-02-06 22:41:39.911 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mf1R5rwiF[0;39m <==        Row: ErDrWSpI, testj, testj, 33, null, null, 2, F, D, null, null, 2022-02-06 13:06:51, 2022-02-06 13:32:19.961
+2022-02-06 22:41:39.911 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000206, 00000200, 爬虫, 206
+2022-02-06 22:41:39.911 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000300, 00000000, 移动开发, 300
+2022-02-06 22:41:39.912 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000301, 00000300, Andriod, 301
+2022-02-06 22:41:39.912 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mf1R5rwiF[0;39m <==        Row: rxqxHLxR, test002, 这是test002, 999, 66.00, null, 3, C, P, null, null, 2021-11-26 14:00:18.369, 2021-11-26 14:00:18.369
+2022-02-06 22:41:39.913 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000302, 00000300, iOS, 302
+2022-02-06 22:41:39.913 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mf1R5rwiF[0;39m <==      Total: 3
+2022-02-06 22:41:39.913 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000303, 00000300, React native, 303
+2022-02-06 22:41:39.914 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000304, 00000300, WEEX, 304
+2022-02-06 22:41:39.915 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000400, 00000000, 计算机基础, 400
+2022-02-06 22:41:39.916 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000401, 00000400, 计算机网络, 401
+2022-02-06 22:41:39.917 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000402, 00000400, 算法与数据结构, 402
+2022-02-06 22:41:39.918 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000403, 00000400, 数学, 403
+2022-02-06 22:41:39.918 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000404, 00000400, Mysql, 404
+2022-02-06 22:41:39.919 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000405, 00000400, Redis, 405
+2022-02-06 22:41:39.920 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000406, 00000400, MongoDB, 406
+2022-02-06 22:41:39.921 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000407, 00000400, Oracle, 407
+2022-02-06 22:41:39.922 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000408, 00000400, SQL Server, 408
+2022-02-06 22:41:39.923 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000409, 00000400, NoSql, 409
+2022-02-06 22:41:39.924 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000500, 00000000, 前沿技术, 500
+2022-02-06 22:41:39.925 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000501, 00000500, 微服务, 501
+2022-02-06 22:41:39.926 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000502, 00000500, 区块链, 502
+2022-02-06 22:41:39.927 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000503, 00000500, 以太坊, 503
+2022-02-06 22:41:39.928 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000504, 00000500, 机器学习, 504
+2022-02-06 22:41:39.928 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000505, 00000500, 深度学习, 505
+2022-02-06 22:41:39.931 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000506, 00000500, 计算机视觉, 506
+2022-02-06 22:41:39.932 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000507, 00000500, 自然语言处理, 507
+2022-02-06 22:41:39.933 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000508, 00000500, 数据分析&挖掘, 508
+2022-02-06 22:41:39.933 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000509, 00000500, 大数据, 509
+2022-02-06 22:41:39.934 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000510, 00000500, Hadoop, 510
+2022-02-06 22:41:39.935 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000511, 00000500, Spark, 511
+2022-02-06 22:41:39.936 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000512, 00000500, Hbase, 512
+2022-02-06 22:41:39.936 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000513, 00000500, Flink, 513
+2022-02-06 22:41:39.937 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000514, 00000500, Storm, 514
+2022-02-06 22:41:39.938 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000515, 00000500, 云计算, 515
+2022-02-06 22:41:39.939 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000516, 00000500, AWS, 516
+2022-02-06 22:41:39.940 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000517, 00000500, Docker, 517
+2022-02-06 22:41:39.941 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000518, 00000500, Kubernetes, 518
+2022-02-06 22:41:39.943 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000600, 00000000, 测试运维, 600
+2022-02-06 22:41:39.944 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000601, 00000600, 运维, 601
+2022-02-06 22:41:39.944 INFO  com.course.server.config.LogAspect                :114  [32mf1R5rwiF[0;39m 返回结果: {"content":{"list":[{"charge":"F","createdAt":1637935195000,"id":"000001","level":"2","name":"test001","price":33.00,"status":"D","summary":"这是test001","time":140999,"updatedAt":1644154331373},{"charge":"F","createdAt":1644152811000,"id":"ErDrWSpI","level":"2","name":"testj","status":"D","summary":"testj","time":33,"updatedAt":1644154339961},{"charge":"C","createdAt":1637935218369,"id":"rxqxHLxR","level":"3","name":"test002","price":66.00,"status":"P","summary":"这是test002","time":999,"updatedAt":1637935218369}],"page":1,"size":5,"total":3},"success":true}
+2022-02-06 22:41:39.945 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000602, 00000600, 自动化运维, 602
+2022-02-06 22:41:39.945 INFO  com.course.server.config.LogAspect                :115  [32mf1R5rwiF[0;39m ------------- 结束 耗时：524 ms -------------
+2022-02-06 22:41:39.946 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000603, 00000600, 运维工具, 603
+2022-02-06 22:41:39.947 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000604, 00000600, 中间件, 604
+2022-02-06 22:41:39.948 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000605, 00000600, Linux, 605
+2022-02-06 22:41:39.948 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000606, 00000600, 测试, 606
+2022-02-06 22:41:39.949 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000607, 00000600, 功能测试, 607
+2022-02-06 22:41:39.950 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000608, 00000600, 性能测试, 608
+2022-02-06 22:41:39.951 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000609, 00000600, 自动化测试, 609
+2022-02-06 22:41:39.952 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000610, 00000600, 接口测试, 610
+2022-02-06 22:41:39.953 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: 00000611, 00000600, 安全测试, 611
+2022-02-06 22:41:39.953 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mc5kLuV90[0;39m <==        Row: GZtCxj1d, 00000000, test, 369963
+2022-02-06 22:41:39.956 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mc5kLuV90[0;39m <==      Total: 66
+2022-02-06 22:41:39.976 INFO  com.course.server.config.LogAspect                :114  [32mc5kLuV90[0;39m 返回结果: {"content":[{"id":"6Y9qKmb2","name":"sub-test1","parent":"GZtCxj1d","sort":3},{"id":"c3rgAs1X","name":"sub-test2","parent":"GZtCxj1d","sort":6},{"id":"PV47HdAM","name":"sub-test9","parent":"GZtCxj1d","sort":9},{"id":"00000100","name":"前端技术","parent":"00000000","sort":100},{"id":"00000101","name":"html/css","parent":"00000100","sort":101},{"id":"00000102","name":"JavaScript","parent":"00000100","sort":102},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000106","name":"NodeJs","parent":"00000100","sort":106},{"id":"00000107","name":"JQuery","parent":"00000100","sort":107},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"00000200","name":"后端技术","parent":"00000000","sort":200},{"id":"00000201","name":"JAVA","parent":"00000200","sort":201},{"id":"00000202","name":"SpringBoot","parent":"00000200","sort":202},{"id":"00000203","name":"SpringCloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"Python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"Andriod","parent":"00000300","sort":301},{"id":"00000302","name":"iOS","parent":"00000300","sort":302},{"id":"00000303","name":"React native","parent":"00000300","sort":303},{"id":"00000304","name":"WEEX","parent":"00000300","sort":304},{"id":"00000400","name":"计算机基础","parent":"00000000","sort":400},{"id":"00000401","name":"计算机网络","parent":"00000400","sort":401},{"id":"00000402","name":"算法与数据结构","parent":"00000400","sort":402},{"id":"00000403","name":"数学","parent":"00000400","sort":403},{"id":"00000404","name":"Mysql","parent":"00000400","sort":404},{"id":"00000405","name":"Redis","parent":"00000400","sort":405},{"id":"00000406","name":"MongoDB","parent":"00000400","sort":406},{"id":"00000407","name":"Oracle","parent":"00000400","sort":407},{"id":"00000408","name":"SQL Server","parent":"00000400","sort":408},{"id":"00000409","name":"NoSql","parent":"00000400","sort":409},{"id":"00000500","name":"前沿技术","parent":"00000000","sort":500},{"id":"00000501","name":"微服务","parent":"00000500","sort":501},{"id":"00000502","name":"区块链","parent":"00000500","sort":502},{"id":"00000503","name":"以太坊","parent":"00000500","sort":503},{"id":"00000504","name":"机器学习","parent":"00000500","sort":504},{"id":"00000505","name":"深度学习","parent":"00000500","sort":505},{"id":"00000506","name":"计算机视觉","parent":"00000500","sort":506},{"id":"00000507","name":"自然语言处理","parent":"00000500","sort":507},{"id":"00000508","name":"数据分析&挖掘","parent":"00000500","sort":508},{"id":"00000509","name":"大数据","parent":"00000500","sort":509},{"id":"00000510","name":"Hadoop","parent":"00000500","sort":510},{"id":"00000511","name":"Spark","parent":"00000500","sort":511},{"id":"00000512","name":"Hbase","parent":"00000500","sort":512},{"id":"00000513","name":"Flink","parent":"00000500","sort":513},{"id":"00000514","name":"Storm","parent":"00000500","sort":514},{"id":"00000515","name":"云计算","parent":"00000500","sort":515},{"id":"00000516","name":"AWS","parent":"00000500","sort":516},{"id":"00000517","name":"Docker","parent":"00000500","sort":517},{"id":"00000518","name":"Kubernetes","parent":"00000500","sort":518},{"id":"00000600","name":"测试运维","parent":"00000000","sort":600},{"id":"00000601","name":"运维","parent":"00000600","sort":601},{"id":"00000602","name":"自动化运维","parent":"00000600","sort":602},{"id":"00000603","name":"运维工具","parent":"00000600","sort":603},{"id":"00000604","name":"中间件","parent":"00000600","sort":604},{"id":"00000605","name":"Linux","parent":"00000600","sort":605},{"id":"00000606","name":"测试","parent":"00000600","sort":606},{"id":"00000607","name":"功能测试","parent":"00000600","sort":607},{"id":"00000608","name":"性能测试","parent":"00000600","sort":608},{"id":"00000609","name":"自动化测试","parent":"00000600","sort":609},{"id":"00000610","name":"接口测试","parent":"00000600","sort":610},{"id":"00000611","name":"安全测试","parent":"00000600","sort":611},{"id":"GZtCxj1d","name":"test","parent":"00000000","sort":369963}],"success":true}
+2022-02-06 22:41:39.977 INFO  com.course.server.config.LogAspect                :115  [32mc5kLuV90[0;39m ------------- 结束 耗时：590 ms -------------
+2022-02-06 22:41:41.786 INFO  com.course.server.config.LogAspect                :81   [32mh57FXH99[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:41:41.787 INFO  com.course.server.config.LogAspect                :82   [32mh57FXH99[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list-category/000001 POST
+2022-02-06 22:41:41.787 INFO  com.course.server.config.LogAspect                :83   [32mh57FXH99[0;39m 类名方法: com.course.business.controller.admin.CourseController.listCategory
+2022-02-06 22:41:41.787 INFO  com.course.server.config.LogAspect                :84   [32mh57FXH99[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:41.787 INFO  com.course.server.config.LogAspect                :102  [32mh57FXH99[0;39m 请求参数: ["000001"]
+2022-02-06 22:41:41.811 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mh57FXH99[0;39m ==>  Preparing: select id, course_id, category_id from course_category WHERE ( course_id = ? ) 
+2022-02-06 22:41:41.812 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mh57FXH99[0;39m ==> Parameters: 000001(String)
+2022-02-06 22:41:41.814 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mh57FXH99[0;39m <==    Columns: id, course_id, category_id
+2022-02-06 22:41:41.815 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mh57FXH99[0;39m <==        Row: A3eV9uDz, 000001, 00000101
+2022-02-06 22:41:41.816 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mh57FXH99[0;39m <==        Row: hn4wxxHo, 000001, 00000100
+2022-02-06 22:41:41.817 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mh57FXH99[0;39m <==      Total: 2
+2022-02-06 22:41:41.825 INFO  com.course.server.config.LogAspect                :114  [32mh57FXH99[0;39m 返回结果: {"content":[{"categoryId":"00000101","courseId":"000001","id":"A3eV9uDz"},{"categoryId":"00000100","courseId":"000001","id":"hn4wxxHo"}],"success":true}
+2022-02-06 22:41:41.826 INFO  com.course.server.config.LogAspect                :115  [32mh57FXH99[0;39m ------------- 结束 耗时：40 ms -------------
+2022-02-06 22:41:45.990 INFO  com.course.server.config.LogAspect                :81   [32mLLfyJF3F[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:41:45.991 INFO  com.course.server.config.LogAspect                :82   [32mLLfyJF3F[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list-category/ErDrWSpI POST
+2022-02-06 22:41:45.991 INFO  com.course.server.config.LogAspect                :83   [32mLLfyJF3F[0;39m 类名方法: com.course.business.controller.admin.CourseController.listCategory
+2022-02-06 22:41:45.992 INFO  com.course.server.config.LogAspect                :84   [32mLLfyJF3F[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:45.993 INFO  com.course.server.config.LogAspect                :102  [32mLLfyJF3F[0;39m 请求参数: ["ErDrWSpI"]
+2022-02-06 22:41:45.995 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mLLfyJF3F[0;39m ==>  Preparing: select id, course_id, category_id from course_category WHERE ( course_id = ? ) 
+2022-02-06 22:41:45.996 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mLLfyJF3F[0;39m ==> Parameters: ErDrWSpI(String)
+2022-02-06 22:41:45.998 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==    Columns: id, course_id, category_id
+2022-02-06 22:41:45.998 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: 0ZzQoTwi, ErDrWSpI, 00000205
+2022-02-06 22:41:45.998 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: AtHlXemi, ErDrWSpI, 00000201
+2022-02-06 22:41:45.999 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: h7Op9Anp, ErDrWSpI, 00000204
+2022-02-06 22:41:45.999 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: PMT5PwNK, ErDrWSpI, 00000202
+2022-02-06 22:41:46.000 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: s8BOayJv, ErDrWSpI, 00000200
+2022-02-06 22:41:46.000 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: TMcsoMqd, ErDrWSpI, 00000206
+2022-02-06 22:41:46.001 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mLLfyJF3F[0;39m <==        Row: zKMLWdmV, ErDrWSpI, 00000203
+2022-02-06 22:41:46.001 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mLLfyJF3F[0;39m <==      Total: 7
+2022-02-06 22:41:46.003 INFO  com.course.server.config.LogAspect                :114  [32mLLfyJF3F[0;39m 返回结果: {"content":[{"categoryId":"00000205","courseId":"ErDrWSpI","id":"0ZzQoTwi"},{"categoryId":"00000201","courseId":"ErDrWSpI","id":"AtHlXemi"},{"categoryId":"00000204","courseId":"ErDrWSpI","id":"h7Op9Anp"},{"categoryId":"00000202","courseId":"ErDrWSpI","id":"PMT5PwNK"},{"categoryId":"00000200","courseId":"ErDrWSpI","id":"s8BOayJv"},{"categoryId":"00000206","courseId":"ErDrWSpI","id":"TMcsoMqd"},{"categoryId":"00000203","courseId":"ErDrWSpI","id":"zKMLWdmV"}],"success":true}
+2022-02-06 22:41:46.004 INFO  com.course.server.config.LogAspect                :115  [32mLLfyJF3F[0;39m ------------- 结束 耗时：13 ms -------------
+2022-02-06 22:41:51.450 INFO  com.course.server.config.LogAspect                :81   [32moJEbzKqS[0;39m ------------- 【课程】保存开始 -------------
+2022-02-06 22:41:51.451 INFO  com.course.server.config.LogAspect                :82   [32moJEbzKqS[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/save POST
+2022-02-06 22:41:51.452 INFO  com.course.server.config.LogAspect                :83   [32moJEbzKqS[0;39m 类名方法: com.course.business.controller.admin.CourseController.save
+2022-02-06 22:41:51.452 INFO  com.course.server.config.LogAspect                :84   [32moJEbzKqS[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:51.453 INFO  com.course.server.config.LogAspect                :102  [32moJEbzKqS[0;39m 请求参数: [{"categorys":[{"id":"00000200","name":"后端技术","parent":"00000000","sort":200},{"id":"00000201","name":"JAVA","parent":"00000200","sort":201},{"id":"00000202","name":"SpringBoot","parent":"00000200","sort":202},{"id":"00000203","name":"SpringCloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"Python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"Andriod","parent":"00000300","sort":301},{"id":"00000302","name":"iOS","parent":"00000300","sort":302},{"id":"00000303","name":"React native","parent":"00000300","sort":303},{"id":"00000304","name":"WEEX","parent":"00000300","sort":304}],"charge":"F","createdAt":1644152811000,"id":"ErDrWSpI","level":"2","name":"testj","status":"D","summary":"testj","time":33,"updatedAt":1644154339000}]
+2022-02-06 22:41:51.467 DEBUG c.c.server.mapper.CourseMapper.updateByPrimaryKey :159  [32moJEbzKqS[0;39m ==>  Preparing: update course set name = ?, summary = ?, time = ?, price = ?, image = ?, level = ?, charge = ?, status = ?, enroll = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2022-02-06 22:41:51.469 DEBUG c.c.server.mapper.CourseMapper.updateByPrimaryKey :159  [32moJEbzKqS[0;39m ==> Parameters: testj(String), testj(String), 33(Integer), null, null, 2(String), F(String), D(String), null, null, 2022-02-06 21:06:51.0(Timestamp), 2022-02-06 22:41:51.463(Timestamp), ErDrWSpI(String)
+2022-02-06 22:41:51.471 DEBUG c.c.server.mapper.CourseMapper.updateByPrimaryKey :159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.472 DEBUG c.c.s.mapper.CourseCategoryMapper.deleteByExample :159  [32moJEbzKqS[0;39m ==>  Preparing: delete from course_category WHERE ( course_id = ? ) 
+2022-02-06 22:41:51.473 DEBUG c.c.s.mapper.CourseCategoryMapper.deleteByExample :159  [32moJEbzKqS[0;39m ==> Parameters: ErDrWSpI(String)
+2022-02-06 22:41:51.475 DEBUG c.c.s.mapper.CourseCategoryMapper.deleteByExample :159  [32moJEbzKqS[0;39m <==    Updates: 7
+2022-02-06 22:41:51.476 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.477 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: b97Qv5ol(String), ErDrWSpI(String), 00000200(String)
+2022-02-06 22:41:51.478 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.479 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.480 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: 8dRM13wg(String), ErDrWSpI(String), 00000201(String)
+2022-02-06 22:41:51.483 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.485 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.486 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: 9wLblBfo(String), ErDrWSpI(String), 00000202(String)
+2022-02-06 22:41:51.488 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.489 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.490 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: MOG1tYgW(String), ErDrWSpI(String), 00000203(String)
+2022-02-06 22:41:51.491 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.492 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.493 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: rLoYHhwq(String), ErDrWSpI(String), 00000204(String)
+2022-02-06 22:41:51.494 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.495 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.496 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: Ftb9XgIN(String), ErDrWSpI(String), 00000205(String)
+2022-02-06 22:41:51.498 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.500 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.502 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: GJjgJyI1(String), ErDrWSpI(String), 00000206(String)
+2022-02-06 22:41:51.503 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.505 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.505 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: aJZ3wlsj(String), ErDrWSpI(String), 00000300(String)
+2022-02-06 22:41:51.507 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.508 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.509 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: 6nLUjjIk(String), ErDrWSpI(String), 00000301(String)
+2022-02-06 22:41:51.511 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.512 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.513 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: v3CSXaho(String), ErDrWSpI(String), 00000302(String)
+2022-02-06 22:41:51.515 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.517 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.519 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: 42Y2YC4T(String), ErDrWSpI(String), 00000303(String)
+2022-02-06 22:41:51.521 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.522 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==>  Preparing: insert into course_category (id, course_id, category_id ) values (?, ?, ? ) 
+2022-02-06 22:41:51.522 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m ==> Parameters: GUPDgHzl(String), ErDrWSpI(String), 00000304(String)
+2022-02-06 22:41:51.524 DEBUG c.course.server.mapper.CourseCategoryMapper.insert:159  [32moJEbzKqS[0;39m <==    Updates: 1
+2022-02-06 22:41:51.529 INFO  com.course.server.config.LogAspect                :114  [32moJEbzKqS[0;39m 返回结果: {"content":{"categorys":[{"id":"00000200","name":"后端技术","parent":"00000000","sort":200},{"id":"00000201","name":"JAVA","parent":"00000200","sort":201},{"id":"00000202","name":"SpringBoot","parent":"00000200","sort":202},{"id":"00000203","name":"SpringCloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"Python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"Andriod","parent":"00000300","sort":301},{"id":"00000302","name":"iOS","parent":"00000300","sort":302},{"id":"00000303","name":"React native","parent":"00000300","sort":303},{"id":"00000304","name":"WEEX","parent":"00000300","sort":304}],"charge":"F","createdAt":1644152811000,"id":"ErDrWSpI","level":"2","name":"testj","status":"D","summary":"testj","time":33,"updatedAt":1644154339000},"success":true}
+2022-02-06 22:41:51.529 INFO  com.course.server.config.LogAspect                :115  [32moJEbzKqS[0;39m ------------- 结束 耗时：79 ms -------------
+2022-02-06 22:41:51.575 INFO  com.course.server.config.LogAspect                :81   [32mCQffdoCP[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:41:51.575 INFO  com.course.server.config.LogAspect                :82   [32mCQffdoCP[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list POST
+2022-02-06 22:41:51.575 INFO  com.course.server.config.LogAspect                :83   [32mCQffdoCP[0;39m 类名方法: com.course.business.controller.admin.CourseController.list
+2022-02-06 22:41:51.576 INFO  com.course.server.config.LogAspect                :84   [32mCQffdoCP[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:51.576 INFO  com.course.server.config.LogAspect                :102  [32mCQffdoCP[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2022-02-06 22:41:51.578 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mCQffdoCP[0;39m ==>  Preparing: SELECT count(0) FROM course 
+2022-02-06 22:41:51.579 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mCQffdoCP[0;39m ==> Parameters: 
+2022-02-06 22:41:51.583 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mCQffdoCP[0;39m <==    Columns: count(0)
+2022-02-06 22:41:51.584 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mCQffdoCP[0;39m <==        Row: 3
+2022-02-06 22:41:51.585 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mCQffdoCP[0;39m <==      Total: 1
+2022-02-06 22:41:51.586 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mCQffdoCP[0;39m ==>  Preparing: select id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at from course order by sort asc LIMIT ? 
+2022-02-06 22:41:51.588 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mCQffdoCP[0;39m ==> Parameters: 5(Integer)
+2022-02-06 22:41:51.590 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCQffdoCP[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at
+2022-02-06 22:41:51.592 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCQffdoCP[0;39m <==        Row: 000001, test001, 这是test001, 140999, 33.00, null, 2, F, D, null, null, 2021-11-26 13:59:55, 2022-02-06 13:32:11.373
+2022-02-06 22:41:51.593 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCQffdoCP[0;39m <==        Row: ErDrWSpI, testj, testj, 33, null, null, 2, F, D, null, null, 2022-02-06 13:06:51, 2022-02-06 14:41:51.463
+2022-02-06 22:41:51.595 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mCQffdoCP[0;39m <==        Row: rxqxHLxR, test002, 这是test002, 999, 66.00, null, 3, C, P, null, null, 2021-11-26 14:00:18.369, 2021-11-26 14:00:18.369
+2022-02-06 22:41:51.596 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mCQffdoCP[0;39m <==      Total: 3
+2022-02-06 22:41:51.599 INFO  com.course.server.config.LogAspect                :114  [32mCQffdoCP[0;39m 返回结果: {"content":{"list":[{"charge":"F","createdAt":1637935195000,"id":"000001","level":"2","name":"test001","price":33.00,"status":"D","summary":"这是test001","time":140999,"updatedAt":1644154331373},{"charge":"F","createdAt":1644152811000,"id":"ErDrWSpI","level":"2","name":"testj","status":"D","summary":"testj","time":33,"updatedAt":1644158511463},{"charge":"C","createdAt":1637935218369,"id":"rxqxHLxR","level":"3","name":"test002","price":66.00,"status":"P","summary":"这是test002","time":999,"updatedAt":1637935218369}],"page":1,"size":5,"total":3},"success":true}
+2022-02-06 22:41:51.599 INFO  com.course.server.config.LogAspect                :115  [32mCQffdoCP[0;39m ------------- 结束 耗时：24 ms -------------
+2022-02-06 22:41:56.121 INFO  com.course.server.config.LogAspect                :81   [32mps6FChaX[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:41:56.122 INFO  com.course.server.config.LogAspect                :82   [32mps6FChaX[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list-category/ErDrWSpI POST
+2022-02-06 22:41:56.122 INFO  com.course.server.config.LogAspect                :83   [32mps6FChaX[0;39m 类名方法: com.course.business.controller.admin.CourseController.listCategory
+2022-02-06 22:41:56.123 INFO  com.course.server.config.LogAspect                :84   [32mps6FChaX[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:41:56.123 INFO  com.course.server.config.LogAspect                :102  [32mps6FChaX[0;39m 请求参数: ["ErDrWSpI"]
+2022-02-06 22:41:56.124 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mps6FChaX[0;39m ==>  Preparing: select id, course_id, category_id from course_category WHERE ( course_id = ? ) 
+2022-02-06 22:41:56.125 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mps6FChaX[0;39m ==> Parameters: ErDrWSpI(String)
+2022-02-06 22:41:56.127 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==    Columns: id, course_id, category_id
+2022-02-06 22:41:56.127 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: 42Y2YC4T, ErDrWSpI, 00000303
+2022-02-06 22:41:56.128 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: 6nLUjjIk, ErDrWSpI, 00000301
+2022-02-06 22:41:56.128 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: 8dRM13wg, ErDrWSpI, 00000201
+2022-02-06 22:41:56.129 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: 9wLblBfo, ErDrWSpI, 00000202
+2022-02-06 22:41:56.129 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: aJZ3wlsj, ErDrWSpI, 00000300
+2022-02-06 22:41:56.130 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: b97Qv5ol, ErDrWSpI, 00000200
+2022-02-06 22:41:56.131 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: Ftb9XgIN, ErDrWSpI, 00000205
+2022-02-06 22:41:56.132 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: GJjgJyI1, ErDrWSpI, 00000206
+2022-02-06 22:41:56.133 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: GUPDgHzl, ErDrWSpI, 00000304
+2022-02-06 22:41:56.134 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: MOG1tYgW, ErDrWSpI, 00000203
+2022-02-06 22:41:56.134 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: rLoYHhwq, ErDrWSpI, 00000204
+2022-02-06 22:41:56.134 TRACE c.c.s.mapper.CourseCategoryMapper.selectByExample :165  [32mps6FChaX[0;39m <==        Row: v3CSXaho, ErDrWSpI, 00000302
+2022-02-06 22:41:56.135 DEBUG c.c.s.mapper.CourseCategoryMapper.selectByExample :159  [32mps6FChaX[0;39m <==      Total: 12
+2022-02-06 22:41:56.136 INFO  com.course.server.config.LogAspect                :114  [32mps6FChaX[0;39m 返回结果: {"content":[{"categoryId":"00000303","courseId":"ErDrWSpI","id":"42Y2YC4T"},{"categoryId":"00000301","courseId":"ErDrWSpI","id":"6nLUjjIk"},{"categoryId":"00000201","courseId":"ErDrWSpI","id":"8dRM13wg"},{"categoryId":"00000202","courseId":"ErDrWSpI","id":"9wLblBfo"},{"categoryId":"00000300","courseId":"ErDrWSpI","id":"aJZ3wlsj"},{"categoryId":"00000200","courseId":"ErDrWSpI","id":"b97Qv5ol"},{"categoryId":"00000205","courseId":"ErDrWSpI","id":"Ftb9XgIN"},{"categoryId":"00000206","courseId":"ErDrWSpI","id":"GJjgJyI1"},{"categoryId":"00000304","courseId":"ErDrWSpI","id":"GUPDgHzl"},{"categoryId":"00000203","courseId":"ErDrWSpI","id":"MOG1tYgW"},{"categoryId":"00000204","courseId":"ErDrWSpI","id":"rLoYHhwq"},{"categoryId":"00000302","courseId":"ErDrWSpI","id":"v3CSXaho"}],"success":true}
+2022-02-06 22:41:56.137 INFO  com.course.server.config.LogAspect                :115  [32mps6FChaX[0;39m ------------- 结束 耗时：16 ms -------------
+2022-02-06 22:42:18.636 INFO  com.course.server.config.LogAspect                :81   [32mPWQMjatI[0;39m ------------- 【分类】操作开始 -------------
+2022-02-06 22:42:18.637 INFO  com.course.server.config.LogAspect                :81   [32mwrHgvimM[0;39m ------------- 【课程】查询开始 -------------
+2022-02-06 22:42:18.637 INFO  com.course.server.config.LogAspect                :82   [32mPWQMjatI[0;39m 请求地址: http://127.0.0.1:9002/business/admin/category/all POST
+2022-02-06 22:42:18.637 INFO  com.course.server.config.LogAspect                :82   [32mwrHgvimM[0;39m 请求地址: http://127.0.0.1:9002/business/admin/course/list POST
+2022-02-06 22:42:18.637 INFO  com.course.server.config.LogAspect                :83   [32mPWQMjatI[0;39m 类名方法: com.course.business.controller.admin.CategoryController.all
+2022-02-06 22:42:18.637 INFO  com.course.server.config.LogAspect                :83   [32mwrHgvimM[0;39m 类名方法: com.course.business.controller.admin.CourseController.list
+2022-02-06 22:42:18.638 INFO  com.course.server.config.LogAspect                :84   [32mwrHgvimM[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:42:18.638 INFO  com.course.server.config.LogAspect                :84   [32mPWQMjatI[0;39m 远程地址: 127.0.0.1
+2022-02-06 22:42:18.638 INFO  com.course.server.config.LogAspect                :102  [32mPWQMjatI[0;39m 请求参数: []
+2022-02-06 22:42:18.638 INFO  com.course.server.config.LogAspect                :102  [32mwrHgvimM[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2022-02-06 22:42:18.639 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mPWQMjatI[0;39m ==>  Preparing: select id, parent, name, sort from category order by sort asc 
+2022-02-06 22:42:18.640 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mPWQMjatI[0;39m ==> Parameters: 
+2022-02-06 22:42:18.641 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mwrHgvimM[0;39m ==>  Preparing: SELECT count(0) FROM course 
+2022-02-06 22:42:18.642 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mwrHgvimM[0;39m ==> Parameters: 
+2022-02-06 22:42:18.642 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==    Columns: id, parent, name, sort
+2022-02-06 22:42:18.643 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 6Y9qKmb2, GZtCxj1d, sub-test1, 3
+2022-02-06 22:42:18.644 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mwrHgvimM[0;39m <==    Columns: count(0)
+2022-02-06 22:42:18.644 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: c3rgAs1X, GZtCxj1d, sub-test2, 6
+2022-02-06 22:42:18.644 TRACE c.c.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32mwrHgvimM[0;39m <==        Row: 3
+2022-02-06 22:42:18.644 DEBUG c.c.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32mwrHgvimM[0;39m <==      Total: 1
+2022-02-06 22:42:18.644 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: PV47HdAM, GZtCxj1d, sub-test9, 9
+2022-02-06 22:42:18.645 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000100, 00000000, 前端技术, 100
+2022-02-06 22:42:18.645 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mwrHgvimM[0;39m ==>  Preparing: select id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at from course order by sort asc LIMIT ? 
+2022-02-06 22:42:18.646 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000101, 00000100, html/css, 101
+2022-02-06 22:42:18.646 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mwrHgvimM[0;39m ==> Parameters: 5(Integer)
+2022-02-06 22:42:18.646 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000102, 00000100, JavaScript, 102
+2022-02-06 22:42:18.647 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000103, 00000100, vue.js, 103
+2022-02-06 22:42:18.648 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000104, 00000100, react.js, 104
+2022-02-06 22:42:18.648 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mwrHgvimM[0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at
+2022-02-06 22:42:18.649 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000105, 00000100, angular, 105
+2022-02-06 22:42:18.649 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mwrHgvimM[0;39m <==        Row: 000001, test001, 这是test001, 140999, 33.00, null, 2, F, D, null, null, 2021-11-26 13:59:55, 2022-02-06 13:32:11.373
+2022-02-06 22:42:18.649 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000106, 00000100, NodeJs, 106
+2022-02-06 22:42:18.650 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000107, 00000100, JQuery, 107
+2022-02-06 22:42:18.651 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000108, 00000100, 小程序, 108
+2022-02-06 22:42:18.651 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mwrHgvimM[0;39m <==        Row: ErDrWSpI, testj, testj, 33, null, null, 2, F, D, null, null, 2022-02-06 13:06:51, 2022-02-06 14:41:51.463
+2022-02-06 22:42:18.652 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000200, 00000000, 后端技术, 200
+2022-02-06 22:42:18.652 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000201, 00000200, JAVA, 201
+2022-02-06 22:42:18.653 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000202, 00000200, SpringBoot, 202
+2022-02-06 22:42:18.653 TRACE c.c.server.mapper.CourseMapper.selectByExample    :165  [32mwrHgvimM[0;39m <==        Row: rxqxHLxR, test002, 这是test002, 999, 66.00, null, 3, C, P, null, null, 2021-11-26 14:00:18.369, 2021-11-26 14:00:18.369
+2022-02-06 22:42:18.653 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000203, 00000200, SpringCloud, 203
+2022-02-06 22:42:18.654 DEBUG c.c.server.mapper.CourseMapper.selectByExample    :159  [32mwrHgvimM[0;39m <==      Total: 3
+2022-02-06 22:42:18.654 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000204, 00000200, ssm, 204
+2022-02-06 22:42:18.654 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000205, 00000200, Python, 205
+2022-02-06 22:42:18.655 INFO  com.course.server.config.LogAspect                :114  [32mwrHgvimM[0;39m 返回结果: {"content":{"list":[{"charge":"F","createdAt":1637935195000,"id":"000001","level":"2","name":"test001","price":33.00,"status":"D","summary":"这是test001","time":140999,"updatedAt":1644154331373},{"charge":"F","createdAt":1644152811000,"id":"ErDrWSpI","level":"2","name":"testj","status":"D","summary":"testj","time":33,"updatedAt":1644158511463},{"charge":"C","createdAt":1637935218369,"id":"rxqxHLxR","level":"3","name":"test002","price":66.00,"status":"P","summary":"这是test002","time":999,"updatedAt":1637935218369}],"page":1,"size":5,"total":3},"success":true}
+2022-02-06 22:42:18.655 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000206, 00000200, 爬虫, 206
+2022-02-06 22:42:18.655 INFO  com.course.server.config.LogAspect                :115  [32mwrHgvimM[0;39m ------------- 结束 耗时：18 ms -------------
+2022-02-06 22:42:18.656 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000300, 00000000, 移动开发, 300
+2022-02-06 22:42:18.656 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000301, 00000300, Andriod, 301
+2022-02-06 22:42:18.657 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000302, 00000300, iOS, 302
+2022-02-06 22:42:18.657 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000303, 00000300, React native, 303
+2022-02-06 22:42:18.658 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000304, 00000300, WEEX, 304
+2022-02-06 22:42:18.659 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000400, 00000000, 计算机基础, 400
+2022-02-06 22:42:18.660 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000401, 00000400, 计算机网络, 401
+2022-02-06 22:42:18.661 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000402, 00000400, 算法与数据结构, 402
+2022-02-06 22:42:18.661 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000403, 00000400, 数学, 403
+2022-02-06 22:42:18.662 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000404, 00000400, Mysql, 404
+2022-02-06 22:42:18.663 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000405, 00000400, Redis, 405
+2022-02-06 22:42:18.663 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000406, 00000400, MongoDB, 406
+2022-02-06 22:42:18.664 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000407, 00000400, Oracle, 407
+2022-02-06 22:42:18.665 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000408, 00000400, SQL Server, 408
+2022-02-06 22:42:18.666 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000409, 00000400, NoSql, 409
+2022-02-06 22:42:18.667 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000500, 00000000, 前沿技术, 500
+2022-02-06 22:42:18.667 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000501, 00000500, 微服务, 501
+2022-02-06 22:42:18.668 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000502, 00000500, 区块链, 502
+2022-02-06 22:42:18.669 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000503, 00000500, 以太坊, 503
+2022-02-06 22:42:18.669 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000504, 00000500, 机器学习, 504
+2022-02-06 22:42:18.669 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000505, 00000500, 深度学习, 505
+2022-02-06 22:42:18.670 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000506, 00000500, 计算机视觉, 506
+2022-02-06 22:42:18.670 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000507, 00000500, 自然语言处理, 507
+2022-02-06 22:42:18.670 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000508, 00000500, 数据分析&挖掘, 508
+2022-02-06 22:42:18.670 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000509, 00000500, 大数据, 509
+2022-02-06 22:42:18.671 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000510, 00000500, Hadoop, 510
+2022-02-06 22:42:18.671 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000511, 00000500, Spark, 511
+2022-02-06 22:42:18.672 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000512, 00000500, Hbase, 512
+2022-02-06 22:42:18.673 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000513, 00000500, Flink, 513
+2022-02-06 22:42:18.674 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000514, 00000500, Storm, 514
+2022-02-06 22:42:18.674 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000515, 00000500, 云计算, 515
+2022-02-06 22:42:18.676 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000516, 00000500, AWS, 516
+2022-02-06 22:42:18.677 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000517, 00000500, Docker, 517
+2022-02-06 22:42:18.678 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000518, 00000500, Kubernetes, 518
+2022-02-06 22:42:18.678 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000600, 00000000, 测试运维, 600
+2022-02-06 22:42:18.679 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000601, 00000600, 运维, 601
+2022-02-06 22:42:18.680 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000602, 00000600, 自动化运维, 602
+2022-02-06 22:42:18.681 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000603, 00000600, 运维工具, 603
+2022-02-06 22:42:18.682 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000604, 00000600, 中间件, 604
+2022-02-06 22:42:18.683 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000605, 00000600, Linux, 605
+2022-02-06 22:42:18.684 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000606, 00000600, 测试, 606
+2022-02-06 22:42:18.685 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000607, 00000600, 功能测试, 607
+2022-02-06 22:42:18.685 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000608, 00000600, 性能测试, 608
+2022-02-06 22:42:18.686 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000609, 00000600, 自动化测试, 609
+2022-02-06 22:42:18.687 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000610, 00000600, 接口测试, 610
+2022-02-06 22:42:18.688 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: 00000611, 00000600, 安全测试, 611
+2022-02-06 22:42:18.689 TRACE c.c.server.mapper.CategoryMapper.selectByExample  :165  [32mPWQMjatI[0;39m <==        Row: GZtCxj1d, 00000000, test, 369963
+2022-02-06 22:42:18.690 DEBUG c.c.server.mapper.CategoryMapper.selectByExample  :159  [32mPWQMjatI[0;39m <==      Total: 66
+2022-02-06 22:42:18.693 INFO  com.course.server.config.LogAspect                :114  [32mPWQMjatI[0;39m 返回结果: {"content":[{"id":"6Y9qKmb2","name":"sub-test1","parent":"GZtCxj1d","sort":3},{"id":"c3rgAs1X","name":"sub-test2","parent":"GZtCxj1d","sort":6},{"id":"PV47HdAM","name":"sub-test9","parent":"GZtCxj1d","sort":9},{"id":"00000100","name":"前端技术","parent":"00000000","sort":100},{"id":"00000101","name":"html/css","parent":"00000100","sort":101},{"id":"00000102","name":"JavaScript","parent":"00000100","sort":102},{"id":"00000103","name":"vue.js","parent":"00000100","sort":103},{"id":"00000104","name":"react.js","parent":"00000100","sort":104},{"id":"00000105","name":"angular","parent":"00000100","sort":105},{"id":"00000106","name":"NodeJs","parent":"00000100","sort":106},{"id":"00000107","name":"JQuery","parent":"00000100","sort":107},{"id":"00000108","name":"小程序","parent":"00000100","sort":108},{"id":"00000200","name":"后端技术","parent":"00000000","sort":200},{"id":"00000201","name":"JAVA","parent":"00000200","sort":201},{"id":"00000202","name":"SpringBoot","parent":"00000200","sort":202},{"id":"00000203","name":"SpringCloud","parent":"00000200","sort":203},{"id":"00000204","name":"ssm","parent":"00000200","sort":204},{"id":"00000205","name":"Python","parent":"00000200","sort":205},{"id":"00000206","name":"爬虫","parent":"00000200","sort":206},{"id":"00000300","name":"移动开发","parent":"00000000","sort":300},{"id":"00000301","name":"Andriod","parent":"00000300","sort":301},{"id":"00000302","name":"iOS","parent":"00000300","sort":302},{"id":"00000303","name":"React native","parent":"00000300","sort":303},{"id":"00000304","name":"WEEX","parent":"00000300","sort":304},{"id":"00000400","name":"计算机基础","parent":"00000000","sort":400},{"id":"00000401","name":"计算机网络","parent":"00000400","sort":401},{"id":"00000402","name":"算法与数据结构","parent":"00000400","sort":402},{"id":"00000403","name":"数学","parent":"00000400","sort":403},{"id":"00000404","name":"Mysql","parent":"00000400","sort":404},{"id":"00000405","name":"Redis","parent":"00000400","sort":405},{"id":"00000406","name":"MongoDB","parent":"00000400","sort":406},{"id":"00000407","name":"Oracle","parent":"00000400","sort":407},{"id":"00000408","name":"SQL Server","parent":"00000400","sort":408},{"id":"00000409","name":"NoSql","parent":"00000400","sort":409},{"id":"00000500","name":"前沿技术","parent":"00000000","sort":500},{"id":"00000501","name":"微服务","parent":"00000500","sort":501},{"id":"00000502","name":"区块链","parent":"00000500","sort":502},{"id":"00000503","name":"以太坊","parent":"00000500","sort":503},{"id":"00000504","name":"机器学习","parent":"00000500","sort":504},{"id":"00000505","name":"深度学习","parent":"00000500","sort":505},{"id":"00000506","name":"计算机视觉","parent":"00000500","sort":506},{"id":"00000507","name":"自然语言处理","parent":"00000500","sort":507},{"id":"00000508","name":"数据分析&挖掘","parent":"00000500","sort":508},{"id":"00000509","name":"大数据","parent":"00000500","sort":509},{"id":"00000510","name":"Hadoop","parent":"00000500","sort":510},{"id":"00000511","name":"Spark","parent":"00000500","sort":511},{"id":"00000512","name":"Hbase","parent":"00000500","sort":512},{"id":"00000513","name":"Flink","parent":"00000500","sort":513},{"id":"00000514","name":"Storm","parent":"00000500","sort":514},{"id":"00000515","name":"云计算","parent":"00000500","sort":515},{"id":"00000516","name":"AWS","parent":"00000500","sort":516},{"id":"00000517","name":"Docker","parent":"00000500","sort":517},{"id":"00000518","name":"Kubernetes","parent":"00000500","sort":518},{"id":"00000600","name":"测试运维","parent":"00000000","sort":600},{"id":"00000601","name":"运维","parent":"00000600","sort":601},{"id":"00000602","name":"自动化运维","parent":"00000600","sort":602},{"id":"00000603","name":"运维工具","parent":"00000600","sort":603},{"id":"00000604","name":"中间件","parent":"00000600","sort":604},{"id":"00000605","name":"Linux","parent":"00000600","sort":605},{"id":"00000606","name":"测试","parent":"00000600","sort":606},{"id":"00000607","name":"功能测试","parent":"00000600","sort":607},{"id":"00000608","name":"性能测试","parent":"00000600","sort":608},{"id":"00000609","name":"自动化测试","parent":"00000600","sort":609},{"id":"00000610","name":"接口测试","parent":"00000600","sort":610},{"id":"00000611","name":"安全测试","parent":"00000600","sort":611},{"id":"GZtCxj1d","name":"test","parent":"00000000","sort":369963}],"success":true}
+2022-02-06 22:42:18.693 INFO  com.course.server.config.LogAspect                :115  [32mPWQMjatI[0;39m ------------- 结束 耗时：57 ms -------------
+2022-02-06 22:45:46.672 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:50:46.671 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 22:55:46.673 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 23:00:46.669 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-06 23:05:46.676 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
