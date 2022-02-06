@@ -52,3 +52,9 @@
 2022-02-07 00:09:35.493 INFO  com.course.gateway.GatewayApplication             :61   [32m        [0;39m Started GatewayApplication in 30.408 seconds (JVM running for 31.138)
 2022-02-07 00:09:35.495 INFO  com.course.gateway.GatewayApplication             :23   [32m        [0;39m 启动成功
 2022-02-07 00:09:35.495 INFO  com.course.gateway.GatewayApplication             :24   [32m        [0;39m gateway 地址：	 http://127.0.0.1:9000
+2022-02-07 00:14:29.935 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-07 00:19:29.930 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-07 00:24:29.977 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-07 00:29:29.972 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-07 00:37:58.648 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2022-02-07 00:42:58.649 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
