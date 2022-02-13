@@ -173,8 +173,8 @@
         let _this = this;
         // _this.list();
         _this.$refs.pagination.size = 5;
-        let course = SessionStorage.get("course") || {};
-        let chapter = SessionStorage.get("chapter") || {};
+        let course = SessionStorage.get(SESSION_KEY_COURSE) || {};
+        let chapter = SessionStorage.get(SESSION_KEY_CHAPTER) || {};
         console.log("course shunhe ", course);
         console.log("chapter shunhe ", chapter);
 
