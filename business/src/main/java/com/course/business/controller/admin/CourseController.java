@@ -1,5 +1,6 @@
 package com.course.business.controller.admin;
 
+import com.course.server.dto.SortDto;
 import com.course.server.service.CourseCategoryService;
 import com.course.server.service.CourseService;
 import com.course.server.util.ValidatorUtil;
@@ -80,6 +81,13 @@ public class CourseController {
     public ResponseVO saveContent(@RequestBody CourseContentVO contentDto) {
         ResponseVO responseDto = new ResponseVO();
         courseService.saveContent(contentDto);
+        return responseDto;
+    }
+
+    @PostMapping("/sort")
+    public ResponseVO saveContent(@RequestBody SortDto contentDto) {
+        ResponseVO responseDto = new ResponseVO();
+        courseService.sort(contentDto);
         return responseDto;
     }
 }
