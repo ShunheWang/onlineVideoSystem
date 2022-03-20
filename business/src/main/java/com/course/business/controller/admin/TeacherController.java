@@ -8,6 +8,7 @@ import com.course.server.vo.ResponseVO;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @RestController 返回json数据时用
@@ -59,4 +60,16 @@ public class TeacherController {
         ResponseVO responseVO = new ResponseVO();
         return responseVO;
     }
+
+    /**
+     * 列表查询
+     */
+    @PostMapping("/all")
+    public ResponseVO all() {
+        ResponseVO responseVO = new ResponseVO();
+        List<TeacherVO> teacherDtoList = teacherService.all();
+        responseVO.setContent(teacherDtoList);
+        return responseVO;
+    }
+
 }

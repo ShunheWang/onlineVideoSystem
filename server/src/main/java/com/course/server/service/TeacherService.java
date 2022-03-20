@@ -1,10 +1,13 @@
 package com.course.server.service;
 
+import com.course.server.dto.Category;
+import com.course.server.dto.CategoryExample;
 import com.course.server.dto.Teacher;
 import com.course.server.dto.TeacherExample;
 import com.course.server.mapper.TeacherMapper;
 import com.course.server.util.CopyUtil;
 import com.course.server.util.UuidUtil;
+import com.course.server.vo.CategoryVO;
 import com.course.server.vo.TeacherVO;
 import com.course.server.vo.PageVO;
 import com.github.pagehelper.PageHelper;
@@ -51,5 +54,14 @@ public class TeacherService {
 
     public void delete(String id) {
         teacherMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 列表查询
+     */
+    public List<TeacherVO> all() {
+        TeacherExample teacherExample = new TeacherExample();
+        List<Teacher> teachers = teacherMapper.selectByExample(teacherExample);
+        return CopyUtil.copyList(teachers, TeacherVO.class);
     }
 }

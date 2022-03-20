@@ -90,6 +90,14 @@
                 </div>
               </div>
               <div class="form-group">
+                <label class="col-sm-2 control-label">讲师</label>
+                <div class="col-sm-10">
+                  <select v-model="course.teacherId" class="form-control">
+                    <option v-for="o in teachers" v-bind:value="o.id">{{o.name}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
                 <label class="col-sm-2 control-label">概述</label>
                 <div class="col-sm-10">
                   <textarea v-model="course.summary" class="form-control"></textarea>
@@ -256,7 +264,8 @@
                 id: "",
                 oldSort: 0,
                 newSort: 0
-            }
+            },
+            teachers: [],
         }
     },
     mounted: function() {
@@ -264,6 +273,7 @@
         // _this.list();
         _this.$refs.pagination.size = 5;
         _this.allCategory();
+        _this.allTeacher();
         _this.list(1);
     //   this.$parent.activeSidebar("business-course-sidebar");
     },
@@ -532,6 +542,19 @@
             toast.error("更新排序失败");
           }
         });
+      },
+
+      /**
+       * 加载所有老师
+       */
+      allTeacher() {
+          let _this = this;
+          Loading.show();
+          _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/teacher/all').then((response) => {
+              Loading.hide();
+              let resp = response.data;
+              _this.teachers = resp.content;
+          })
       },
 
 
